@@ -1,0 +1,43 @@
+# Warrington Car Detailing - SEO-Optimized robots.txt
+# Production configuration for Next.js + smartphone-first indexing
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+Allow: /_next/static/
+Allow: /public/
+
+# Block API routes and internal paths
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /.env*
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+
+# Block unnecessary file types to preserve crawl budget
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xlsx$
+
+# Crawl delay: Reasonable limit (optional, can be removed for faster indexing)
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://warringtoncardetailing.co.uk/sitemap.xml
+Sitemap: https://warringtoncardetailing.co.uk/sitemap-images.xml
+
+# GoogleBot-specific rules (optional, for fine-tuning)
+User-agent: Googlebot
+Allow: /
+Allow: /_next/static/
+Allow: /public/
+Crawl-delay: 0
+
+# Googlebot-Image specific rules
+User-agent: Googlebot-Image
+Allow: /
+Allow: /public/gallery/
+Crawl-delay: 0
