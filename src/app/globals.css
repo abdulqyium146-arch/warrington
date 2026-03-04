@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-black text-brand-white font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-gradient-gold text-brand-black font-bold py-3 px-6 rounded-md transition-all duration-300 hover:shadow-lg hover:shadow-brand-gold/30 hover:scale-105 active:scale-95 text-sm md:text-base;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-brand-gold text-brand-gold font-bold py-3 px-6 rounded-md transition-all duration-300 hover:bg-brand-gold hover:text-brand-black hover:shadow-lg hover:shadow-brand-gold/30 hover:scale-105 active:scale-95 text-sm md:text-base;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-white;
+  }
+
+  .section-subheading {
+    @apply text-brand-gold font-semibold text-sm md:text-base uppercase tracking-widest mb-3;
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 bg-gradient-gold rounded-full mx-auto my-4;
+  }
+
+  .card-dark {
+    @apply bg-brand-darkgray border border-brand-gray rounded-xl p-6 transition-all duration-300 hover:border-brand-gold/50 hover:shadow-lg hover:shadow-brand-gold/10;
+  }
+
+  .nav-link {
+    @apply text-gray-300 hover:text-brand-gold transition-colors duration-200 font-medium text-sm;
+  }
+
+  .input-field {
+    @apply w-full bg-brand-gray border border-gray-600 rounded-md px-4 py-3 text-brand-white placeholder-gray-400 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-gold bg-clip-text text-transparent;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
