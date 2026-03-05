@@ -150,6 +150,17 @@ export default function Footer() {
                 <span className="text-brand-gold">🕐</span>
                 Open 24 Hours, 7 Days
               </li>
+              <li>
+                <a
+                  href="https://share.google/Srfz4m37t6oxFsNHX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-brand-gold transition-colors text-sm font-bold"
+                >
+                  <span className="text-brand-gold">📍</span>
+                  Visit on Google
+                </a>
+              </li>
             </ul>
           </div>
         </div>
