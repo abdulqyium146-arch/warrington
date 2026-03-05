@@ -16,39 +16,84 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  /* Improved base typography for mobile-first */
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h3 {
+    @apply text-lg md:text-xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
 }
 
 @layer components {
+  /* Button styles with improved mobile tap targets */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-gradient-gold text-brand-black font-bold py-3 px-6 rounded-md transition-all duration-300 hover:shadow-lg hover:shadow-brand-gold/30 hover:scale-105 active:scale-95 text-sm md:text-base;
+    @apply inline-flex items-center justify-center gap-2 bg-gradient-gold text-brand-black font-bold rounded-lg transition-all duration-300 active:scale-95 text-sm md:text-base py-3 md:py-4 px-5 md:px-8 whitespace-nowrap;
+    @apply hover:shadow-lg hover:shadow-brand-gold/40 hover:-translate-y-0.5;
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-black;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none disabled:hover:translate-y-0;
+    min-height: 44px;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 border-2 border-brand-gold text-brand-gold font-bold py-3 px-6 rounded-md transition-all duration-300 hover:bg-brand-gold hover:text-brand-black hover:shadow-lg hover:shadow-brand-gold/30 hover:scale-105 active:scale-95 text-sm md:text-base;
+    @apply inline-flex items-center justify-center gap-2 border-2 border-brand-gold text-brand-gold font-bold rounded-lg transition-all duration-300 active:scale-95 text-sm md:text-base py-3 md:py-4 px-5 md:px-8 whitespace-nowrap;
+    @apply hover:bg-brand-gold hover:text-brand-black hover:shadow-lg hover:shadow-brand-gold/30 hover:-translate-y-0.5;
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-black;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none disabled:hover:translate-y-0;
+    min-height: 44px;
   }
 
+  /* Section typography */
   .section-heading {
-    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-white;
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-white mb-6;
   }
 
   .section-subheading {
-    @apply text-brand-gold font-semibold text-sm md:text-base uppercase tracking-widest mb-3;
+    @apply text-brand-gold font-semibold text-xs md:text-sm uppercase tracking-widest mb-3 inline-block;
   }
 
   .gold-divider {
     @apply w-16 h-1 bg-gradient-gold rounded-full mx-auto my-4;
   }
 
+  /* Card components with improved hover and spacing */
   .card-dark {
-    @apply bg-brand-darkgray border border-brand-gray rounded-xl p-6 transition-all duration-300 hover:border-brand-gold/50 hover:shadow-lg hover:shadow-brand-gold/10;
+    @apply bg-brand-darkgray border border-brand-gray rounded-xl transition-all duration-300;
+    @apply hover:border-brand-gold/60 hover:shadow-lg hover:shadow-brand-gold/15;
+    @apply hover:-translate-y-1;
   }
 
+  /* Navigation links */
   .nav-link {
     @apply text-gray-300 hover:text-brand-gold transition-colors duration-200 font-medium text-sm;
+    @apply focus:outline-none focus:text-brand-gold;
   }
 
+  /* Form inputs with better mobile clarity */
   .input-field {
-    @apply w-full bg-brand-gray border border-gray-600 rounded-md px-4 py-3 text-brand-white placeholder-gray-400 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors duration-200;
+    @apply w-full bg-brand-gray border border-gray-600 rounded-lg px-4 py-3 md:py-4 text-brand-white placeholder-gray-400;
+    @apply focus:outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 transition-all duration-200;
+    @apply text-base md:text-base;
+    min-height: 44px;
+  }
+
+  .input-field::placeholder {
+    @apply text-gray-500;
+  }
+
+  /* Textarea styling */
+  textarea.input-field {
+    @apply resize-vertical min-h-32;
   }
 }
 
@@ -59,5 +104,73 @@
 
   .bg-noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Line clamping for text */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Visually hide elements (for screen readers) */
+  .sr-only {
+    @apply absolute w-1 h-1 p-0 -m-1 overflow-hidden clip-[rect(0,0,0,0)] whitespace-nowrap border-0;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-gold rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-gold-light;
+  }
+}
+
+/* Mobile-first responsive improvements */
+@media (max-width: 640px) {
+  body {
+    @apply text-sm;
+  }
+
+  /* Improve spacing on small screens */
+  main > section {
+    @apply py-10;
+  }
+}
+
+/* Tablet improvements */
+@media (min-width: 641px) and (max-width: 1024px) {
+  main > section {
+    @apply py-12;
+  }
+}
+
+/* Landscape mobile - vertical spacing */
+@media (max-height: 600px) and (orientation: landscape) {
+  main {
+    @apply py-4;
+  }
+}
+
+/* Improved readability for print */
+@media print {
+  .no-print {
+    @apply hidden;
   }
 }

@@ -16,29 +16,60 @@ export default function ServiceCard({
   features,
 }: ServiceCardProps) {
   return (
-    <div className="card-dark group flex flex-col h-full">
-      <div className="text-4xl mb-4">{icon}</div>
-      <h3 className="font-heading font-bold text-xl text-brand-white mb-2 group-hover:text-brand-gold transition-colors">
-        {title}
-      </h3>
-      <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">{shortDesc}</p>
-      {features && (
-        <ul className="space-y-1.5 mb-5">
-          {features.map((f, i) => (
-            <li key={i} className="flex items-start gap-2 text-xs text-gray-400">
-              <span className="text-brand-gold mt-0.5 flex-shrink-0">✓</span>
-              {f}
-            </li>
-          ))}
-        </ul>
-      )}
-      <Link
-        href={`/${slug}`}
-        className="inline-flex items-center gap-2 text-brand-gold font-semibold text-sm hover:gap-3 transition-all duration-200 mt-auto group-hover:text-brand-gold-light"
-      >
-        Learn More
-        <span>→</span>
-      </Link>
+    <div className="group h-full transition-all duration-300">
+      {/* Card container with improved spacing and shadows */}
+      <div className="card-dark h-full flex flex-col p-6 md:p-7 lg:p-8">
+        {/* Icon section */}
+        <div className="text-5xl md:text-6xl mb-5 md:mb-6 transform transition-transform duration-300 group-hover:scale-110">
+          {icon}
+        </div>
+
+        {/* Title */}
+        <h3 className="font-heading font-bold text-lg md:text-xl lg:text-2xl text-brand-white mb-3 md:mb-4 group-hover:text-brand-gold transition-colors duration-200 line-clamp-2">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 md:mb-6 flex-1">
+          {shortDesc}
+        </p>
+
+        {/* Features list - improved for mobile */}
+        {features && features.length > 0 && (
+          <ul className="space-y-2.5 md:space-y-3 mb-6 md:mb-8">
+            {features.map((f, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-2.5 md:gap-3 text-xs md:text-sm text-gray-400 group-hover:text-gray-300 transition-colors"
+              >
+                <span className="text-brand-gold flex-shrink-0 mt-1 text-base md:text-lg">✓</span>
+                <span className="leading-relaxed">{f}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {/* CTA Link */}
+        <Link
+          href={`/${slug}`}
+          className="inline-flex items-center gap-2 text-brand-gold font-semibold text-sm md:text-base transition-all duration-300 group-hover:text-brand-gold-light"
+        >
+          <span>Learn More</span>
+          <svg
+            className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 7l5 5m0 0l-5 5m5-5H6"
+            />
+          </svg>
+        </Link>
+      </div>
     </div>
   );
 }

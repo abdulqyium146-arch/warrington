@@ -14,24 +14,45 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <section
-      className={`py-16 ${
-        dark ? 'bg-brand-darkgray' : 'bg-brand-black'
-      } border-y border-brand-gray`}
+      className={`py-12 md:py-16 lg:py-20 ${
+        dark ? 'bg-brand-darkgray' : 'bg-gradient-dark'
+      } border-y border-brand-gold/20`}
     >
-      <div className="max-w-4xl mx-auto px-4 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        {/* Subheading */}
         <p className="section-subheading">Get Started Today</p>
-        <h2 className="section-heading mb-4">{title}</h2>
-        <p className="text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">{subtitle}</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href={`tel:${PHONE}`} className="btn-primary text-base py-4 px-8">
+
+        {/* Main heading */}
+        <h2 className="section-heading mb-4 md:mb-6">{title}</h2>
+
+        {/* Subtitle text */}
+        <p className="text-gray-400 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
+          {subtitle}
+        </p>
+
+        {/* CTA Buttons - Stacked on mobile, side-by-side on larger screens */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 md:mb-8">
+          <a
+            href={`tel:${PHONE}`}
+            className="btn-primary text-base md:text-lg py-4 md:py-4 px-6 md:px-8 w-full sm:w-auto justify-center"
+          >
             📞 Call {PHONE_DISPLAY}
           </a>
-          <Link href="/contact" className="btn-secondary text-base py-4 px-8">
+          <Link
+            href="/contact"
+            className="btn-secondary text-base md:text-lg py-4 md:py-4 px-6 md:px-8 w-full sm:w-auto justify-center"
+          >
             Get a Free Quote
           </Link>
         </div>
-        <p className="mt-4 text-gray-500 text-sm">
-          Open 24 hours · No hidden fees · Free estimates
+
+        {/* Trust indicators */}
+        <p className="text-gray-500 text-xs md:text-sm space-x-4 md:space-x-6 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0">
+          <span>✓ Open 24 hours</span>
+          <span className="hidden md:inline">·</span>
+          <span>✓ No hidden fees</span>
+          <span className="hidden md:inline">·</span>
+          <span>✓ Free estimates</span>
         </p>
       </div>
     </section>
