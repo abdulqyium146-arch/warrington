@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import { SITE_URL, PHONE, EMAIL } from '@/lib/constants';
 
 // SEO Metadata Configuration
 export const metadata: Metadata = {
-  title: 'How to Choose a Professional Car Detailer in Manchester | SRV Detailing',
+  title: 'How to Choose a Professional Car Detailer in Manchester | WCD Warrington',
   description:
     'Expert guide to selecting a professional car detailer in Manchester. Learn how to evaluate paint correction, ceramic coating, and interior detailing services across Greater Manchester.',
   keywords: [
@@ -17,24 +18,24 @@ export const metadata: Metadata = {
     'car valeting Manchester',
   ],
   alternates: {
-    canonical: 'https://srvdetailing.co.uk/blog/how-to-choose-professional-car-detailer-manchester',
+    canonical: `${SITE_URL}/blog/how-to-choose-professional-car-detailer-manchester`,
   },
   openGraph: {
     type: 'article',
     title: 'How to Choose a Professional Car Detailer in Manchester',
     description:
       'Expert guide to selecting a professional car detailer in Manchester for paint correction, ceramic coating, and interior detailing.',
-    url: 'https://srvdetailing.co.uk/blog/how-to-choose-professional-car-detailer-manchester',
-    siteName: 'SRV Detailing',
+    url: `${SITE_URL}/blog/how-to-choose-professional-car-detailer-manchester`,
+    siteName: 'WCD Car Detailing Warrington',
     images: [
       {
-        url: 'https://srvdetailing.co.uk/og-image-detailer-manchester.jpg',
+        url: `${SITE_URL}/og-image-detailer-manchester.jpg`,
         width: 1200,
         height: 630,
         alt: 'Professional car detailer working on paint correction',
       },
     ],
-    authors: ['SRV Detailing'],
+    authors: ['WCD Car Detailing Warrington'],
     publishedTime: '2026-03-05',
     modifiedTime: '2026-03-05',
   },
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     title: 'How to Choose a Professional Car Detailer in Manchester',
     description:
       'Expert guide to evaluating paint correction, ceramic coating, and detailing services in Manchester.',
-    images: ['https://srvdetailing.co.uk/og-image-detailer-manchester.jpg'],
+    images: [`${SITE_URL}/og-image-detailer-manchester.jpg`],
   },
 };
 
@@ -51,22 +52,24 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://srvdetailing.co.uk',
-  name: 'SRV Detailing',
+  '@id': SITE_URL,
+  name: 'WCD Car Detailing Warrington',
   description: 'Professional car detailing services in Manchester and Greater Manchester',
-  url: 'https://srvdetailing.co.uk',
-  telephone: '+44 161 000 0000',
-  email: 'info@srvdetailing.co.uk',
+  url: SITE_URL,
+  telephone: PHONE,
+  email: EMAIL,
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Manchester',
-    addressRegion: 'Greater Manchester',
+    streetAddress: 'Unit 1, Fairclough Mill',
+    addressLocality: 'Warrington',
+    addressRegion: 'Cheshire',
+    addressPostalCode: 'WA5 1AH',
     addressCountry: 'GB',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '53.4808',
-    longitude: '-2.2426',
+    latitude: '53.3900',
+    longitude: '-2.5970',
   },
   service: [
     {
@@ -129,37 +132,37 @@ const localBusinessSchema = {
     },
   ],
   sameAs: [
-    'https://www.facebook.com/srvdetailing',
-    'https://www.instagram.com/srvdetailing',
+    'https://www.facebook.com/WCDCarDetailing',
+    'https://www.instagram.com/WCDCarDetailing',
   ],
 };
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  '@id': 'https://srvdetailing.co.uk/blog/how-to-choose-professional-car-detailer-manchester',
+  '@id': `${SITE_URL}/blog/how-to-choose-professional-car-detailer-manchester`,
   headline: 'How to Choose a Professional Car Detailer in Manchester',
   description:
     'Expert guide to selecting a professional car detailer in Manchester. Learn how to evaluate paint correction, ceramic coating, and interior detailing services.',
-  image: 'https://srvdetailing.co.uk/og-image-detailer-manchester.jpg',
+  image: `${SITE_URL}/og-image-detailer-manchester.jpg`,
   datePublished: '2026-03-05',
   dateModified: '2026-03-05',
   author: {
     '@type': 'Organization',
-    name: 'SRV Detailing',
-    url: 'https://srvdetailing.co.uk',
+    name: 'WCD Car Detailing Warrington',
+    url: SITE_URL,
   },
   publisher: {
     '@type': 'Organization',
-    name: 'SRV Detailing',
+    name: 'WCD Car Detailing Warrington',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://srvdetailing.co.uk/logo.png',
+      url: `${SITE_URL}/logo.png`,
     },
   },
   mainEntity: {
     '@type': 'LocalBusiness',
-    '@id': 'https://srvdetailing.co.uk',
+    '@id': SITE_URL,
   },
 };
 
@@ -533,7 +536,7 @@ export default function CarDetailerManchesterPage() {
               Looking for a professional car detailer in Manchester?
             </h3>
             <p className="text-gray-300 mb-6">
-              SRV Detailing brings professional expertise to paint correction, ceramic coating, and interior detailing across Manchester and Greater Manchester.{' '}
+              WCD Car Detailing Warrington brings professional expertise to paint correction, ceramic coating, and interior detailing across Manchester and Greater Manchester.{' '}
               <Link href="/contact" className="text-brand-gold font-semibold hover:text-brand-gold/80 transition-colors">
                 Get in touch
               </Link>
