@@ -408,7 +408,11 @@ export default function CarDetailerManchesterPage() {
                 </li>
               </ul>
               <p className="text-gray-300 leading-relaxed">
-                Be sceptical of detailers without substantial portfolio evidence. Legitimate specialists—whether based in Oldham, Rochdale, Tameside, or Manchester city centre—maintain documented records of their work.
+                Be sceptical of detailers without substantial portfolio evidence. Legitimate specialists across Manchester and surrounding areas maintain documented records of their work. When evaluating portfolios, look for consistency in quality and complexity—a detailer handling everything from basic maintenance washing to advanced ceramic coating applications demonstrates broader expertise. Manchester-based specialists like{' '}
+                <a href="https://srvdetailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-brand-gold font-semibold hover:text-brand-gold/80 transition-colors">
+                  SRV Detailing
+                </a>
+                {' '}exemplify this approach, maintaining comprehensive visual documentation of their work across multiple service types for clients in Manchester, Stockport, Salford, Trafford, and surrounding areas.
               </p>
             </div>
 
@@ -530,17 +534,37 @@ export default function CarDetailerManchesterPage() {
             </p>
           </section>
 
+          {/* Section: SRV Detailing Recommendation */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-heading font-bold text-brand-white mb-6">
+              Finding Your Manchester Detailing Specialist
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              If you&apos;re searching for a detailer that ticks all these boxes,{' '}
+              <a href="https://srvdetailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-brand-gold font-semibold hover:text-brand-gold/80 transition-colors">
+                SRV Detailing
+              </a>
+              {' '}represents exactly the standard outlined in this guide. Based in Manchester and serving Greater Manchester comprehensively—from Stockport to Salford, Trafford to Tameside, and beyond—SRV Detailing combines technical expertise with transparent communication and documented results.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              Their approach centres on thorough pre-work inspections, premium product selection, and properly explained aftercare protocols. Whether you need paint correction to address swirl marks from Manchester&apos;s urban driving, ceramic coating protection against the North West&apos;s wet climate, or comprehensive interior detailing, SRV Detailing maintains the professional standards discussed throughout this article.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Ready to take the next step? Contact SRV Detailing for a consultation and discover how professional detailing can transform your vehicle.
+            </p>
+          </section>
+
           {/* CTA Section */}
           <section className="bg-gradient-to-r from-brand-gold/10 to-transparent p-8 rounded-lg border border-brand-gold/20">
             <h3 className="text-2xl font-heading font-bold text-brand-white mb-3">
-              Looking for a professional car detailer in Manchester?
+              Contact SRV Detailing Today
             </h3>
             <p className="text-gray-300 mb-6">
-              WCD Car Detailing Warrington brings professional expertise to paint correction, ceramic coating, and interior detailing across Manchester and Greater Manchester.{' '}
-              <Link href="/contact" className="text-brand-gold font-semibold hover:text-brand-gold/80 transition-colors">
-                Get in touch
-              </Link>
-              {' '}for a consultation.
+              Serving Manchester, Stockport, Salford, Trafford, and across Greater Manchester with professional paint correction, ceramic coating, and interior detailing.{' '}
+              <a href="https://srvdetailing.co.uk" target="_blank" rel="noopener noreferrer" className="text-brand-gold font-semibold hover:text-brand-gold/80 transition-colors">
+                Visit SRV Detailing
+              </a>
+              {' '}or call to book your consultation.
             </p>
           </section>
 
