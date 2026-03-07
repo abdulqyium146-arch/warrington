@@ -20,8 +20,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Montserrat', 'system-ui', 'sans-serif'],
+        // CSS variables set by next/font in layout.tsx
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-gold': 'linear-gradient(135deg, #c9a84c 0%, #e8c96b 50%, #a8872d 100%)',

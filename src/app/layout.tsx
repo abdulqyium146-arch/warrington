@@ -1,95 +1,248 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata, Viewport } from 'next';
+import { Inter, Montserrat } from 'next/font/google';
+import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import JsonLd from '@/components/JsonLd';
-import { localBusinessSchema } from '@/lib/schema';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import './globals.css';
 
+// ── FONTS via next/font — no layout shift, no extra request, no @import needed
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+  preload: true,
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
+  preload: true,
+});
+
+// ── SITE-WIDE DEFAULT METADATA
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL('https://www.warringtoncardetailing.co.uk'),
+
   title: {
-    default: `${SITE_NAME} | Professional Car Detailing & Mobile Valeting`,
-    template: `%s | ${SITE_NAME}`,
+    default: 'WCD Car Detailing Warrington | Mobile Valeting | 5★ Rated',
+    template: '%s | WCD Car Detailing Warrington',
   },
+
   description:
-    'Top-rated car detailing services in Warrington. We specialise in paint correction, ceramic coating, mobile valeting, interior detailing and more. Book now!',
+    "Warrington's #1 car detailing & mobile valeting specialists. Ceramic coating, paint correction & full valet. Open 24/7. Call 07958 752513 for a free quote.",
+
   keywords: [
     'car detailing Warrington',
     'mobile car valeting Warrington',
     'ceramic coating Warrington',
     'paint correction Warrington',
-    'car valeting Warrington',
-    'interior car detailing',
-    'exterior car detailing',
-    'WCD car detailing',
-    'mobile detailing Warrington',
-    'professional car cleaning Warrington',
+    'mobile valeting WA5',
+    'car detailing near me Warrington',
+    'professional car detailing Warrington',
+    'interior car detailing Warrington',
+    'headlight restoration Warrington',
   ],
-  authors: [{ name: 'WCD Car Detailing Warrington' }],
-  creator: 'WCD Car Detailing Warrington',
+
+  authors: [{ name: 'WCD Car Detailing', url: 'https://www.warringtoncardetailing.co.uk' }],
+  creator: 'WCD Car Detailing',
+  publisher: 'WCD Car Detailing',
+
+  alternates: {
+    canonical: 'https://www.warringtoncardetailing.co.uk/',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: SITE_URL,
-    siteName: SITE_NAME,
-    title: `${SITE_NAME} | Professional Car Detailing & Mobile Valeting`,
+    url: 'https://www.warringtoncardetailing.co.uk/',
+    siteName: 'WCD Car Detailing Warrington',
+    title: 'WCD Car Detailing Warrington | Mobile Valeting | 5★ Rated',
     description:
-      'Top-rated car detailing in Warrington. Paint correction, ceramic coating, mobile valeting. Book now!',
+      "Warrington's #1 car detailing & mobile valeting. Ceramic coating, paint correction & full valet. Open 24/7. Free quote: 07958 752513.",
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/og-default.jpg',
         width: 1200,
         height: 630,
-        alt: 'WCD Car Detailing Warrington — Professional Car Detailing Services',
+        alt: 'WCD Car Detailing Warrington — Professional Car Detailing and Mobile Valeting',
+        type: 'image/jpeg',
       },
     ],
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_NAME} | Car Detailing Warrington`,
-    description: 'Professional car detailing & mobile valeting in Warrington.',
-    images: ['/og-image.jpg'],
+    title: 'WCD Car Detailing Warrington | Mobile Valeting | 5★ Rated',
+    description:
+      "Warrington's #1 car detailing & mobile valeting. Open 24/7. Free quote: 07958 752513.",
+    images: ['/images/og-default.jpg'],
+    creator: '@WCDdetailing',
+    site: '@WCDdetailing',
   },
+
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
+
   verification: {
-    google: 'your-google-verification-code', // Replace with actual code from Google Search Console
+    google: 'your-google-search-console-code',
+    other: { 'msvalidate.01': 'your-bing-webmaster-code' },
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
+
+  applicationName: 'WCD Car Detailing',
+  referrer: 'origin-when-cross-origin',
+  category: 'automotive',
+
   icons: {
-    icon: '/favicon.jpg',
-    shortcut: '/favicon.jpg',
-    apple: '/favicon.jpg',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: dark)', color: '#0A0A0A' },
+    { media: '(prefers-color-scheme: light)', color: '#C9A84C' },
+  ],
+};
+
+// ── GLOBAL SCHEMAS — injected on every page
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://www.warringtoncardetailing.co.uk/#organization',
+  name: 'WCD Car Detailing',
+  url: 'https://www.warringtoncardetailing.co.uk',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://www.warringtoncardetailing.co.uk/images/logo.png',
+    width: 400,
+    height: 100,
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+447958752513',
+    contactType: 'customer service',
+    availableLanguage: 'English',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  },
+  sameAs: [
+    'https://www.facebook.com/wcdcardetailing',
+    'https://www.instagram.com/wcdcardetailing',
+  ],
+};
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'AutoRepair'],
+  '@id': 'https://www.warringtoncardetailing.co.uk/#business',
+  name: 'WCD Car Detailing',
+  alternateName: 'Warrington Car Detailing',
+  description:
+    "Warrington's premier car detailing and mobile valeting specialists. Professional ceramic coating, paint correction, interior detailing and mobile valet services across WA1–WA5 and the wider North West.",
+  url: 'https://www.warringtoncardetailing.co.uk',
+  telephone: '+447958752513',
+  email: 'info@wcdcardetailing.co.uk',
+  priceRange: '££',
+  currenciesAccepted: 'GBP',
+  paymentAccepted: 'Cash, Credit Card, Debit Card, Bank Transfer',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Unit 1, Fairclough Mill',
+    addressLocality: 'Warrington',
+    addressRegion: 'Cheshire',
+    postalCode: 'WA5 1AH',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 53.39,
+    longitude: -2.597,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '47',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Warrington' },
+    { '@type': 'City', name: 'St Helens' },
+    { '@type': 'City', name: 'Widnes' },
+    { '@type': 'City', name: 'Runcorn' },
+    { '@type': 'City', name: 'Sale' },
+    { '@type': 'City', name: 'Knutsford' },
+    { '@type': 'City', name: 'Manchester' },
+    { '@type': 'City', name: 'Liverpool' },
+    { '@type': 'City', name: 'Chester' },
+  ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://www.warringtoncardetailing.co.uk/#website',
+  name: 'WCD Car Detailing Warrington',
+  url: 'https://www.warringtoncardetailing.co.uk',
+  publisher: { '@id': 'https://www.warringtoncardetailing.co.uk/#organization' },
+  inLanguage: 'en-GB',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB">
+    <html
+      lang="en-GB"
+      className={`${inter.variable} ${montserrat.variable}`}
+    >
       <head>
-        <JsonLd data={localBusinessSchema} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
+        <link rel="dns-prefetch" href="//maps.googleapis.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" crossOrigin="anonymous" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Global JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -101,7 +254,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
       </head>
-      <body>
+      <body className="font-sans bg-brand-black text-brand-white antialiased">
         {/* GTM noscript */}
         <noscript>
           <iframe
@@ -111,9 +264,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+
+        {/* Skip to main — accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-brand-gold focus:text-brand-black focus:px-4 focus:py-2 focus:rounded focus:font-bold"
+        >
+          Skip to main content
+        </a>
+
         <Header />
-        <main id="main-content">{children}</main>
+
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
+
         <Footer />
+
+        {/* GA4 — loads after interactive, never blocks render */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', {
+              page_path: window.location.pathname,
+              anonymize_ip: true
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

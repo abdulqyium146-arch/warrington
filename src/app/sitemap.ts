@@ -1,87 +1,63 @@
 import { MetadataRoute } from 'next';
-import { SITE_URL } from '@/lib/constants';
+import { allLocations } from '@/lib/data/locations';
+
+const BASE = 'https://www.warringtoncardetailing.co.uk';
+
+function url(
+  path: string,
+  priority: number,
+  freq: MetadataRoute.Sitemap[0]['changeFrequency'],
+) {
+  return {
+    url: `${BASE}${path}`,
+    lastModified: new Date(),
+    changeFrequency: freq,
+    priority,
+  };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
   return [
-    {
-      url: SITE_URL,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${SITE_URL}/car-detailing`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/mobile-car-valeting`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/ceramic-coating`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/paint-correction`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/interior-detailing`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/headlight-restoration`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/gallery`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog/how-to-choose-professional-car-detailer-manchester`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog/detailing-vs-valeting`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/blog/ceramic-coating-benefits`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/blog/how-often-car-detailed`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // ── HOMEPAGE
+    url('/', 1.0, 'weekly'),
+
+    // ── CORE SERVICES
+    url('/car-detailing/', 0.9, 'weekly'),
+    url('/mobile-car-valeting/', 0.9, 'weekly'),
+    url('/ceramic-coating/', 0.9, 'weekly'),
+    url('/paint-correction/', 0.9, 'weekly'),
+    url('/interior-detailing/', 0.9, 'weekly'),
+    url('/headlight-restoration/', 0.9, 'weekly'),
+
+    // ── AUTHORITY PAGES
+    url('/faq/', 0.8, 'monthly'),
+    url('/about/', 0.8, 'monthly'),
+    url('/gallery/', 0.8, 'weekly'),
+    url('/contact/', 0.8, 'monthly'),
+    url('/get-a-quote/', 0.9, 'monthly'),
+    url('/blog/', 0.8, 'weekly'),
+
+    // ── PRIMARY MOBILE SERVICE PAGE
+    url('/mobile-car-detailing-warrington/', 0.9, 'monthly'),
+
+    // ── BLOG POSTS
+    url('/blog/how-to-choose-professional-car-detailer-manchester/', 0.65, 'monthly'),
+    url('/blog/detailing-vs-valeting/', 0.65, 'monthly'),
+    url('/blog/ceramic-coating-benefits/', 0.65, 'monthly'),
+    url('/blog/how-often-car-detailed/', 0.65, 'monthly'),
+    url('/blog/paint-correction-guide/', 0.65, 'monthly'),
+    url('/blog/interior-detailing-guide/', 0.65, 'monthly'),
+    url('/blog/mobile-car-valeting-warrington/', 0.65, 'monthly'),
+    url('/blog/headlight-restoration-guide/', 0.65, 'monthly'),
+    url('/blog/how-to-maintain-ceramic-coating/', 0.65, 'monthly'),
+    url('/blog/new-car-detailing-warrington/', 0.65, 'monthly'),
+
+    // ── ALL LOCATION PAGES (dynamic from data)
+    ...allLocations.map((loc) => ({
+      url: `${BASE}/${loc.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: loc.type === 'town' ? 0.8 : 0.7,
+    })),
   ];
 }

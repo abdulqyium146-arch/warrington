@@ -1,0 +1,40 @@
+{
+  "name": "WCD Car Detailing Warrington",
+  "short_name": "WCD Detailing",
+  "description": "Warrington's #1 car detailing & mobile valeting. Open 24/7.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#C9A84C",
+  "orientation": "portrait-primary",
+  "lang": "en-GB",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["automotive", "business", "local"],
+  "shortcuts": [
+    {
+      "name": "Get a Free Quote",
+      "short_name": "Quote",
+      "description": "Get a free car detailing quote",
+      "url": "/get-a-quote/"
+    },
+    {
+      "name": "Call Now",
+      "short_name": "Call",
+      "description": "Call WCD Car Detailing",
+      "url": "tel:07958752513"
+    }
+  ]
+}

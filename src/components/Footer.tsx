@@ -1,19 +1,66 @@
 import Link from 'next/link';
-import {
-  PHONE,
-  PHONE_DISPLAY,
-  EMAIL,
-  ADDRESS,
-  FACEBOOK,
-  INSTAGRAM,
-  AREAS_SERVED,
-} from '@/lib/constants';
+import { PHONE, PHONE_DISPLAY, EMAIL, ADDRESS } from '@/lib/constants';
+
+const footerLinks = {
+  services: [
+    { label: 'Car Detailing Warrington', href: '/car-detailing' },
+    { label: 'Mobile Car Valeting', href: '/mobile-car-valeting' },
+    { label: 'Ceramic Coating', href: '/ceramic-coating' },
+    { label: 'Paint Correction', href: '/paint-correction' },
+    { label: 'Interior Detailing', href: '/interior-detailing' },
+    { label: 'Headlight Restoration', href: '/headlight-restoration' },
+    { label: 'Mobile Detailing Warrington', href: '/mobile-car-detailing-warrington' },
+  ],
+  warringtonAreas: [
+    { label: 'Car Detailing Warrington', href: '/car-detailing-warrington' },
+    { label: 'Great Sankey', href: '/car-detailing-great-sankey-warrington' },
+    { label: 'Stockton Heath', href: '/car-detailing-stockton-heath-warrington' },
+    { label: 'Birchwood', href: '/car-detailing-birchwood-warrington' },
+    { label: 'Padgate', href: '/car-detailing-padgate-warrington' },
+    { label: 'Latchford', href: '/car-detailing-latchford-warrington' },
+    { label: 'Fearnhead', href: '/car-detailing-fearnhead-warrington' },
+    { label: 'Grappenhall', href: '/car-detailing-grappenhall-warrington' },
+    { label: 'Westbrook', href: '/car-detailing-westbrook-warrington' },
+    { label: 'Penketh', href: '/car-detailing-penketh-warrington' },
+    { label: 'Woolston', href: '/car-detailing-woolston-warrington' },
+    { label: 'Appleton', href: '/car-detailing-appleton-warrington' },
+    { label: 'Callands', href: '/car-detailing-callands-warrington' },
+    { label: 'Culcheth', href: '/car-detailing-culcheth-warrington' },
+    { label: 'Thelwall', href: '/car-detailing-thelwall-warrington' },
+  ],
+  surroundingTowns: [
+    { label: 'Car Detailing St Helens', href: '/car-detailing-st-helens' },
+    { label: 'Car Detailing Widnes', href: '/car-detailing-widnes' },
+    { label: 'Car Detailing Runcorn', href: '/car-detailing-runcorn' },
+    { label: 'Car Detailing Wigan', href: '/car-detailing-wigan' },
+    { label: 'Car Detailing Sale', href: '/car-detailing-sale' },
+    { label: 'Car Detailing Stockport', href: '/car-detailing-stockport' },
+    { label: 'Car Detailing Manchester', href: '/car-detailing-manchester' },
+    { label: 'Car Detailing Liverpool', href: '/car-detailing-liverpool' },
+    { label: 'Car Detailing Chester', href: '/car-detailing-chester' },
+    { label: 'Car Detailing Northwich', href: '/car-detailing-northwich' },
+    { label: 'Car Detailing Knutsford', href: '/car-detailing-knutsford' },
+    { label: 'Car Detailing Newton-le-Willows', href: '/car-detailing-newton-le-willows' },
+    { label: 'Car Detailing Lymm', href: '/car-detailing-lymm' },
+  ],
+  company: [
+    { label: 'About WCD', href: '/about' },
+    { label: 'Gallery', href: '/gallery' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'Get a Free Quote', href: '/get-a-quote' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Sitemap', href: '/sitemap.xml' },
+  ],
+};
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-brand-darkgray border-t border-brand-gray">
+    <footer role="contentinfo" className="bg-brand-black border-t border-brand-gray">
       {/* CTA Banner */}
       <div className="bg-gradient-gold py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -27,11 +74,12 @@ export default function Footer() {
             <a
               href={`tel:${PHONE}`}
               className="inline-flex items-center justify-center gap-2 bg-brand-black text-brand-gold font-bold py-3 px-8 rounded-md hover:bg-brand-darkgray transition-colors"
+              aria-label={`Call WCD Car Detailing on ${PHONE_DISPLAY}`}
             >
               📞 Call Now — {PHONE_DISPLAY}
             </a>
             <Link
-              href="/contact"
+              href="/get-a-quote"
               className="inline-flex items-center justify-center gap-2 border-2 border-brand-black text-brand-black font-bold py-3 px-8 rounded-md hover:bg-brand-black hover:text-brand-gold transition-colors"
             >
               Get a Free Quote
@@ -40,145 +88,147 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main footer */}
+      {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+
+          {/* Brand + NAP */}
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center font-heading font-black text-brand-black text-lg">
                 W
               </div>
               <div>
                 <div className="font-heading font-black text-brand-white text-lg">WCD</div>
-                <div className="text-brand-gold text-xs font-semibold tracking-widest">
-                  CAR DETAILING
-                </div>
+                <div className="text-brand-gold text-xs font-semibold tracking-widest">CAR DETAILING</div>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Warrington&apos;s premier car detailing and mobile valeting specialists.
-              Professional results, exceptional service, every time.
+              Professional results, every time.
             </p>
-            <div className="flex gap-3">
-              <a
-                href={FACEBOOK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-brand-gray hover:bg-brand-gold hover:text-brand-black transition-all flex items-center justify-center text-gray-300"
-                aria-label="Facebook"
-              >
-                f
-              </a>
-              <a
-                href={INSTAGRAM}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-brand-gray hover:bg-brand-gold hover:text-brand-black transition-all flex items-center justify-center text-gray-300 font-bold text-xs"
-                aria-label="Instagram"
-              >
-                ig
-              </a>
+            {/* NAP in address — machine-readable for schema signals */}
+            <address className="not-italic text-sm text-gray-400 space-y-1 mb-4">
+              <div className="font-semibold text-brand-white">WCD Car Detailing</div>
+              <div>{ADDRESS}</div>
+              <div className="pt-1">
+                <a
+                  href={`tel:${PHONE}`}
+                  className="text-brand-gold hover:text-brand-gold-light font-medium transition-colors"
+                  aria-label={`Call WCD on ${PHONE_DISPLAY}`}
+                >
+                  {PHONE_DISPLAY}
+                </a>
+              </div>
+              <div>
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="text-brand-gold hover:text-brand-gold-light transition-colors"
+                >
+                  {EMAIL}
+                </a>
+              </div>
+              <div className="text-gray-500 text-xs pt-1">Open 24 hours · 7 days a week</div>
+            </address>
+            {/* Rating badge */}
+            <div className="p-3 bg-brand-darkgray border border-brand-gray rounded-lg inline-block">
+              <div className="text-yellow-400 text-lg leading-none">★★★★★</div>
+              <div className="text-brand-white text-sm font-semibold">5.0 / 5.0</div>
+              <div className="text-gray-500 text-xs">47 Google Reviews</div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-heading font-bold text-brand-white mb-4">Our Services</h3>
+            <h3 className="font-heading font-bold text-brand-white text-sm mb-4 uppercase tracking-wider">
+              Our Services
+            </h3>
             <ul className="space-y-2">
-              {[
-                { href: '/car-detailing', label: 'Car Detailing' },
-                { href: '/mobile-car-valeting', label: 'Mobile Car Valeting' },
-                { href: '/ceramic-coating', label: 'Ceramic Coating' },
-                { href: '/paint-correction', label: 'Paint Correction' },
-                { href: '/interior-detailing', label: 'Interior Detailing' },
-                { href: '/headlight-restoration', label: 'Headlight Restoration' },
-              ].map((item) => (
-                <li key={item.href}>
+              {footerLinks.services.map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={item.href}
-                    className="text-gray-400 hover:text-brand-gold transition-colors text-sm flex items-center gap-2"
+                    href={link.href}
+                    className="text-gray-400 hover:text-brand-gold text-sm transition-colors"
                   >
-                    <span className="text-brand-gold/60">→</span>
-                    {item.label}
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Areas Served */}
+          {/* Warrington areas */}
           <div>
-            <h3 className="font-heading font-bold text-brand-white mb-4">Areas We Cover</h3>
-            <ul className="space-y-1.5 columns-2">
-              {AREAS_SERVED.map((area) => (
-                <li key={area} className="text-gray-400 text-sm flex items-center gap-1.5">
-                  <span className="text-brand-gold/60">•</span>
-                  {area}
+            <h3 className="font-heading font-bold text-brand-white text-sm mb-4 uppercase tracking-wider">
+              Warrington Areas
+            </h3>
+            <ul className="space-y-2">
+              {footerLinks.warringtonAreas.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-brand-gold text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Surrounding towns */}
           <div>
-            <h3 className="font-heading font-bold text-brand-white mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-400 text-sm">
-                <span className="text-brand-gold mt-0.5">📍</span>
-                <span>{ADDRESS}</span>
-              </li>
-              <li>
-                <a
-                  href={`tel:${PHONE}`}
-                  className="flex items-center gap-3 text-gray-400 hover:text-brand-gold transition-colors text-sm"
-                >
-                  <span className="text-brand-gold">📞</span>
-                  {PHONE_DISPLAY}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${EMAIL}`}
-                  className="flex items-center gap-3 text-gray-400 hover:text-brand-gold transition-colors text-sm"
-                >
-                  <span className="text-brand-gold">✉</span>
-                  {EMAIL}
-                </a>
-              </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
-                <span className="text-brand-gold">🕐</span>
-                Open 24 Hours, 7 Days
-              </li>
-              <li>
-                <a
-                  href="https://share.google/Srfz4m37t6oxFsNHX"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-400 hover:text-brand-gold transition-colors text-sm font-bold"
-                >
-                  <span className="text-brand-gold">📍</span>
-                  Visit on Google
-                </a>
-              </li>
+            <h3 className="font-heading font-bold text-brand-white text-sm mb-4 uppercase tracking-wider">
+              Areas Covered
+            </h3>
+            <ul className="space-y-2">
+              {footerLinks.surroundingTowns.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-brand-gold text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="font-heading font-bold text-brand-white text-sm mb-4 uppercase tracking-wider">
+              Company
+            </h3>
+            <ul className="space-y-2">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-brand-gold text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-brand-gray flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      {/* Bottom bar */}
+      <div className="border-t border-brand-gray/50">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>© {year} WCD Car Detailing Warrington. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-brand-gold transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-brand-gold transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="/sitemap.xml" className="hover:text-brand-gold transition-colors">
-              Sitemap
-            </Link>
-          </div>
+          <p className="text-center">
+            <span>{ADDRESS}</span>
+            <span className="mx-2">·</span>
+            <a href={`tel:${PHONE}`} className="hover:text-brand-gold transition-colors">
+              {PHONE_DISPLAY}
+            </a>
+            <span className="mx-2">·</span>
+            <span>Registered in England &amp; Wales</span>
+          </p>
         </div>
       </div>
     </footer>
