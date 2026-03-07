@@ -105,11 +105,9 @@ export const metadata: Metadata = {
   category: 'automotive',
 
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon.jpg',
+    shortcut: '/favicon.jpg',
+    apple: '/favicon.jpg',
   },
 };
 
@@ -227,8 +225,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//maps.googleapis.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="preconnect" href="https://maps.googleapis.com" crossOrigin="anonymous" />
-        <link rel="manifest" href="/site.webmanifest" />
-
         {/* Global JSON-LD */}
         <script
           type="application/ld+json"
