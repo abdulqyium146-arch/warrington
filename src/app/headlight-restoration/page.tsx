@@ -3,6 +3,7 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY } from '@/lib/constants';
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Headlight Restoration Warrington | Fix Cloudy Headlights | WCD',
   description:
     'Professional headlight restoration in Warrington. We restore yellowed, cloudy or hazy headlights to crystal clarity. Improves appearance and night visibility. From £40.',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/headlight-restoration' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/headlight-restoration/' },
 };
 
 export default function HeadlightRestorationPage() {
@@ -176,6 +177,7 @@ export default function HeadlightRestorationPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="headlight-restoration" heading="Explore Our Other Detailing Services" />
       <CTASection title="Restore Your Headlights Today" subtitle="Improve visibility, pass your MOT, and make your car look years younger. Book in Warrington today." />
     </>
   );

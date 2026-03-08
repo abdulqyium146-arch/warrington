@@ -3,6 +3,7 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY } from '@/lib/constants';
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Interior Car Detailing Warrington | Deep Clean & Restoration | WCD',
   description:
     'Professional interior car detailing in Warrington. Deep vacuuming, fabric & leather cleaning, steam sanitising, odour removal. Book your interior detail today.',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/interior-detailing' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/interior-detailing/' },
 };
 
 export default function InteriorDetailingPage() {
@@ -176,6 +177,7 @@ export default function InteriorDetailingPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="interior-detailing" heading="Explore Our Full Range of Services" />
       <CTASection title="Book Your Interior Detail" subtitle="Get a quote for interior car detailing in Warrington. We come to you or you can drop your car off." dark />
     </>
   );

@@ -42,15 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── BLOG POSTS
     url('/blog/how-to-choose-professional-car-detailer-manchester/', 0.65, 'monthly'),
-    url('/blog/detailing-vs-valeting/', 0.65, 'monthly'),
-    url('/blog/ceramic-coating-benefits/', 0.65, 'monthly'),
-    url('/blog/how-often-car-detailed/', 0.65, 'monthly'),
-    url('/blog/paint-correction-guide/', 0.65, 'monthly'),
-    url('/blog/interior-detailing-guide/', 0.65, 'monthly'),
-    url('/blog/mobile-car-valeting-warrington/', 0.65, 'monthly'),
-    url('/blog/headlight-restoration-guide/', 0.65, 'monthly'),
-    url('/blog/how-to-maintain-ceramic-coating/', 0.65, 'monthly'),
-    url('/blog/new-car-detailing-warrington/', 0.65, 'monthly'),
 
     // ── ALL LOCATION PAGES (dynamic from data)
     ...allLocations.map((loc) => ({

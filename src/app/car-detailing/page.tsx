@@ -3,6 +3,8 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
+import LocationsGrid from '@/components/LocationsGrid';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY } from '@/lib/constants';
 
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Professional Car Detailing in Warrington | WCD',
   description:
     'Expert car detailing in Warrington. Full exterior & interior detailing, paint correction, engine bay cleaning, and headlight restoration. Book today!',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/car-detailing' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/car-detailing/' },
 };
 
 const services = [
@@ -351,6 +353,8 @@ export default function CarDetailingPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="car-detailing" heading="Complete Detailing Services" />
+      <LocationsGrid dark />
       <CTASection dark />
     </>
   );

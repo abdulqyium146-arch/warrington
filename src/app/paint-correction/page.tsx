@@ -4,6 +4,7 @@ import Image from 'next/image';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY } from '@/lib/constants';
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Paint Correction Warrington | Scratch & Swirl Removal | WCD',
   description:
     'Professional paint correction in Warrington. Remove swirl marks, scratches, oxidation & water spots. Multi-stage machine polishing for a flawless mirror finish. Book now.',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/paint-correction' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/paint-correction/' },
 };
 
 export default function PaintCorrectionPage() {
@@ -226,6 +227,7 @@ export default function PaintCorrectionPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="paint-correction" heading="Complete the Detail — Explore More Services" />
       <CTASection
         title="Restore Your Car's Finish"
         subtitle="Book a professional paint correction in Warrington and see the difference a flawless finish makes."

@@ -15,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'Googlebot-Image',
-        allow: '/images/',
+        allow: ['/images/', '/gallery/'],
       },
       {
         userAgent: 'Bingbot',
@@ -29,7 +29,10 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'OAI-SearchBot', allow: '/' },
     ],
-    sitemap: 'https://www.warringtoncardetailing.co.uk/sitemap.xml',
+    sitemap: [
+      'https://www.warringtoncardetailing.co.uk/sitemap.xml',
+      'https://www.warringtoncardetailing.co.uk/sitemap-images.xml',
+    ],
     host: 'https://www.warringtoncardetailing.co.uk',
   };
 }

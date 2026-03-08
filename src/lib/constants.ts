@@ -1,5 +1,5 @@
 export const SITE_NAME = 'WCD Car Detailing Warrington';
-export const SITE_URL = 'https://warringtoncardetailing.co.uk';
+export const SITE_URL = 'https://www.warringtoncardetailing.co.uk';
 export const PHONE = '+44 7958 752513';
 export const PHONE_DISPLAY = '07958 752513';
 export const EMAIL = 'info@wcdcardetailing.co.uk';

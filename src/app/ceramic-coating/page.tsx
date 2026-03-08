@@ -4,6 +4,8 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
+import LocationsGrid from '@/components/LocationsGrid';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY } from '@/lib/constants';
 
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Ceramic Coating Warrington | Long-Lasting Paint Protection | WCD',
   description:
     'Professional ceramic coating in Warrington. Industry-leading 9H hardness coatings for unrivalled paint protection, gloss and hydrophobic properties. Book today.',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/ceramic-coating' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/ceramic-coating/' },
 };
 
 const benefits = [
@@ -306,6 +308,8 @@ export default function CeramicCoatingPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="ceramic-coating" heading="Pair With Our Other Services" />
+      <LocationsGrid />
       <CTASection
         title="Protect Your Paint Today"
         subtitle="Book a ceramic coating in Warrington and give your car the protection it deserves. Free quotes available."

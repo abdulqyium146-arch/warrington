@@ -3,6 +3,8 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 import Breadcrumb from '@/components/Breadcrumb';
 import JsonLd from '@/components/JsonLd';
+import RelatedServices from '@/components/RelatedServices';
+import LocationsGrid from '@/components/LocationsGrid';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY, AREAS_SERVED } from '@/lib/constants';
 
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Mobile Car Valeting Warrington | We Come to You | WCD',
   description:
     'Convenient mobile car valeting in Warrington. We come to your home or workplace with full professional equipment. Exterior & interior valeting, waxing and more. Book 07958 752513.',
-  alternates: { canonical: 'https://warringtoncardetailing.co.uk/mobile-car-valeting' },
+  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/mobile-car-valeting/' },
 };
 
 export default function MobileValetingPage() {
@@ -289,6 +291,8 @@ export default function MobileValetingPage() {
         </div>
       </section>
 
+      <RelatedServices currentSlug="mobile-car-valeting" heading="Upgrade Your Valet — Explore Full Detailing" />
+      <LocationsGrid dark />
       <CTASection
         title="Book Your Mobile Valet Today"
         subtitle="We come to you anywhere in Warrington and the North West. Book now for a free quote."
