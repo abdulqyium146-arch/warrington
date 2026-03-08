@@ -219,7 +219,7 @@ export default function Footer() {
       {/* WhatsApp bar */}
       <div className="border-t border-brand-gray/50 bg-brand-darkgray">
         <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <span className="text-gray-400 text-sm">Chat with us on WhatsApp:</span>
+          <span className="text-gray-400 text-sm">Chat with developer:</span>
           <a
             href="https://wa.me/923474825228"
             target="_blank"
