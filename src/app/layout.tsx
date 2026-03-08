@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 
 // ── SITE-WIDE DEFAULT METADATA
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.warringtoncardetailing.co.uk'),
+  metadataBase: new URL('https://warringtoncardetailing.co.uk'),
 
   title: {
     default: 'WCD Car Detailing Warrington | Mobile Valeting | 5★ Rated',
@@ -44,18 +44,18 @@ export const metadata: Metadata = {
     'headlight restoration Warrington',
   ],
 
-  authors: [{ name: 'WCD Car Detailing', url: 'https://www.warringtoncardetailing.co.uk' }],
+  authors: [{ name: 'WCD Car Detailing', url: 'https://warringtoncardetailing.co.uk' }],
   creator: 'WCD Car Detailing',
   publisher: 'WCD Car Detailing',
 
   alternates: {
-    canonical: 'https://www.warringtoncardetailing.co.uk/',
+    canonical: 'https://warringtoncardetailing.co.uk/',
   },
 
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://www.warringtoncardetailing.co.uk/',
+    url: 'https://warringtoncardetailing.co.uk/',
     siteName: 'WCD Car Detailing Warrington',
     title: 'WCD Car Detailing Warrington | Mobile Valeting | 5★ Rated',
     description:
@@ -129,12 +129,12 @@ export const viewport: Viewport = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': 'https://www.warringtoncardetailing.co.uk/#organization',
+  '@id': 'https://warringtoncardetailing.co.uk/#organization',
   name: 'WCD Car Detailing',
-  url: 'https://www.warringtoncardetailing.co.uk',
+  url: 'https://warringtoncardetailing.co.uk',
   logo: {
     '@type': 'ImageObject',
-    url: 'https://www.warringtoncardetailing.co.uk/logo.jpg',
+    url: 'https://warringtoncardetailing.co.uk/logo.jpg',
     width: 400,
     height: 100,
   },
@@ -159,12 +159,12 @@ const organizationSchema = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'AutoRepair'],
-  '@id': 'https://www.warringtoncardetailing.co.uk/#business',
+  '@id': 'https://warringtoncardetailing.co.uk/#business',
   name: 'WCD Car Detailing',
   alternateName: 'Warrington Car Detailing',
   description:
     "Warrington's premier car detailing and mobile valeting specialists. Professional ceramic coating, paint correction, interior detailing and mobile valet services across WA1–WA5 and the wider North West.",
-  url: 'https://www.warringtoncardetailing.co.uk',
+  url: 'https://warringtoncardetailing.co.uk',
   telephone: '+447958752513',
   email: 'info@wcdcardetailing.co.uk',
   priceRange: '££',
@@ -212,10 +212,10 @@ const localBusinessSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  '@id': 'https://www.warringtoncardetailing.co.uk/#website',
+  '@id': 'https://warringtoncardetailing.co.uk/#website',
   name: 'WCD Car Detailing Warrington',
-  url: 'https://www.warringtoncardetailing.co.uk',
-  publisher: { '@id': 'https://www.warringtoncardetailing.co.uk/#organization' },
+  url: 'https://warringtoncardetailing.co.uk',
+  publisher: { '@id': 'https://warringtoncardetailing.co.uk/#organization' },
   inLanguage: 'en-GB',
 };
 

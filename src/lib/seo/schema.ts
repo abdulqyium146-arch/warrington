@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.warringtoncardetailing.co.uk';
+const BASE_URL = 'https://warringtoncardetailing.co.uk';
 const BUSINESS_ID = `${BASE_URL}/#business`;
 
 // ── BREADCRUMB

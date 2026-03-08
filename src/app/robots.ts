@@ -30,9 +30,9 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'OAI-SearchBot', allow: '/' },
     ],
     sitemap: [
-      'https://www.warringtoncardetailing.co.uk/sitemap.xml',
-      'https://www.warringtoncardetailing.co.uk/sitemap-images.xml',
+      'https://warringtoncardetailing.co.uk/sitemap.xml',
+      'https://warringtoncardetailing.co.uk/sitemap-images.xml',
     ],
-    host: 'https://www.warringtoncardetailing.co.uk',
+    host: 'https://warringtoncardetailing.co.uk',
   };
 }

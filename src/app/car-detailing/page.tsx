@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Professional Car Detailing in Warrington | WCD',
   description:
     'Expert car detailing in Warrington. Full exterior & interior detailing, paint correction, engine bay cleaning, and headlight restoration. Book today!',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/car-detailing/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/car-detailing/' },
 };
 
 const services = [

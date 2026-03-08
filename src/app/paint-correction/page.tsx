@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Paint Correction Warrington | Scratch & Swirl Removal | WCD',
   description:
     'Professional paint correction in Warrington. Remove swirl marks, scratches, oxidation & water spots. Multi-stage machine polishing for a flawless mirror finish. Book now.',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/paint-correction/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/paint-correction/' },
 };
 
 export default function PaintCorrectionPage() {

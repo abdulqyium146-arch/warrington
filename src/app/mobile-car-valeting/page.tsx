@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Mobile Car Valeting Warrington | We Come to You | WCD',
   description:
     'Convenient mobile car valeting in Warrington. We come to your home or workplace with full professional equipment. Exterior & interior valeting, waxing and more. Book 07958 752513.',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/mobile-car-valeting/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/mobile-car-valeting/' },
 };
 
 export default function MobileValetingPage() {

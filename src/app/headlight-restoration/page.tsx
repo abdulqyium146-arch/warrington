@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Headlight Restoration Warrington | Fix Cloudy Headlights | WCD',
   description:
     'Professional headlight restoration in Warrington. We restore yellowed, cloudy or hazy headlights to crystal clarity. Improves appearance and night visibility. From £40.',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/headlight-restoration/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/headlight-restoration/' },
 };
 
 export default function HeadlightRestorationPage() {

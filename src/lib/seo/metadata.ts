@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const BASE_URL = 'https://www.warringtoncardetailing.co.uk';
+const BASE_URL = 'https://warringtoncardetailing.co.uk';
 const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
 
 interface PageSEO {

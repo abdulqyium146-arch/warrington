@@ -1,5 +1,5 @@
 // Hardcoded HTTPS + www — never relies on env or constants
-const BASE = 'https://www.warringtoncardetailing.co.uk';
+const BASE = 'https://warringtoncardetailing.co.uk';
 
 const GALLERY_IMAGES = [
   {

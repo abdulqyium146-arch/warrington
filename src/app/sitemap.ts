@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { allLocations } from '@/lib/data/locations';
 
 // ── Always HTTPS + www — never changes
-const BASE = 'https://www.warringtoncardetailing.co.uk';
+const BASE = 'https://warringtoncardetailing.co.uk';
 
 // ── Static dates: only update when content actually changes
 // This prevents Google treating every deploy as a full-site update

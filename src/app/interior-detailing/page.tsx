@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Interior Car Detailing Warrington | Deep Clean & Restoration | WCD',
   description:
     'Professional interior car detailing in Warrington. Deep vacuuming, fabric & leather cleaning, steam sanitising, odour removal. Book your interior detail today.',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/interior-detailing/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/interior-detailing/' },
 };
 
 export default function InteriorDetailingPage() {

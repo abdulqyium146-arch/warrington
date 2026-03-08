@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Ceramic Coating Warrington | Long-Lasting Paint Protection | WCD',
   description:
     'Professional ceramic coating in Warrington. Industry-leading 9H hardness coatings for unrivalled paint protection, gloss and hydrophobic properties. Book today.',
-  alternates: { canonical: 'https://www.warringtoncardetailing.co.uk/ceramic-coating/' },
+  alternates: { canonical: 'https://warringtoncardetailing.co.uk/ceramic-coating/' },
 };
 
 const benefits = [
