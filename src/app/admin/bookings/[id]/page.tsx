@@ -86,7 +86,7 @@ export default async function BookingDetailPage({ params }: Props) {
             <div className="bg-brand-darkgray border border-brand-gray/50 rounded-xl p-5">
               <h3 className="font-heading font-semibold text-brand-white mb-4">Services</h3>
               <div className="space-y-3">
-                {booking.services.map((s) => (
+                {booking.services.map((s: typeof booking.services[number]) => (
                   <div key={s.id} className="flex items-center justify-between">
                     <div>
                       <p className="text-brand-white text-sm font-medium">{s.name || s.service.name}</p>
@@ -95,7 +95,7 @@ export default async function BookingDetailPage({ params }: Props) {
                     <p className="text-brand-white font-medium">{formatCurrency(Number(s.priceAtBooking) * s.quantity)}</p>
                   </div>
                 ))}
-                {booking.addons.map((a) => (
+                {booking.addons.map((a: typeof booking.addons[number]) => (
                   <div key={a.id} className="flex items-center justify-between">
                     <p className="text-gray-300 text-sm">{a.name || a.addon.name} <span className="text-xs text-gray-500">(add-on)</span></p>
                     <p className="text-gray-300">{formatCurrency(a.priceAtBooking)}</p>
