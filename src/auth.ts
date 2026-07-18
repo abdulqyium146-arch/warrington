@@ -3,13 +3,35 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import prisma from '@/lib/db';
 import type { Role } from '@prisma/client';
-import { authConfig } from './auth.config';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  ...authConfig,
+  secret: process.env.AUTH_SECRET,
+  trustHost: true,
+  session: { strategy: 'jwt' },
+  pages: {
+    signIn: '/admin/login',
+    error: '/admin/login',
+  },
+  callbacks: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    jwt({ token, user }: { token: any; user?: any }) {
+      if (user) {
+        token.id = user.id;
+        token.role = user.role;
+      }
+      return token;
+    },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    session({ session, token }: { session: any; token: any }) {
+      if (token && session.user) {
+        session.user.id = token.id;
+        session.user.role = token.role;
+      }
+      return session;
+    },
+  },
   providers: [
     CredentialsProvider({
-      name: 'credentials',
       credentials: {
         email: { label: 'Email', type: 'email' },
         password: { label: 'Password', type: 'password' },
@@ -17,17 +39,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       async authorize(credentials) {
         try {
           if (!credentials?.email || !credentials?.password) return null;
-
           const user = await prisma.user.findUnique({
-            where: { email: credentials.email as string },
+            where: { email: String(credentials.email) },
             select: { id: true, name: true, email: true, passwordHash: true, role: true, image: true, isActive: true },
           });
-
           if (!user || !user.isActive || !user.passwordHash) return null;
-
-          const valid = await bcrypt.compare(credentials.password as string, user.passwordHash);
+          const valid = await bcrypt.compare(String(credentials.password), user.passwordHash);
           if (!valid) return null;
-
           return { id: user.id, name: user.name, email: user.email, image: user.image, role: user.role };
         } catch {
           return null;
@@ -35,17 +53,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-
-  events: {
-    async signIn({ user }) {
-      await prisma.activityLog.create({
-        data: { userId: user.id, action: 'auth.signIn', entity: 'user', entityId: user.id },
-      }).catch(() => {});
-    },
-  },
 });
-
-// ── Server-side auth helpers ──────────────────────────────────────────────────
 
 export async function requireAuth() {
   const session = await auth();
