@@ -15,19 +15,23 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         password: { label: 'Password', type: 'password' },
       },
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) return null;
+        try {
+          if (!credentials?.email || !credentials?.password) return null;
 
-        const user = await prisma.user.findUnique({
-          where: { email: credentials.email as string },
-          select: { id: true, name: true, email: true, passwordHash: true, role: true, image: true, isActive: true },
-        });
+          const user = await prisma.user.findUnique({
+            where: { email: credentials.email as string },
+            select: { id: true, name: true, email: true, passwordHash: true, role: true, image: true, isActive: true },
+          });
 
-        if (!user || !user.isActive || !user.passwordHash) return null;
+          if (!user || !user.isActive || !user.passwordHash) return null;
 
-        const valid = await bcrypt.compare(credentials.password as string, user.passwordHash);
-        if (!valid) return null;
+          const valid = await bcrypt.compare(credentials.password as string, user.passwordHash);
+          if (!valid) return null;
 
-        return { id: user.id, name: user.name, email: user.email, image: user.image, role: user.role };
+          return { id: user.id, name: user.name, email: user.email, image: user.image, role: user.role };
+        } catch {
+          return null;
+        }
       },
     }),
   ],

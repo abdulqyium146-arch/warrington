@@ -3,6 +3,7 @@ import type { NextAuthConfig } from 'next-auth';
 // Edge-safe auth config — no database or Node.js-only imports.
 // Used by middleware; src/auth.ts extends this with the full provider + adapter.
 export const authConfig = {
+  trustHost: true,
   session: { strategy: 'jwt' as const },
   pages: {
     signIn: '/admin/login',
