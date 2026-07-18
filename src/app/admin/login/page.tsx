@@ -1,6 +1,5 @@
 'use client';
 import { useState, Suspense } from 'react';
-import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -10,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
+import { loginAction } from './actions';
 
 const loginSchema = z.object({
   email: z.string().email('Please enter a valid email'),
@@ -32,14 +32,9 @@ function LoginForm() {
 
   const onSubmit = async (data: LoginFormValues) => {
     setServerError('');
-    const result = await signIn('credentials', {
-      email: data.email,
-      password: data.password,
-      redirect: false,
-    });
-
+    const result = await loginAction(data.email, data.password, callbackUrl);
     if (result?.error) {
-      setServerError('Invalid email or password. Please try again.');
+      setServerError(result.error);
     } else {
       router.push(callbackUrl);
       router.refresh();
