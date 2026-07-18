@@ -3,8 +3,7 @@ import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import prisma from '@/lib/db';
 import bcrypt from 'bcryptjs';
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const { encode } = require('@auth/core/jwt') as typeof import('@auth/core/jwt');
+import { encode } from '@auth/core/jwt';
 
 export async function loginAction(
   email: string,
@@ -26,9 +25,12 @@ export async function loginAction(
       return { error: 'Invalid email or password. Please try again.' };
     }
 
-    // Use Auth.js v5's own JWE encoder so the middleware can verify the cookie.
+    // Build a JWE session token using the same encoder Auth.js v5 middleware uses
+    // so that auth() in proxy.ts can verify it without any extra config.
     const isProd = process.env.NODE_ENV === 'production';
-    const cookieName = isProd ? '__Secure-authjs.session-token' : 'authjs.session-token';
+    const cookieName = isProd
+      ? '__Secure-authjs.session-token'
+      : 'authjs.session-token';
 
     const jweToken = await encode({
       token: {
@@ -44,8 +46,8 @@ export async function loginAction(
       maxAge: 60 * 60 * 24 * 30,
     });
 
-    const cookieStore = await cookies();
-    cookieStore.set(cookieName, jweToken, {
+    const jar = await cookies();
+    jar.set(cookieName, jweToken, {
       httpOnly: true,
       secure: isProd,
       sameSite: 'lax',
