@@ -123,7 +123,7 @@ export default async function BookingDetailPage({ params }: Props) {
               <div className="bg-brand-darkgray border border-brand-gray/50 rounded-xl p-5">
                 <h3 className="font-heading font-semibold text-brand-white mb-3">Photos ({booking.photos.length})</h3>
                 <div className="grid grid-cols-3 gap-2">
-                  {booking.photos.map((p) => (
+                  {booking.photos.map((p: typeof booking.photos[number]) => (
                     <a key={p.id} href={p.url} target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden bg-brand-gray/50 hover:opacity-80 transition-opacity">
                       <img src={p.url} alt={p.caption ?? 'Vehicle photo'} className="w-full h-full object-cover" />
                     </a>
@@ -137,7 +137,7 @@ export default async function BookingDetailPage({ params }: Props) {
                 <CheckCircle2 className="h-4 w-4 text-brand-gold" /> Status History
               </h3>
               <div className="space-y-3">
-                {booking.statusHistory.map((h) => (
+                {booking.statusHistory.map((h: typeof booking.statusHistory[number]) => (
                   <div key={h.id} className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-brand-gold mt-1.5 shrink-0" />
                     <div>
@@ -211,7 +211,7 @@ export default async function BookingDetailPage({ params }: Props) {
                   </div>
                 )}
               </div>
-              {booking.payments.map((p) => (
+              {booking.payments.map((p: typeof booking.payments[number]) => (
                 <div key={p.id} className="mt-3 pt-3 border-t border-brand-gray/50">
                   <p className="text-xs text-gray-400">{p.type} payment via {p.method} — {formatCurrency(p.amount)}</p>
                   <p className="text-xs text-gray-500">{formatDate(p.createdAt)}</p>
