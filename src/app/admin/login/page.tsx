@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
-import { loginAction } from './actions';
 
 const loginSchema = z.object({
   email: z.string().email('Please enter a valid email'),
@@ -32,12 +31,21 @@ function LoginForm() {
 
   const onSubmit = async (data: LoginFormValues) => {
     setServerError('');
-    const result = await loginAction(data.email, data.password, callbackUrl);
-    if (result?.error) {
-      setServerError(result.error);
-    } else {
-      router.push(callbackUrl);
-      router.refresh();
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: data.email, password: data.password }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setServerError(json.error ?? 'An unexpected error occurred.');
+      } else {
+        router.push(callbackUrl);
+        router.refresh();
+      }
+    } catch {
+      setServerError('An unexpected error occurred. Please try again.');
     }
   };
 
