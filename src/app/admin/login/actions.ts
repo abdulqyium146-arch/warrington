@@ -59,8 +59,9 @@ export async function loginAction(
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    console.error('[loginAction] stage=' + stage, err);
-    return { error: `Error at ${stage}: ${msg}` };
+    const secretLen = process.env.AUTH_SECRET?.length ?? 'undefined';
+    console.error('[loginAction] stage=' + stage, 'secretLen=' + secretLen, err);
+    return { error: `Error at ${stage} (secret:${secretLen}): ${msg}` };
   }
 
   redirect(redirectTo || '/admin');
