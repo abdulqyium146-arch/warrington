@@ -1,5 +1,11 @@
 import type { NextAuthConfig } from 'next-auth';
+import { SignJWT, jwtVerify } from 'jose';
 
+function secretKey() {
+  return new TextEncoder().encode(process.env.AUTH_SECRET ?? '');
+}
+
+// Edge-safe auth config — no database or Node.js-only imports.
 export const authConfig = {
   secret: process.env.AUTH_SECRET,
   trustHost: true,
@@ -7,6 +13,26 @@ export const authConfig = {
   pages: {
     signIn: '/admin/login',
     error: '/admin/login',
+  },
+  jwt: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    async encode({ token }: { token: any }) {
+      return new SignJWT(token ?? {})
+        .setProtectedHeader({ alg: 'HS256' })
+        .setIssuedAt()
+        .setExpirationTime('30d')
+        .sign(secretKey());
+    },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    async decode({ token }: { token?: string }): Promise<any> {
+      if (!token) return null;
+      try {
+        const { payload } = await jwtVerify(token, secretKey());
+        return payload;
+      } catch {
+        return null;
+      }
+    },
   },
   callbacks: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

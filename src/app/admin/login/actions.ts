@@ -3,7 +3,11 @@ import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import prisma from '@/lib/db';
 import bcrypt from 'bcryptjs';
-import { encode } from '@auth/core/jwt';
+import { SignJWT } from 'jose';
+
+function secretKey() {
+  return new TextEncoder().encode(process.env.AUTH_SECRET ?? '');
+}
 
 export async function loginAction(
   email: string,
@@ -25,29 +29,26 @@ export async function loginAction(
       return { error: 'Invalid email or password. Please try again.' };
     }
 
-    // Build a JWE session token using the same encoder Auth.js v5 middleware uses
-    // so that auth() in proxy.ts can verify it without any extra config.
-    const isProd = process.env.NODE_ENV === 'production';
-    const cookieName = isProd
-      ? '__Secure-authjs.session-token'
-      : 'authjs.session-token';
+    // Create HS256 JWT — matches the custom encode/decode in auth.config.ts
+    // so the middleware auth() can verify this cookie directly.
+    const token = await new SignJWT({
+      sub: user.id,
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      picture: user.image ?? null,
+      role: user.role,
+    })
+      .setProtectedHeader({ alg: 'HS256' })
+      .setIssuedAt()
+      .setExpirationTime('30d')
+      .sign(secretKey());
 
-    const jweToken = await encode({
-      token: {
-        sub: user.id,
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        picture: user.image ?? null,
-        role: user.role,
-      },
-      secret: process.env.AUTH_SECRET!,
-      salt: cookieName,
-      maxAge: 60 * 60 * 24 * 30,
-    });
+    const isProd = process.env.NODE_ENV === 'production';
+    const cookieName = isProd ? '__Secure-authjs.session-token' : 'authjs.session-token';
 
     const jar = await cookies();
-    jar.set(cookieName, jweToken, {
+    jar.set(cookieName, token, {
       httpOnly: true,
       secure: isProd,
       sameSite: 'lax',

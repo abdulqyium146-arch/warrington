@@ -3,33 +3,10 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import prisma from '@/lib/db';
 import type { Role } from '@prisma/client';
+import { authConfig } from './auth.config';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  secret: process.env.AUTH_SECRET,
-  trustHost: true,
-  session: { strategy: 'jwt' },
-  pages: {
-    signIn: '/admin/login',
-    error: '/admin/login',
-  },
-  callbacks: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    jwt({ token, user }: { token: any; user?: any }) {
-      if (user) {
-        token.id = user.id;
-        token.role = user.role;
-      }
-      return token;
-    },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    session({ session, token }: { session: any; token: any }) {
-      if (token && session.user) {
-        session.user.id = token.id;
-        session.user.role = token.role;
-      }
-      return session;
-    },
-  },
+  ...authConfig,
   providers: [
     CredentialsProvider({
       credentials: {
