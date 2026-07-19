@@ -14,6 +14,7 @@ export async function loginAction(
   password: string,
   redirectTo: string,
 ): Promise<{ error: string } | void> {
+  let stage = 'db';
   try {
     const user = await prisma.user.findUnique({
       where: { email },
@@ -24,13 +25,13 @@ export async function loginAction(
       return { error: 'Invalid email or password. Please try again.' };
     }
 
+    stage = 'bcrypt';
     const valid = await bcrypt.compare(password, user.passwordHash);
     if (!valid) {
       return { error: 'Invalid email or password. Please try again.' };
     }
 
-    // Create HS256 JWT — matches the custom encode/decode in auth.config.ts
-    // so the middleware auth() can verify this cookie directly.
+    stage = 'jwt';
     const token = await new SignJWT({
       sub: user.id,
       id: user.id,
@@ -44,6 +45,7 @@ export async function loginAction(
       .setExpirationTime('30d')
       .sign(secretKey());
 
+    stage = 'cookie';
     const isProd = process.env.NODE_ENV === 'production';
     const cookieName = isProd ? '__Secure-authjs.session-token' : 'authjs.session-token';
 
@@ -56,8 +58,9 @@ export async function loginAction(
       maxAge: 60 * 60 * 24 * 30,
     });
   } catch (err) {
-    console.error('[loginAction]', err);
-    return { error: 'An unexpected error occurred. Please try again.' };
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error('[loginAction] stage=' + stage, err);
+    return { error: `Error at ${stage}: ${msg}` };
   }
 
   redirect(redirectTo || '/admin');
