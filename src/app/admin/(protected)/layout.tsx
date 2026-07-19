@@ -1,6 +1,5 @@
 import { auth } from '@/auth';
 import { redirect } from 'next/navigation';
-import { SessionProvider } from 'next-auth/react';
 import { Sidebar } from '@/components/admin/sidebar';
 
 export const metadata = {
@@ -10,16 +9,14 @@ export const metadata = {
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
-  if (!session) redirect('/admin/login');
+  if (!session?.user) redirect('/admin/login/');
 
   return (
-    <SessionProvider session={session}>
-      <div className="flex h-screen bg-brand-black overflow-hidden">
-        <Sidebar userName={session.user.name ?? undefined} userRole={session.user.role} />
-        <div className="flex-1 flex flex-col overflow-hidden">
-          <main className="flex-1 overflow-y-auto">{children}</main>
-        </div>
+    <div className="flex h-screen bg-brand-black overflow-hidden">
+      <Sidebar userName={session!.user.name ?? undefined} userRole={session!.user.role} />
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <main className="flex-1 overflow-y-auto">{children}</main>
       </div>
-    </SessionProvider>
+    </div>
   );
 }
