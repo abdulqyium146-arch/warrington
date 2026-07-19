@@ -16,7 +16,7 @@ export const authConfig = {
   },
   jwt: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    async encode({ token }: { token: any }) {
+    async encode({ token }: { token?: any }) {
       return new SignJWT(token ?? {})
         .setProtectedHeader({ alg: 'HS256' })
         .setIssuedAt()
