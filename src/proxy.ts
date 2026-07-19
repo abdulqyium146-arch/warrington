@@ -26,11 +26,6 @@ export default auth((req) => {
     return res;
   }
 
-  // Redirect authenticated users away from the login page
-  if (isLoginPage && isLoggedIn) {
-    return NextResponse.redirect(new URL('/admin/', req.url));
-  }
-
   return NextResponse.next();
 });
 
