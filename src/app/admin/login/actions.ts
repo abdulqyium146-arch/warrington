@@ -5,8 +5,16 @@ import prisma from '@/lib/db';
 import bcrypt from 'bcryptjs';
 import { SignJWT } from 'jose';
 
+// Read at module scope so Next.js/Turbopack captures it at bundle time, not request time.
+// NODE_ENV is always available; WCD_JWT_SECRET and AUTH_SECRET must be set in Vercel env.
+const _jwtSecret =
+  process.env.WCD_JWT_SECRET ??
+  process.env.AUTH_SECRET ??
+  process.env.NEXTAUTH_SECRET ??
+  '';
+
 function secretKey() {
-  return new TextEncoder().encode(process.env.WCD_JWT_SECRET ?? process.env.AUTH_SECRET ?? '');
+  return new TextEncoder().encode(_jwtSecret);
 }
 
 export async function loginAction(
@@ -32,6 +40,10 @@ export async function loginAction(
     }
 
     stage = 'jwt';
+    if (!_jwtSecret) {
+      return { error: 'Server config error: JWT secret is missing (len=0). Contact support.' };
+    }
+
     const token = await new SignJWT({
       sub: user.id,
       id: user.id,
@@ -59,10 +71,7 @@ export async function loginAction(
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    const s1 = process.env.WCD_JWT_SECRET?.length ?? 'u';
-    const s2 = process.env.AUTH_SECRET?.length ?? 'u';
-    console.error('[loginAction] stage=' + stage, 'wcd=' + s1, 'auth=' + s2, err);
-    return { error: `Error at ${stage} (wcd:${s1} auth:${s2}): ${msg}` };
+    return { error: `Error at ${stage} (secret len:${_jwtSecret.length}): ${msg}` };
   }
 
   redirect(redirectTo || '/admin');
