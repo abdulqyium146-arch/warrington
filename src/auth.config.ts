@@ -1,14 +1,15 @@
 import type { NextAuthConfig } from 'next-auth';
 import { SignJWT, jwtVerify } from 'jose';
 
-const _jwtSecret =
-  process.env.WCD_JWT_SECRET ??
-  process.env.AUTH_SECRET ??
-  process.env.NEXTAUTH_SECRET ??
-  '';
-
+// Read INSIDE functions (not at module scope) so Turbopack doesn't capture
+// empty build-time values — same pattern that makes the API route work.
 function secretKey() {
-  return new TextEncoder().encode(_jwtSecret);
+  const s =
+    process.env.WCD_JWT_SECRET ??
+    process.env.AUTH_SECRET ??
+    process.env.NEXTAUTH_SECRET ??
+    '';
+  return new TextEncoder().encode(s);
 }
 
 // Edge-safe auth config — no database or Node.js-only imports.

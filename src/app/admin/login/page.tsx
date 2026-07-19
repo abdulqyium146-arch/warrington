@@ -41,8 +41,9 @@ function LoginForm() {
       if (!res.ok || json.error) {
         setServerError(json.error ?? 'An unexpected error occurred.');
       } else {
-        router.push(callbackUrl);
-        router.refresh();
+        // Hard redirect so middleware sees the fresh session cookie
+        const dest = callbackUrl.startsWith('/') ? callbackUrl : '/admin';
+        window.location.href = dest.endsWith('/') ? dest : dest + '/';
       }
     } catch {
       setServerError('An unexpected error occurred. Please try again.');

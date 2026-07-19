@@ -9,10 +9,13 @@ export default auth((req) => {
   const { pathname } = req.nextUrl;
   const isLoggedIn = !!req.auth;
 
+  const isLoginPage =
+    pathname === '/admin/login' || pathname === '/admin/login/';
+
   // Admin routes — require authentication
-  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+  if (pathname.startsWith('/admin') && !isLoginPage) {
     if (!isLoggedIn) {
-      const loginUrl = new URL('/admin/login', req.url);
+      const loginUrl = new URL('/admin/login/', req.url);
       loginUrl.searchParams.set('callbackUrl', pathname);
       return NextResponse.redirect(loginUrl);
     }
@@ -24,8 +27,8 @@ export default auth((req) => {
   }
 
   // Redirect authenticated users away from the login page
-  if (pathname === '/admin/login' && isLoggedIn) {
-    return NextResponse.redirect(new URL('/admin', req.url));
+  if (isLoginPage && isLoggedIn) {
+    return NextResponse.redirect(new URL('/admin/', req.url));
   }
 
   return NextResponse.next();
