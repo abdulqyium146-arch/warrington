@@ -2,7 +2,7 @@ import type { NextAuthConfig } from 'next-auth';
 import { SignJWT, jwtVerify } from 'jose';
 
 function secretKey() {
-  return new TextEncoder().encode(process.env.AUTH_SECRET ?? '');
+  return new TextEncoder().encode(process.env.WCD_JWT_SECRET ?? process.env.AUTH_SECRET ?? '');
 }
 
 // Edge-safe auth config — no database or Node.js-only imports.

@@ -6,7 +6,7 @@ import bcrypt from 'bcryptjs';
 import { SignJWT } from 'jose';
 
 function secretKey() {
-  return new TextEncoder().encode(process.env.AUTH_SECRET ?? '');
+  return new TextEncoder().encode(process.env.WCD_JWT_SECRET ?? process.env.AUTH_SECRET ?? '');
 }
 
 export async function loginAction(
@@ -59,9 +59,10 @@ export async function loginAction(
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    const secretLen = process.env.AUTH_SECRET?.length ?? 'undefined';
-    console.error('[loginAction] stage=' + stage, 'secretLen=' + secretLen, err);
-    return { error: `Error at ${stage} (secret:${secretLen}): ${msg}` };
+    const s1 = process.env.WCD_JWT_SECRET?.length ?? 'u';
+    const s2 = process.env.AUTH_SECRET?.length ?? 'u';
+    console.error('[loginAction] stage=' + stage, 'wcd=' + s1, 'auth=' + s2, err);
+    return { error: `Error at ${stage} (wcd:${s1} auth:${s2}): ${msg}` };
   }
 
   redirect(redirectTo || '/admin');
