@@ -1,11 +1,5 @@
 import { z } from 'zod';
 
-const today = () => {
-  const d = new Date();
-  d.setHours(0, 0, 0, 0);
-  return d;
-};
-
 export const bookingEnquirySchema = z.object({
   full_name: z
     .string()
@@ -46,17 +40,6 @@ export const bookingEnquirySchema = z.object({
   service: z
     .string()
     .min(1, 'Please select a service'),
-
-  preferred_date: z
-    .string()
-    .min(1, 'Please select a preferred date')
-    .refine((d) => new Date(d) >= today(), {
-      message: 'Preferred date must be today or in the future',
-    }),
-
-  preferred_time: z
-    .string()
-    .min(1, 'Please select a preferred time'),
 
   notes: z.string().max(1000, 'Notes must be under 1000 characters').optional(),
 });

@@ -18,8 +18,8 @@ export interface BookingFormData {
   email: string;
   phone: string;
   address: string;
-  preferred_date: string;
-  preferred_time: string;
+  preferred_date?: string;
+  preferred_time?: string;
   notes?: string;
   status?: BookingStatus;
 }

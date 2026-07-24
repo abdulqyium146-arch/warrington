@@ -16,14 +16,6 @@ const SERVICES = [
   'Mobile Car Valeting',
 ];
 
-const TIME_SLOTS = [
-  '08:00', '09:00', '10:00', '11:00',
-  '12:00', '13:00', '14:00', '15:00',
-  '16:00', '17:00',
-];
-
-const todayISO = () => new Date().toISOString().split('T')[0];
-
 interface FieldProps {
   label: string;
   error?: string;
@@ -67,7 +59,12 @@ export default function BookingForm() {
   async function onSubmit(data: BookingEnquiryInput) {
     setServerError('');
     const result = await createBookingAction({
-      ...data,
+      full_name: data.full_name,
+      email: data.email,
+      phone: data.phone,
+      address: data.address,
+      preferred_date: '',
+      preferred_time: '',
       notes: data.notes ?? '',
     });
     if (result.success) {
@@ -83,11 +80,7 @@ export default function BookingForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      noValidate
-      className="space-y-6"
-    >
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
       {/* Personal details */}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Full Name" error={errors.full_name?.message} required>
@@ -127,12 +120,12 @@ export default function BookingForm() {
         </Field>
       </div>
 
-      {/* Vehicle */}
+      {/* Vehicle & Service */}
       <div>
         <h3 className="text-sm font-semibold text-brand-gold uppercase tracking-wider mb-4">
-          Vehicle Details
+          Vehicle & Service
         </h3>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <Field label="Vehicle Make" error={errors.vehicle_make?.message} required>
             <input
               {...register('vehicle_make')}
@@ -150,42 +143,13 @@ export default function BookingForm() {
               className={inputClass}
             />
           </Field>
-        </div>
-      </div>
 
-      {/* Service & timing */}
-      <div>
-        <h3 className="text-sm font-semibold text-brand-gold uppercase tracking-wider mb-4">
-          Service & Timing
-        </h3>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <Field label="Select Service" error={errors.service?.message} required>
             <div className="relative">
               <select {...register('service')} className={selectClass}>
                 <option value="">Choose a service…</option>
                 {SERVICES.map((s) => (
                   <option key={s} value={s}>{s}</option>
-                ))}
-              </select>
-              <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">▾</span>
-            </div>
-          </Field>
-
-          <Field label="Preferred Date" error={errors.preferred_date?.message} required>
-            <input
-              {...register('preferred_date')}
-              type="date"
-              min={todayISO()}
-              className={inputClass}
-            />
-          </Field>
-
-          <Field label="Preferred Time" error={errors.preferred_time?.message} required>
-            <div className="relative">
-              <select {...register('preferred_time')} className={selectClass}>
-                <option value="">Choose a time…</option>
-                {TIME_SLOTS.map((t) => (
-                  <option key={t} value={t}>{t}</option>
                 ))}
               </select>
               <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">▾</span>
