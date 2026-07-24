@@ -93,6 +93,13 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
             📞 Call {PHONE_DISPLAY}
           </a>
           <Link
+            href="/booking"
+            onClick={onClose}
+            className="flex w-full items-center justify-center rounded-lg bg-brand-gold px-6 py-3 text-base font-semibold text-brand-black hover:bg-brand-gold-light transition-colors"
+          >
+            Book Now
+          </Link>
+          <Link
             href="/contact"
             onClick={onClose}
             className="btn-secondary w-full justify-center text-base py-3"

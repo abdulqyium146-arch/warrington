@@ -167,8 +167,8 @@ export default function Header() {
               >
                 📞 {PHONE_DISPLAY}
               </a>
-              <Link href="/get-a-quote" className="btn-secondary text-sm py-2.5 px-4">
-                Free Quote
+              <Link href="/booking" className="btn-secondary text-sm py-2.5 px-4 bg-brand-gold text-brand-black font-semibold hover:bg-brand-gold-light">
+                Book Now
               </Link>
             </div>
 
@@ -216,10 +216,10 @@ export default function Header() {
             📞 Call Now
           </a>
           <Link
-            href="/get-a-quote"
+            href="/booking"
             className="flex-1 flex items-center justify-center bg-brand-gold text-brand-black font-semibold h-full text-sm"
           >
-            Free Quote
+            Book Now
           </Link>
         </div>
       </div>

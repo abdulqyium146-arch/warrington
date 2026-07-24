@@ -233,6 +233,74 @@ export async function sendBookingCancelledEmail(data: {
   });
 }
 
+// ── Enquiry System: New Enquiry Alert (Supabase simple bookings) ─────────────
+
+export async function sendEnquiryAlertToAdmin(data: {
+  full_name: string;
+  email: string;
+  phone: string;
+  address: string;
+  vehicle_make: string;
+  vehicle_model: string;
+  service: string;
+  preferred_date: string;
+  preferred_time: string;
+  notes?: string;
+}) {
+  const html = baseTemplate(`
+    <span class="badge">New Booking Enquiry</span>
+    <h2 style="color:#f5f5f5;margin:16px 0 8px;">New booking request received</h2>
+    <div class="detail-box">
+      <div class="detail-row"><span class="detail-label">Customer</span><span class="detail-value">${data.full_name}</span></div>
+      <div class="detail-row"><span class="detail-label">Phone</span><span class="detail-value"><a href="tel:${data.phone}" style="color:#c9a84c;">${data.phone}</a></span></div>
+      <div class="detail-row"><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:${data.email}" style="color:#c9a84c;">${data.email}</a></span></div>
+      <div class="detail-row"><span class="detail-label">Address</span><span class="detail-value">${data.address}</span></div>
+      <div class="detail-row"><span class="detail-label">Vehicle</span><span class="detail-value">${data.vehicle_make} ${data.vehicle_model}</span></div>
+      <div class="detail-row"><span class="detail-label">Service</span><span class="detail-value">${data.service}</span></div>
+      <div class="detail-row"><span class="detail-label">Preferred Date</span><span class="detail-value">${data.preferred_date}</span></div>
+      <div class="detail-row"><span class="detail-label">Preferred Time</span><span class="detail-value">${data.preferred_time}</span></div>
+      ${data.notes ? `<div class="detail-row"><span class="detail-label">Notes</span><span class="detail-value">${data.notes}</span></div>` : ''}
+    </div>
+    <center><a class="btn" href="${SITE_URL}/admin/enquiries">View in Admin →</a></center>
+  `, 'New Booking Enquiry — WCD Admin');
+
+  return getResend().emails.send({
+    from: FROM,
+    to: ADMIN_EMAIL,
+    subject: `🔔 New enquiry: ${data.full_name} — ${data.service}`,
+    html,
+  });
+}
+
+export async function sendEnquiryAcknowledgement(data: {
+  full_name: string;
+  email: string;
+  service: string;
+  preferred_date: string;
+  preferred_time: string;
+}) {
+  const html = baseTemplate(`
+    <span class="badge">Request Received</span>
+    <h2 style="color:#f5f5f5;margin:16px 0 8px;">Hi ${data.full_name},</h2>
+    <p>Thank you for your booking request! We've received your enquiry and will be in touch within 24 hours to confirm your appointment.</p>
+    <div class="detail-box">
+      <div class="detail-row"><span class="detail-label">Service</span><span class="detail-value">${data.service}</span></div>
+      <div class="detail-row"><span class="detail-label">Preferred Date</span><span class="detail-value">${data.preferred_date}</span></div>
+      <div class="detail-row"><span class="detail-label">Preferred Time</span><span class="detail-value">${data.preferred_time}</span></div>
+    </div>
+    <p>No payment is required at this stage — we'll confirm everything over the phone or by email.</p>
+    <p style="margin-top:16px;"><strong style="color:#f5f5f5;">Need to speak to us urgently?</strong></p>
+    <center><a class="btn" href="tel:+447375759686">📞 07375 759686</a></center>
+  `, 'Booking Request Received — WCD Detailing');
+
+  return getResend().emails.send({
+    from: FROM,
+    to: data.email,
+    subject: `Booking request received — WCD Detailing`,
+    html,
+  });
+}
+
 // ── Admin: New Booking Alert ─────────────────────────────────────────────────
 
 export async function sendAdminNewBookingAlert(data: {

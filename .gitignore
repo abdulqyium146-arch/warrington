@@ -42,3 +42,12 @@ Thumbs.db
 .vercel
 .env*.local
 .env.production
+.env.production.check
+
+# Claude Code / AI tooling
+.agents/
+.claude/
+skills-lock.json
+
+# Dev scripts
+scripts/
