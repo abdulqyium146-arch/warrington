@@ -4,10 +4,40 @@ import { useState, useTransition, useCallback, useEffect } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import {
   Plus, Search, Trash2, Pencil, ChevronLeft, ChevronRight,
-  RefreshCw, ArrowUpDown, X,
+  RefreshCw, ArrowUpDown, X, Copy, Check,
 } from 'lucide-react';
 import { createBookingAction, updateBookingAction, deleteBookingAction } from '@/app/actions/bookings';
 import type { Booking, BookingStatus, BookingFormData } from '@/types/bookings';
+
+function CopyButton({ booking }: { booking: Booking }) {
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    const lines = [
+      `Name:     ${booking.full_name}`,
+      `Phone:    ${booking.phone}`,
+      booking.email ? `Email:    ${booking.email}` : null,
+      booking.address ? `Location: ${booking.address}` : null,
+      booking.preferred_date ? `Date:     ${booking.preferred_date}` : null,
+      booking.preferred_time ? `Time:     ${booking.preferred_time}` : null,
+      booking.notes ? `Notes:    ${booking.notes}` : null,
+      `Status:   ${booking.status}`,
+    ].filter(Boolean).join('\n');
+    navigator.clipboard.writeText(lines);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="rounded-md p-1.5 text-gray-500 hover:bg-brand-gold/10 hover:text-brand-gold transition-colors"
+      title="Copy booking details"
+    >
+      {copied ? <Check className="h-4 w-4 text-green-400" /> : <Copy className="h-4 w-4" />}
+    </button>
+  );
+}
 
 const STATUSES: Array<BookingStatus | 'all'> = ['all', 'Pending', 'Confirmed', 'Completed', 'Cancelled'];
 
@@ -414,6 +444,7 @@ export function BookingsClient({ initialBookings, total, page, search: initSearc
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex items-center justify-end gap-1">
+                      <CopyButton booking={b} />
                       <button
                         onClick={() => setModal({ open: true, booking: b })}
                         className="rounded-md p-1.5 text-gray-500 hover:bg-brand-gold/10 hover:text-brand-gold transition-colors"
