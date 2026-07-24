@@ -7,7 +7,7 @@ import type { Booking, BookingFormData, BookingStatus, GetBookingsOptions, GetBo
 export async function createBookingAction(
   data: BookingFormData
 ): Promise<{ success: boolean; error?: string }> {
-  if (!data.full_name?.trim() || !data.phone?.trim() || !data.preferred_date || !data.preferred_time || !data.address?.trim()) {
+  if (!data.full_name?.trim() || !data.phone?.trim() || !data.address?.trim()) {
     return { success: false, error: 'Please fill in all required fields.' };
   }
 
