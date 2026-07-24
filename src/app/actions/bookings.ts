@@ -7,17 +7,17 @@ import type { Booking, BookingFormData, BookingStatus, GetBookingsOptions, GetBo
 export async function createBookingAction(
   data: BookingFormData
 ): Promise<{ success: boolean; error?: string }> {
-  if (!data.full_name?.trim() || !data.phone?.trim() || !data.address?.trim()) {
-    return { success: false, error: 'Please fill in all required fields.' };
+  if (!data.full_name?.trim() || !data.phone?.trim()) {
+    return { success: false, error: 'Please enter your name and phone number.' };
   }
 
   try {
     const supabase = createAdminClient();
     const { error } = await supabase.from('bookings').insert([{
       full_name: data.full_name.trim(),
-      email: data.email?.trim() || '',
+      email: data.email?.trim() ?? '',
       phone: data.phone.trim(),
-      address: data.address.trim(),
+      address: data.address?.trim() ?? '',
       preferred_date: data.preferred_date ?? '',
       preferred_time: data.preferred_time ?? '',
       notes: data.notes?.trim() || null,
@@ -48,9 +48,9 @@ export async function updateBookingAction(
 
   const updates: Record<string, unknown> = {};
   if (data.full_name !== undefined) updates.full_name = data.full_name.trim();
-  if (data.email !== undefined) updates.email = data.email.trim();
+  if (data.email !== undefined) updates.email = data.email?.trim() ?? '';
   if (data.phone !== undefined) updates.phone = data.phone.trim();
-  if (data.address !== undefined) updates.address = data.address.trim();
+  if (data.address !== undefined) updates.address = data.address?.trim() ?? '';
   if (data.preferred_date !== undefined) updates.preferred_date = data.preferred_date;
   if (data.preferred_time !== undefined) updates.preferred_time = data.preferred_time;
   if (data.notes !== undefined) updates.notes = data.notes?.trim() || null;

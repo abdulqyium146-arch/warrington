@@ -100,7 +100,7 @@ export default async function ConfirmationPage({ searchParams }: PageProps) {
           <Link href="/">
             <Button variant="outline">Return to Site</Button>
           </Link>
-          <Link href="/book">
+          <Link href="/booking">
             <Button>
               Book Another Service <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

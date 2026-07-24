@@ -15,9 +15,9 @@ export interface Booking {
 
 export interface BookingFormData {
   full_name: string;
-  email: string;
   phone: string;
-  address: string;
+  email?: string;
+  address?: string;
   preferred_date?: string;
   preferred_time?: string;
   notes?: string;

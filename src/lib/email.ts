@@ -221,7 +221,7 @@ export async function sendBookingCancelledEmail(data: {
       ${data.reason ? `<div class="detail-row"><span class="detail-label">Reason</span><span class="detail-value">${data.reason}</span></div>` : ''}
     </div>
     <p>If you'd like to rebook or have any questions, please don't hesitate to get in touch.</p>
-    <center><a class="btn" href="${SITE_URL}/book">Book Again</a></center>
+    <center><a class="btn" href="${SITE_URL}/booking">Book Again</a></center>
     <p style="text-align:center;font-size:13px;color:#6b7280;">Or call us: <a href="tel:+447375759686" style="color:#c9a84c;">07375 759686</a></p>
   `, 'Booking Cancelled — WCD Detailing');
 
