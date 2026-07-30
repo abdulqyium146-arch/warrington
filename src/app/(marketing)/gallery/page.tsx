@@ -8,21 +8,21 @@ import { imageGallerySchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY, SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Ceramic Coating & Machine Polishing Gallery Warrington | Car Ceramic Coating and detailing warrington0',
+  title: 'Ceramic Coating Gallery Warrington | VW Golf R, Ford Mustang, BMW — WCD Car Detailing',
   description:
-    'Real results from Car Ceramic Coating and detailing warrington0. Browse before & after photos of ceramic coating, machine polishing, paint correction and car detailing. 5-star rated specialists in WA5.',
+    'See real ceramic coating and machine polishing results on VW Golf R, Ford Mustang GT, BMW 2 Series, Seat Cupra and more. Before & after photos from our Warrington WA5 unit. 5-star rated.',
   alternates: { canonical: `${SITE_URL}/gallery` },
   openGraph: {
-    title: 'Ceramic Coating & Machine Polishing Gallery | Car Ceramic Coating and detailing warrington0',
+    title: 'Ceramic Coating & Machine Polishing Gallery | WCD Car Detailing Warrington',
     description:
-      'See the real difference — ceramic coating and machine polishing results from Car Ceramic Coating and detailing warrington0. Before & after photos, 5-star rated.',
+      'Real results on VW Golf R, Ford Mustang GT, BMW 2 Series & more. Ceramic coating, machine polishing and car detailing in Warrington. No filters — just real results.',
     url: `${SITE_URL}/gallery`,
     images: [
       {
-        url: `${SITE_URL}/gallery/ceramic-coating-seat-cupra-warrington-Car Ceramic Coating and detailing warrington0-car-detailing.jpg`,
-        width: 1080,
-        height: 1080,
-        alt: 'Ceramic coating applied to Seat Cupra in Warrington — Car Ceramic Coating and detailing warrington0 Car Detailing',
+        url: `${SITE_URL}/gallery/ford-mustang-gt-ceramic-coating-warrington-wcd-car-detailing.webp`,
+        width: 1200,
+        height: 900,
+        alt: 'Ford Mustang GT ceramic coating result in Warrington — deep gloss green finish by WCD Car Detailing',
       },
     ],
   },
@@ -34,18 +34,45 @@ export const metadata: Metadata = {
 const GALLERY_IMAGES = [
   // ── CERAMIC COATING ──────────────────────────────────────────────────────────
   {
-    src: '/gallery/ceramic-coating-seat-cupra-warrington-Car Ceramic Coating and detailing warrington0-car-detailing.jpg',
-    alt: 'Ceramic coating on Seat Cupra in Warrington — deep gloss hydrophobic finish by Car Ceramic Coating and detailing warrington0 Car Detailing',
-    caption: 'Seat Cupra ceramic coating — mirror gloss & hydrophobic protection, Warrington',
+    src: '/gallery/ford-mustang-gt-ceramic-coating-warrington-wcd-car-detailing.webp',
+    alt: 'Ford Mustang GT ceramic coating in Warrington — deep gloss green paint protection by WCD Car Detailing, Fairclough Mill WA5',
+    caption: 'Ford Mustang GT — ceramic coating, deep gloss finish, Warrington',
+    category: 'Ceramic Coating',
+    featured: true,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/bmw-2-series-ceramic-coating-warrington-wcd-car-detailing.webp',
+    alt: 'BMW 2 Series ceramic coating in Warrington — Misano Blue hydrophobic paint protection at WCD Car Detailing WA5',
+    caption: 'BMW 2 Series — ceramic coating, Misano Blue gloss, Warrington',
+    category: 'Ceramic Coating',
+    featured: true,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/ceramic-coating-seat-cupra-warrington-wcd-car-detailing.jpg',
+    alt: 'Seat Cupra ceramic coating in Warrington — deep gloss hydrophobic finish by WCD Car Detailing, unit at Fairclough Mill WA5',
+    caption: 'Seat Cupra — ceramic coating, mirror gloss & hydrophobic protection, Warrington',
     category: 'Ceramic Coating',
     featured: true,
     width: 1080,
     height: 1080,
   },
   {
+    src: '/gallery/volkswagen-golf-r-ceramic-coating-warrington-wcd-car-detailing.jpg',
+    alt: 'Volkswagen Golf R ceramic coating in Warrington — Lapiz Blue paint sealed and protected by WCD Car Detailing WA5',
+    caption: 'VW Golf R — ceramic coating, Lapiz Blue protected, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1080,
+    height: 720,
+  },
+  {
     src: '/gallery/warrington-ceramic-coating-application-1.jpg',
-    alt: 'Ceramic coating application in Warrington — hydrophobic paint protection by Car Ceramic Coating and detailing warrington0',
-    caption: 'Ceramic coating — permanent paint protection in Warrington',
+    alt: 'Ceramic coating application process in Warrington — hydrophobic paint protection being applied by WCD Car Detailing',
+    caption: 'Ceramic coating application — permanent paint protection, Warrington',
     category: 'Ceramic Coating',
     featured: true,
     width: 1080,
@@ -53,18 +80,18 @@ const GALLERY_IMAGES = [
   },
   {
     src: '/gallery/warrington-car-valeting-results-warrington-1.webp',
-    alt: 'Ceramic coated car gleaming in Warrington — mirror finish by Car Ceramic Coating and detailing warrington0',
-    caption: 'Ceramic coating result — deep gloss mirror finish',
+    alt: 'Ceramic coated car gleaming in Warrington — mirror finish result by WCD Car Detailing at Fairclough Mill',
+    caption: 'Ceramic coating result — deep gloss mirror finish, Warrington',
     category: 'Ceramic Coating',
-    featured: true,
+    featured: false,
     width: 1080,
     height: 1080,
   },
   // ── MACHINE POLISHING ────────────────────────────────────────────────────────
   {
     src: '/gallery/warrington-paint-correction-swirl-removal-1.jpg',
-    alt: 'Machine polishing and swirl mark removal in Warrington — paint correction by Car Ceramic Coating and detailing warrington0',
-    caption: 'Machine polishing — swirl mark & scratch removal Warrington',
+    alt: 'Machine polishing and swirl mark removal in Warrington — paint correction result by WCD Car Detailing WA5',
+    caption: 'Machine polishing — swirl marks & scratches removed, Warrington',
     category: 'Machine Polishing',
     featured: true,
     width: 1080,
@@ -72,8 +99,8 @@ const GALLERY_IMAGES = [
   },
   {
     src: '/gallery/warrington-car-polish-machine-detailing-1.webp',
-    alt: 'Multi-stage machine polishing in Warrington — paint defect removal by Car Ceramic Coating and detailing warrington0',
-    caption: 'Multi-stage machine polish — paint clarity restored',
+    alt: 'Multi-stage machine polishing in Warrington — paint defects removed, clarity restored by WCD Car Detailing',
+    caption: 'Multi-stage machine polish — paint clarity restored, Warrington',
     category: 'Machine Polishing',
     featured: true,
     width: 1080,
@@ -82,8 +109,8 @@ const GALLERY_IMAGES = [
   // ── BEFORE & AFTER ───────────────────────────────────────────────────────────
   {
     src: '/gallery/warrington-car-detailing-before-after-1.webp',
-    alt: 'Before and after machine polishing in Warrington — dramatic paint transformation by Car Ceramic Coating and detailing warrington0',
-    caption: 'Before & after — machine polish + ceramic coating result',
+    alt: 'Before and after machine polishing in Warrington — dramatic paint transformation by WCD Car Detailing at Fairclough Mill WA5',
+    caption: 'Before & after — machine polish + ceramic coating, Warrington',
     category: 'Before & After',
     featured: false,
     width: 1080,
@@ -92,8 +119,8 @@ const GALLERY_IMAGES = [
   // ── CAR DETAILING ────────────────────────────────────────────────────────────
   {
     src: '/gallery/warrington-car-exterior-detailing-1.jpg',
-    alt: 'Professional exterior car detailing in Warrington — decontamination wash and clay bar by Car Ceramic Coating and detailing warrington0',
-    caption: 'Exterior detailing — decontamination & prep in Warrington',
+    alt: 'Professional exterior car detailing in Warrington — decontamination wash and clay bar treatment by WCD Car Detailing',
+    caption: 'Exterior detailing — decontamination & prep, Warrington',
     category: 'Car Detailing',
     featured: false,
     width: 1080,
@@ -101,8 +128,8 @@ const GALLERY_IMAGES = [
   },
   {
     src: '/gallery/warrington-car-valeting-service-1.jpg',
-    alt: 'Professional car detailing in Warrington — full exterior treatment by Car Ceramic Coating and detailing warrington0',
-    caption: 'Full exterior car detail — showroom finish Warrington',
+    alt: 'Professional car detailing in Warrington — full exterior treatment and showroom finish by WCD Car Detailing WA5',
+    caption: 'Full exterior car detail — showroom finish, Warrington',
     category: 'Car Detailing',
     featured: false,
     width: 1080,
@@ -110,8 +137,8 @@ const GALLERY_IMAGES = [
   },
   {
     src: '/gallery/warrington-mobile-car-valeting-1.jpg',
-    alt: 'Car detailing in progress at Car Ceramic Coating and detailing warrington0 unit — Warrington WA5',
-    caption: 'Professional car detailing at our Warrington unit',
+    alt: 'Car detailing in progress at WCD Car Detailing unit, Fairclough Mill, Warrington WA5 — professional results',
+    caption: 'Car detailing at our Warrington WA5 unit — professional results',
     category: 'Car Detailing',
     featured: false,
     width: 1080,
@@ -120,8 +147,8 @@ const GALLERY_IMAGES = [
   // ── INTERIOR ─────────────────────────────────────────────────────────────────
   {
     src: '/gallery/warrington-interior-car-detailing-1.webp',
-    alt: 'Interior car detailing in Warrington — leather conditioning, steam clean and deep clean by Car Ceramic Coating and detailing warrington0',
-    caption: 'Interior detail — leather conditioning & deep clean',
+    alt: 'Interior car detailing in Warrington — leather conditioning, steam clean and deep clean by WCD Car Detailing WA5',
+    caption: 'Interior detail — leather conditioning & deep clean, Warrington',
     category: 'Interior Detailing',
     featured: false,
     width: 1080,
@@ -129,8 +156,8 @@ const GALLERY_IMAGES = [
   },
   {
     src: '/gallery/warrington-professional-car-wash-warrington-1.webp',
-    alt: 'Pre-detail wash stage in Warrington — two bucket hand wash before machine polishing by Car Ceramic Coating and detailing warrington0',
-    caption: 'Pre-detail wash prep — foundation for perfect polishing',
+    alt: 'Pre-detail two-bucket hand wash in Warrington — safe wash method before machine polishing by WCD Car Detailing',
+    caption: 'Pre-detail wash prep — safe foundation for machine polishing',
     category: 'Car Detailing',
     featured: false,
     width: 1080,
@@ -186,8 +213,8 @@ export default function GalleryPage() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Car Ceramic Coating and detailing warrington0 — Ceramic Coating & Machine Polishing Gallery',
-          description: 'Real results from Car Ceramic Coating and detailing warrington0. Ceramic coating and machine polishing before and after photos.',
+          name: 'WCD Car Detailing Warrington — Ceramic Coating & Machine Polishing Gallery',
+          description: 'Real results from WCD Car Detailing in Warrington. Ceramic coating on VW Golf R, Ford Mustang GT, BMW 2 Series, Seat Cupra. Machine polishing and car detailing before and after photos.',
           numberOfItems: GALLERY_IMAGES.length,
           itemListElement: GALLERY_IMAGES.map((img, i) => ({
             '@type': 'ListItem',
@@ -213,9 +240,9 @@ export default function GalleryPage() {
               Gallery
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Every photo below is a real result from our unit at Fairclough Mill, Warrington. No
-              stock images, no filters. Ceramic coating that lasts years. Machine polishing that
-              eliminates swirl marks, scratches and oxidation completely.
+              Every photo below is a real result from our unit at Fairclough Mill, Warrington WA5. No
+              stock images, no filters. VW Golf R, Ford Mustang GT, BMW 2 Series, Seat Cupra and more —
+              ceramic coating that lasts years, machine polishing that eliminates swirl marks completely.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href={`tel:${PHONE}`} className="btn-primary">
