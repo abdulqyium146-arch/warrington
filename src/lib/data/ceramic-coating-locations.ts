@@ -23,7 +23,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Warrington | Accredited Installer | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Professional ceramic coating in Warrington WA1–WA5 from £250. Gtechniq Crystal Serum & CarPro Cquartz by accredited installers. Call Car Ceramic Coating and detailing warrington0: 07375 759686.',
+      'Professional ceramic coating in Warrington WA1–WA5 from £250. Gtechniq Crystal Serum & CarPro Cquartz by accredited installers. Call Car Ceramic Coating and detailing warrington0: 07482 225323.',
     h1: 'Ceramic Coating in Warrington',
     intro:
       'Warrington sits at the convergence of three motorways — the M6 to the north-east, the M62 cutting east to west, and the M56 to the south — with the A49, A57, and Sankey Way serving as the primary inbound arterials. For a town of its size, Warrington generates an unusually high vehicle mileage per household: professionals commuting into Manchester, Liverpool, and Cheshire; HGVs routing through the North West freight corridors; and the general traffic burden of a town that functions as a distribution hub for the entire region. That road environment inflicts a specific and measurable toll on unprotected vehicle paintwork — ferrous brake dust from motorway HGV traffic, fine stone chips at speed, and road salt in winter all accelerate clear coat degradation in ways that are entirely preventable.\n\nAt Car Ceramic Coating and detailing warrington0, we apply professional ceramic coatings from our dedicated unit at Fairclough Mill, Atherton\'s Quay in WA5 — purpose-built for professional detailing, not a shared garage or driveway operation. Our accreditation by both Gtechniq and CarPro makes us one of the only dual-accredited studios in the North West: we apply Gtechniq Crystal Serum Light, Crystal Serum Ultra, and CarPro Cquartz UK 3.0 under full manufacturer specification, with warranty paperwork where applicable. Gtechniq Crystal Serum Ultra\'s 9-year manufacturer warranty is only available through accredited installers — it cannot be issued by non-accredited studios regardless of the product they use.\n\nCeramic coating is a semi-permanent chemical bond to your vehicle\'s clear coat that transforms how the paint interacts with every environmental element it encounters. Water beads and rolls rather than sheets; road salt cannot penetrate; brake dust and ferrous fallout sit on the coating surface rather than embedding in the paint. For Warrington drivers covering regular motorway mileage on the M62 or M6, the reduction in contamination bonding alone makes maintenance noticeably easier — and the preserved paint condition over a 3–9 year coating lifespan represents the most cost-effective paint protection available.',
@@ -33,7 +33,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How much does ceramic coating cost in Warrington?',
         answer:
-          'Our ceramic coating packages start at £250 for CarPro Cquartz UK 3.0 (2–3 years), £350 for Gtechniq Crystal Serum Light (3–5 years), and £650 for Gtechniq Crystal Serum Ultra (up to 9 years with manufacturer warranty). All prices include full decontamination, paint correction appropriate to the package, and coating application. Final pricing depends on vehicle size and paint condition — we provide a fixed quote before any work begins. Call 07375 759686 or use our online quote form.',
+          'Our ceramic coating packages start at £250 for CarPro Cquartz UK 3.0 (2–3 years), £350 for Gtechniq Crystal Serum Light (3–5 years), and £650 for Gtechniq Crystal Serum Ultra (up to 9 years with manufacturer warranty). All prices include full decontamination, paint correction appropriate to the package, and coating application. Final pricing depends on vehicle size and paint condition — we provide a fixed quote before any work begins. Call 07482 225323 or use our online quote form.',
       },
       {
         question: 'How long does ceramic coating last in Warrington\'s climate?',
@@ -78,7 +78,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How do I book ceramic coating at your Warrington unit?',
         answer:
-          'Call us on 07375 759686 or submit a quote request through our website. Provide your vehicle make, model, year, and registration, along with any known paint condition concerns. We\'ll confirm a fixed price and arrange a date at our Fairclough Mill, Atherton\'s Quay unit in WA5 1AH. We\'re available 24/7 with flexible drop-off and collection times — most appointments are confirmed within 48 hours of enquiry, with weekend slots available year-round.',
+          'Call us on 07482 225323 or submit a quote request through our website. Provide your vehicle make, model, year, and registration, along with any known paint condition concerns. We\'ll confirm a fixed price and arrange a date at our Fairclough Mill, Atherton\'s Quay unit in WA5 1AH. We\'re available 24/7 with flexible drop-off and collection times — most appointments are confirmed within 48 hours of enquiry, with weekend slots available year-round.',
       },
     ],
   },
@@ -93,7 +93,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Stockton Heath WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Stockton Heath WA4. Gtechniq Crystal Serum & CarPro from £250 at our Warrington WA5 unit. 5-star rated. Call Car Ceramic Coating and detailing warrington0 07375 759686.',
+      'Ceramic coating in Stockton Heath WA4. Gtechniq Crystal Serum & CarPro from £250 at our Warrington WA5 unit. 5-star rated. Call Car Ceramic Coating and detailing warrington0 07482 225323.',
     h1: 'Ceramic Coating in Stockton Heath, Warrington',
     intro:
       'Stockton Heath is one of Warrington\'s most desirable postcodes — a village suburb with a distinct identity, a concentration of independent restaurants and bars along London Road, and a level of vehicle ownership that reflects the area\'s affluence. Residents here tend to drive premium German saloons, large family SUVs, and the occasional classic that only comes out on dry summer weekends. These are exactly the vehicles that benefit most from a properly applied ceramic coating: paint that\'s already in good condition becomes significantly easier to maintain, and the gloss depth that a Gtechniq or CarPro coating adds to darker metallics in particular is something car wax simply cannot replicate.\n\nOur unit at Fairclough Mill, Atherton\'s Quay in Warrington WA5 is a straightforward drive from Stockton Heath — up Walton Road, onto the A49, and across to our WA5 base. Drop the car with us in the morning and collect it transformed in the evening. We apply Gtechniq Crystal Serum Light, Crystal Serum Ultra, and CarPro Cquartz UK 3.0 depending on the level of protection required — each product is applied by accredited installers who understand the chemistry behind the product, not just the application steps. For Stockton Heath residents who take pride in their vehicles, a ceramic coating is a natural progression from regular valeting.',
@@ -138,7 +138,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Grappenhall WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Grappenhall WA4 Warrington. Crystal Serum & CarPro from £250. Professional unit in WA5. 5-star rated. Car Ceramic Coating and detailing warrington0 07375 759686.',
+      'Ceramic coating in Grappenhall WA4 Warrington. Crystal Serum & CarPro from £250. Professional unit in WA5. 5-star rated. Car Ceramic Coating and detailing warrington0 07482 225323.',
     h1: 'Ceramic Coating in Grappenhall, Warrington',
     intro:
       'Grappenhall village sits at the southern edge of Warrington\'s urban boundary, where the residential streets give way to the Cheshire countryside and the canal towpath running alongside the Bridgewater Canal. The older part of the village — Church Lane, Bellhouse Lane, and the cobbled area near St Wilfrid\'s Church — has a quiet, rural character that makes it one of the most sought-after addresses in WA4. Grappenhall Heys, the newer development to the south, adds a large number of executive homes and the substantial vehicle collection that typically accompanies them.\n\nThe country lane driving around Grappenhall brings its own paint hazards: stone chips from unmetalled surfaces, tree sap dropping onto parked vehicles from overhanging branches in spring and summer, and the fine grit that coats vehicles travelling along Grappenhall Lane and the rural routes towards Lymm. A ceramic coating creates the hardest possible outer surface for your clear coat — rated at 9H on the pencil hardness scale for our top-tier Gtechniq Crystal Serum Ultra — significantly reducing the penetration of fine stone chips and making any contamination that does reach the surface far easier to remove. Our Fairclough Mill unit in WA5 is under ten minutes from Grappenhall village, and we regularly work with residents from across both Grappenhall and Grappenhall Heys.',
@@ -148,7 +148,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Do you cover Grappenhall Heys as well as the original village?',
         answer:
-          'Yes — we serve the full WA4 postcode area including both Grappenhall village and Grappenhall Heys. Both areas are a short drive from our Fairclough Mill, Atherton\'s Quay unit in WA5. Whether you\'re on Church Lane or in one of the newer Grappenhall Heys developments, the booking process is identical: call 07375 759686 or submit an online quote request and we\'ll arrange a day at our unit.',
+          'Yes — we serve the full WA4 postcode area including both Grappenhall village and Grappenhall Heys. Both areas are a short drive from our Fairclough Mill, Atherton\'s Quay unit in WA5. Whether you\'re on Church Lane or in one of the newer Grappenhall Heys developments, the booking process is identical: call 07482 225323 or submit an online quote request and we\'ll arrange a day at our unit.',
       },
       {
         question: 'Can ceramic coating protect against stone chips on country lanes near Grappenhall?',
@@ -183,7 +183,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Appleton Warrington WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Appleton WA4 Warrington from £250. Gtechniq Crystal Serum & CarPro applied at our WA5 unit. Book Car Ceramic Coating and detailing warrington0 on 07375 759686.',
+      'Ceramic coating in Appleton WA4 Warrington from £250. Gtechniq Crystal Serum & CarPro applied at our WA5 unit. Book Car Ceramic Coating and detailing warrington0 on 07482 225323.',
     h1: 'Ceramic Coating in Appleton, Warrington',
     intro:
       'Appleton is a leafy, well-established suburb in south Warrington spanning the WA4 postcode, with Broomfields as its civic centrepiece — a leisure centre, schools, and retail cluster that serves much of south Warrington. The residential streets running off Lyons Lane, Pepper Street, and Appleton Thorn Road are lined with detached and semi-detached homes, many with garages and private driveways where vehicles spend the night. These are predominantly family households with newer cars and the awareness that paintwork condition directly reflects the care taken of a vehicle.\n\nCeramic coating suits the Appleton lifestyle particularly well. Residents here typically plan maintenance in advance — they\'re the customers who book a service before the warning light appears — and ceramic coating is the logical extension of that approach to vehicle care. Rather than addressing deteriorating paint reactively with a cut and polish every few years, ceramic coating provides a proactive solution: a chemically bonded layer that prevents contamination bonding to the clear coat in the first place. Our CarPro Cquartz UK 3.0, Gtechniq Crystal Serum Light, and Crystal Serum Ultra packages are applied at our WA5 unit — a ten-minute drive from Broomfields Leisure Centre. We also offer a combined paint correction and ceramic coating package for vehicles that have accumulated swirl marks and need their paint brought back to a clean baseline before the coating goes on.',
@@ -228,7 +228,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Appleton Thorn WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Appleton Thorn WA4 Warrington. Professional application from £250. Gtechniq & CarPro accredited. Call Car Ceramic Coating and detailing warrington0 07375 759686.',
+      'Ceramic coating in Appleton Thorn WA4 Warrington. Professional application from £250. Gtechniq & CarPro accredited. Call Car Ceramic Coating and detailing warrington0 07482 225323.',
     h1: 'Ceramic Coating in Appleton Thorn, Warrington',
     intro:
       'Appleton Thorn sits at the junction of rural Cheshire and the commuter belt, straddling the WA4 postcode just south of the M56 at Junction 10. It\'s a traditional village with a clear rural character — wide lanes, hedgerow-lined roads, and detached properties with long driveways — but with fast motorway access that makes it a practical base for professionals commuting south towards Northwich, east towards Manchester, or north into Warrington. The combination of country lane driving and motorway commuting creates one of the most demanding environments for vehicle paintwork in the Warrington area.\n\nStone chips from the lanes around Stretton Road and Arley Road are a frequent complaint among residents here. Motorway driving compounds this with high-speed grit and brake dust from other vehicles. Ceramic coating addresses both: the hardened SiO2 layer that cures onto the clear coat provides measurably better resistance to stone chip penetration than bare paint alone, and the chemical repellency of the coating prevents the fine grit and dust that coats vehicles on the M56 from adhering between washes. We apply Gtechniq Crystal Serum Ultra, Crystal Serum Light, and CarPro Cquartz UK 3.0 at our Fairclough Mill unit — a fifteen-minute drive via the A49. Most coating appointments complete in a single day.',
@@ -273,7 +273,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Lymm WA13 | Gtechniq Crystal Serum & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Lymm WA13 Cheshire. Car Ceramic Coating and detailing warrington0 is 5 miles away in Warrington WA5. Gtechniq & CarPro from £250. 5-star rated. Book 07375 759686.',
+      'Ceramic coating in Lymm WA13 Cheshire. Car Ceramic Coating and detailing warrington0 is 5 miles away in Warrington WA5. Gtechniq & CarPro from £250. 5-star rated. Book 07482 225323.',
     h1: 'Ceramic Coating in Lymm, Cheshire',
     intro:
       'Lymm is one of Cheshire\'s most picturesque villages — the canal-side setting, Lymm Dam, and the distinctive Lymm Cross at the heart of the village make it one of the most desirable addresses between Warrington and Manchester. The WA13 postcode has a higher-than-average density of prestige vehicles, with Bentleys, Porsches, Range Rovers, and classic British sports cars a familiar sight on Bridgewater Street and the lanes that wind through the village and out towards Higher Lane and Booth\'s Hill Road.\n\nFor Lymm residents, Car Ceramic Coating and detailing warrington0 is genuinely local. Our Fairclough Mill unit in Warrington WA5 is just five miles away — a ten-minute drive via the A56 — making us the nearest professional ceramic coating facility to the village. Customers from Lymm visit us regularly for Gtechniq Crystal Serum Ultra applications on prestige vehicles, single-stage corrections ahead of CarPro Cquartz applications on well-maintained daily drivers, and paint correction work that doesn\'t involve a coating at all. The short distance means same-day and occasionally next-day bookings are feasible. Lymm\'s country lane driving — along Booths Hill Road, the towpath-adjacent roads near the Bridgewater Canal, and the lanes heading south towards Knutsford — also brings the organic contamination challenges that ceramic coating is particularly effective at managing.',
@@ -318,7 +318,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Thelwall WA4 Warrington | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Thelwall WA4 Warrington. Gtechniq Crystal Serum & CarPro from £250. Professional unit at Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Thelwall WA4 Warrington. Gtechniq Crystal Serum & CarPro from £250. Professional unit at Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Thelwall, Warrington',
     intro:
       'Thelwall is a quiet, characterful village that sits in the shadow of the Thelwall Viaduct — the M6 motorway\'s famous dual-bridge crossing over the Manchester Ship Canal. It\'s an incongruous setting: one of England\'s busiest stretches of motorway directly overhead, while below, Thelwall Lane and Bell Lane wind through a village that feels genuinely removed from the surrounding urban sprawl. Residents here tend to have a clear appreciation for their local environment and, by extension, the vehicles they drive through it.\n\nThe proximity to the M6 viaduct brings a specific paint contamination challenge: the fine particulate exhaust and rubber dust that settles in the zone beneath and around major motorway structures creates a consistent layer of airborne contamination on vehicles parked in Thelwall. Add to this the tree coverage along Ferry Lane and the lanes heading towards Grappenhall and Lymm, and vehicles in WA4\'s quieter pockets face a combination of industrial particulate and organic matter that is particularly adherent on unprotected paintwork. Ceramic coating\'s chemical repellency makes the maintenance significantly more manageable — the weekly accumulation of fine dust that requires pressure washing and multiple rinse passes on a bare vehicle simply beads and rinses on a ceramic-coated surface. Our WA5 unit at Fairclough Mill is eight minutes from Thelwall by car.',
@@ -363,7 +363,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Walton Warrington WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Walton WA4 Warrington. Gtechniq & CarPro from £250 at our WA5 unit. Serving Walton Hall area. Call Car Ceramic Coating and detailing warrington0 07375 759686.',
+      'Ceramic coating in Walton WA4 Warrington. Gtechniq & CarPro from £250 at our WA5 unit. Serving Walton Hall area. Call Car Ceramic Coating and detailing warrington0 07482 225323.',
     h1: 'Ceramic Coating in Walton, Warrington',
     intro:
       'Walton occupies a stretch of south Warrington between Stockton Heath and the Cheshire countryside, its character shaped by the proximity to Walton Hall and Gardens — the publicly accessible estate that brings green space and parkland to this part of WA4. The residential roads around Chester Road, Walton Lea Road, and Runcorn Road serve a mix of established family homes and newer developments, with vehicles ranging from everyday family cars to the prestige models associated with south Warrington\'s more affluent pockets.\n\nVehicles in the Walton area benefit from ceramic coating for reasons that are consistent across south Warrington\'s leafier suburbs: overhanging trees along Walton Lea Road and the park perimeter deposit sap and pollen at a higher rate than open urban environments, while the Chester Road corridor carries enough through traffic to generate consistent road grime. A ceramic coating manages both — the hydrophobic surface causes organic deposits to sit on top rather than adhere, and the chemical hardness prevents the fine surface marring that multiple years of unprotected driving inevitably creates. Our Fairclough Mill unit in WA5 is accessible from Walton via the A49 in under fifteen minutes, making a full-day coating appointment a practical and non-disruptive commitment for Walton residents.',
@@ -408,7 +408,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Stretton Warrington WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Stretton WA4 Warrington. Professional Gtechniq & CarPro application from £250. Near M56 J10. Book Car Ceramic Coating and detailing warrington0 on 07375 759686.',
+      'Ceramic coating in Stretton WA4 Warrington. Professional Gtechniq & CarPro application from £250. Near M56 J10. Book Car Ceramic Coating and detailing warrington0 on 07482 225323.',
     h1: 'Ceramic Coating in Stretton, Warrington',
     intro:
       'Stretton sits at the southern edge of the Warrington conurbation, a quiet village with a character that leans towards rural Cheshire rather than suburban Warrington. The M56 at Junction 10 is minutes away, making it a practical base for professionals who commute south and west, but the village roads — Stretton Road, Northwich Road, and the connecting lanes that run between the village and the surrounding countryside — retain the character of agricultural Cheshire. Properties here tend to be larger, set back from the road on generous plots, and the vehicles associated with them reflect that.\n\nCeramic coating is particularly well-suited to vehicles based in Stretton because the pattern of use — short local drives on rural lanes punctuated by longer motorway journeys on the M56 — produces the full spectrum of paint contamination. Rural lanes deposit organic debris, stone chips, and fine dust. The M56 adds fine ferrous particles from surrounding vehicles\' brakes and the road surface itself. Our Gtechniq Crystal Serum Ultra provides the best available ceramic response to both: the hardened SiO2 matrix resists stone impact at speed, and the chemical barrier prevents ferrous and organic contamination from bonding between maintenance washes. Our Fairclough Mill unit is under fifteen minutes from Stretton via the A49.',
@@ -428,7 +428,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How much does a ceramic coating cost for a vehicle in Stretton?',
         answer:
-          'Our packages start at £250 for CarPro Cquartz UK 3.0 (2–3 years protection), £350 for Gtechniq Crystal Serum Light (3–5 years), and £650 for Gtechniq Crystal Serum Ultra (up to 9 years). All prices include full decontamination and paint correction appropriate to the package. Final pricing depends on vehicle size and paint condition. We provide a fixed quote before starting any work — call 07375 759686.',
+          'Our packages start at £250 for CarPro Cquartz UK 3.0 (2–3 years protection), £350 for Gtechniq Crystal Serum Light (3–5 years), and £650 for Gtechniq Crystal Serum Ultra (up to 9 years). All prices include full decontamination and paint correction appropriate to the package. Final pricing depends on vehicle size and paint condition. We provide a fixed quote before starting any work — call 07482 225323.',
       },
       {
         question: 'Do you offer same-day ceramic coating appointments for Stretton customers?',
@@ -453,7 +453,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Great Sankey Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Great Sankey WA5 Warrington. Car Ceramic Coating and detailing warrington0 is minutes away at Fairclough Mill. Gtechniq & CarPro from £250. Book 07375 759686.',
+      'Ceramic coating in Great Sankey WA5 Warrington. Car Ceramic Coating and detailing warrington0 is minutes away at Fairclough Mill. Gtechniq & CarPro from £250. Book 07482 225323.',
     h1: 'Ceramic Coating in Great Sankey, Warrington',
     intro:
       'Great Sankey is one of Warrington\'s largest and most established residential areas, spreading across the WA5 postcode west of the town centre. Liverpool Road forms the main artery through the area, with residential streets branching off towards the Sankey Valley Park to the south and the Gemini Retail Park corridor to the north. It\'s a diverse community with a wide range of vehicle types — family hatchbacks and small SUVs are the norm, but the area also has a significant proportion of newer, higher-value cars on private driveways.\n\nFor Great Sankey residents, the practical appeal of ceramic coating is straightforward: Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit is just minutes away on Atherton\'s Quay in WA5, making us genuinely the most accessible professional ceramic coating facility in the area. Our CarPro Cquartz UK 3.0, Gtechniq Crystal Serum Light, and Crystal Serum Ultra packages suit the range of vehicles in this part of Warrington — from the £250 entry-level coating on a well-maintained family car to the full Crystal Serum Ultra treatment on a newer prestige vehicle. The Sankey Valley road network and the busy Liverpool Road corridor expose WA5 paintwork to a consistent stream of road grime, particularly in the wetter months when road salt and standing water spray create the conditions for accelerated paint deterioration without protection.',
@@ -498,7 +498,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Penketh Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Penketh WA5 Warrington. Car Ceramic Coating and detailing warrington0 Fairclough Mill minutes away. Gtechniq Crystal Serum & CarPro from £250. Call 07375 759686.',
+      'Ceramic coating in Penketh WA5 Warrington. Car Ceramic Coating and detailing warrington0 Fairclough Mill minutes away. Gtechniq Crystal Serum & CarPro from £250. Call 07482 225323.',
     h1: 'Ceramic Coating in Penketh, Warrington',
     intro:
       'Penketh sits on the western edge of Warrington\'s built environment, where the residential estates give way to the River Mersey floodplain and the industrial legacy of Fiddlers Ferry. It\'s a quieter, more spacious part of Warrington — WA5 postcodes with wider roads, larger private driveways, and the semi-rural character that comes with proximity to the Mersey. For residents here, the drive to our Fairclough Mill unit in WA5 is measured in minutes rather than miles, making Car Ceramic Coating and detailing warrington0 genuinely the most accessible ceramic coating facility available.\n\nPenketh vehicles travel a mix of residential streets, the Liverpool Road A57 arterial, and the routes north to the M62 Junction 8 at Burtonwood. This variety of road conditions — from the quiet lanes around Houghton Green to the busy arterial and motorway approaches — creates a full spectrum of paint contamination. Our ceramic coating packages are designed to handle all of it: the CarPro Cquartz UK 3.0 is a practical, cost-effective solution for well-maintained daily drivers, while Gtechniq Crystal Serum Light and Ultra are the preferred choices for newer, higher-value vehicles where the protection investment matches the asset value. We assess every vehicle before quoting and recommend the package that delivers the best return for the specific make, age, and condition.',
@@ -513,7 +513,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How quickly can Car Ceramic Coating and detailing warrington0 fit in a ceramic coating appointment from Penketh?',
         answer:
-          'Due to our proximity — Penketh to Fairclough Mill WA5 1AH is under 10 minutes — we can often accommodate short-notice bookings when our schedule allows. For guaranteed availability, booking a week in advance is advisable, particularly for weekend slots. Call 07375 759686 to check current availability.',
+          'Due to our proximity — Penketh to Fairclough Mill WA5 1AH is under 10 minutes — we can often accommodate short-notice bookings when our schedule allows. For guaranteed availability, booking a week in advance is advisable, particularly for weekend slots. Call 07482 225323 to check current availability.',
       },
       {
         question: 'What surface preparation does my car need before ceramic coating in Penketh?',
@@ -543,7 +543,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Chapelford Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Chapelford WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Chapelford WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Chapelford, Warrington',
     intro:
       'Chapelford Village is one of Warrington\'s most modern residential developments — a planned community in WA5 built primarily from the early 2000s onward, with attractive landscaping, well-maintained roads, and a high proportion of newer vehicles on private driveways. The demographic here skews towards younger families and professionals who bought new or nearly-new, and the vehicles in Chapelford reflect that — predominantly modern family SUVs, mid-range hatchbacks, and occasional prestige models.\n\nNew and newer vehicles are the ideal candidates for ceramic coating applied early in the vehicle\'s life. When the coating goes on before the paint has accumulated swirl marks, water spot etching, or UV-induced dullness, the preparation process is minimal and the coating bonds to paint that is genuinely in factory condition. The result is a vehicle that maintains its showroom appearance for years rather than months. Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit in WA5 is minutes from Chapelford — a straight run along the WA5 road network with no complicated routing. Our packages from £250 are designed to suit the range of vehicles in this part of Warrington, and we regularly work with Chapelford residents who want to protect new-vehicle paint before the first winter.',
@@ -588,7 +588,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Westbrook Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Westbrook WA5 Warrington. Minutes from Fairclough Mill WA5. Gtechniq & CarPro from £250. 5-star rated Car Ceramic Coating and detailing warrington0. Call 07375 759686.',
+      'Ceramic coating in Westbrook WA5 Warrington. Minutes from Fairclough Mill WA5. Gtechniq & CarPro from £250. 5-star rated Car Ceramic Coating and detailing warrington0. Call 07482 225323.',
     h1: 'Ceramic Coating in Westbrook, Warrington',
     intro:
       'Westbrook is one of Warrington\'s fastest-growing residential and retail districts — the Westbrook Centre and the surrounding commercial development along Europa Boulevard have established it as a major node in the western WA5 area. Residential estates spread across a wide area from the A580 East Lancashire Road corridor to the junction with the A57, with thousands of households in a mix of older and newer properties. The vehicle population here reflects that breadth — families with practical SUVs, commuters with company cars, and a growing proportion of residents in newer higher-value vehicles on the recently completed estates.\n\nThe commercial proximity of Westbrook\'s retail and logistics zones is relevant from a paint care perspective: vehicles parked near or regularly driven past warehousing and logistics infrastructure encounter higher levels of airborne particulate and industrial fallout than purely residential areas. Ceramic coating creates a chemical barrier that prevents these particles from bonding, making post-wash contamination removal far more straightforward. Our WA5 unit at Fairclough Mill is a short distance from Westbrook along the WA5 road network, making the logistics of a coating appointment simple for residents.',
@@ -633,7 +633,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Callands Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Callands WA5 Warrington. Car Ceramic Coating and detailing warrington0 is minutes away at Fairclough Mill. Gtechniq & CarPro from £250. Book 07375 759686.',
+      'Ceramic coating in Callands WA5 Warrington. Car Ceramic Coating and detailing warrington0 is minutes away at Fairclough Mill. Gtechniq & CarPro from £250. Book 07482 225323.',
     h1: 'Ceramic Coating in Callands, Warrington',
     intro:
       'Callands is a residential area in the west of Warrington\'s WA5 postcode, sitting between Westbrook and Great Sankey with easy access from the M62 and the Lingley Mere Business Park to the north. Wide residential streets, established housing, and private driveways characterise the area — it\'s a practical, family-oriented part of Warrington that is extraordinarily convenient for Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit. Residents of Callands are among the closest of any Warrington neighbourhood to our studio.\n\nThe Lingley Mere Business Park on Callands\'s northern boundary is relevant from a paint care perspective — business park environments generate ferrous contamination from the volumes of commercial vehicles and the infrastructure of light industry. Vehicles parked or driven regularly in proximity to business parks accumulate this contamination at a higher rate than purely residential driving. Ceramic coating\'s chemical barrier prevents embedded ferrous particles and brake dust from adhering to the clear coat surface. At our WA5 unit minutes from Callands, we apply Gtechniq and CarPro ceramic coatings to the full range of vehicles driven by Callands residents — same-day appointments, fixed pricing, and no-obligation quotes by phone or online form.',
@@ -658,7 +658,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Can I get a ceramic coating quote without committing to a booking in Callands?',
         answer:
-          'Absolutely. Call 07375 759686 or fill in the online quote form with your vehicle details. We provide a fixed price based on make, model, vehicle size, and the package you\'re interested in — no obligation. If you proceed, we confirm a date. If you need more time to decide, the quote remains valid. We don\'t charge for quotes or require any deposit to receive one.',
+          'Absolutely. Call 07482 225323 or fill in the online quote form with your vehicle details. We provide a fixed price based on make, model, vehicle size, and the package you\'re interested in — no obligation. If you proceed, we confirm a date. If you need more time to decide, the quote remains valid. We don\'t charge for quotes or require any deposit to receive one.',
       },
       {
         question: 'Does a ceramic coating eliminate the need for regular washing in Callands?',
@@ -678,7 +678,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Old Hall Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Old Hall WA5 Warrington. Gtechniq & CarPro from £250 at our Fairclough Mill WA5 unit. Call Car Ceramic Coating and detailing warrington0 07375 759686.',
+      'Ceramic coating in Old Hall WA5 Warrington. Gtechniq & CarPro from £250 at our Fairclough Mill WA5 unit. Call Car Ceramic Coating and detailing warrington0 07482 225323.',
     h1: 'Ceramic Coating in Old Hall, Warrington',
     intro:
       'Old Hall is a residential area within the WA5 postcode of Warrington, positioned between the expanding Westbrook developments to the west and the Callands and Great Sankey estates to the east and south. It\'s a quiet neighbourhood with established housing stock and the kind of settled residential character that often goes with areas that have been built-up for several decades. Private driveways are common, and vehicles here tend to be well-maintained by owners who take an interest in their upkeep.\n\nFor Old Hall residents, Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit represents extremely convenient access to professional ceramic coating. The short drive across the WA5 postcode takes minutes, and our full range of Gtechniq and CarPro coating packages is available for every vehicle type. We regularly work with Old Hall residents who want to protect a newer purchase from the outset, restore and protect a well-kept vehicle that\'s accumulated years of minor paint wear, or bring a second car up to a standard they\'re proud of. Our fixed-price quoting system means there are no surprises: we agree the price before starting any work, and the vehicle leaves our unit with a written aftercare guide and any warranty documentation that applies to the chosen package.',
@@ -723,7 +723,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Burtonwood Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Burtonwood WA5 Warrington near M62 J8. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill. Book 07375 759686.',
+      'Ceramic coating in Burtonwood WA5 Warrington near M62 J8. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill. Book 07482 225323.',
     h1: 'Ceramic Coating in Burtonwood, Warrington',
     intro:
       'Burtonwood is a village in the north of the WA5 postcode, best known historically for RAF Burtonwood — once one of the largest US Air Force bases in Europe, now largely converted to residential and commercial use. The village sits at the M62 Junction 8, making it one of the best-connected communities in Warrington for motorway access in any direction. Residents commute east on the M62 towards Manchester, west towards Liverpool, and south to Warrington town centre via the A57 or A49.\n\nHigh-mileage motorway commuting from Burtonwood creates one of the most demanding environments for vehicle paintwork. The constant exposure to motorway-speed stone chips, brake dust from the heavy goods vehicles that dominate the M62 corridor, and the spray from wet roads at speed all accelerate paint deterioration. A Gtechniq Crystal Serum Ultra application provides the highest hardness rating we offer — 9H — which significantly reduces the penetration of fine stone chips and creates a chemical barrier against the ferrous contamination that motorway driving generates at pace. Our WA5 unit is a straightforward drive from Burtonwood via the A57, taking under ten minutes.',
@@ -768,7 +768,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Birchwood Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Birchwood WA3 Warrington. Professionals at Birchwood Park trust Car Ceramic Coating and detailing warrington0. Gtechniq & CarPro from £250. Call 07375 759686.',
+      'Ceramic coating in Birchwood WA3 Warrington. Professionals at Birchwood Park trust Car Ceramic Coating and detailing warrington0. Gtechniq & CarPro from £250. Call 07482 225323.',
     h1: 'Ceramic Coating in Birchwood, Warrington',
     intro:
       'Birchwood is Warrington\'s science and technology district — a planned residential and business community in the east of the town, home to Birchwood Park business park and thousands of professionals working in engineering, technology, and the science sectors. The residential areas surrounding Birchwood Park — Benson Road, Dovecot, and the connecting estates — have a high proportion of executive and prestige vehicles driven by professionals who commute into the park or travel further afield on business.\n\nThe professional character of Birchwood\'s resident population makes it one of the most receptive areas in Warrington for ceramic coating. These are customers who research purchases, understand material science at a professional level in many cases, and appreciate the genuine chemistry behind why Gtechniq\'s SiO2 matrix bonds to clear coat and produces the properties it does. We welcome that engagement — ceramic coating is a genuinely interesting product and we\'re happy to explain the process in detail. Our WA5 unit at Fairclough Mill is approximately fifteen minutes from Birchwood Park via the A57, and we work with professionals from across the Birchwood area who want the best available protection for vehicles they take pride in.',
@@ -813,7 +813,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Risley Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Risley WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250 at Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Risley WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250 at Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Risley, Warrington',
     intro:
       'Risley is a quiet residential area on the eastern edge of the Warrington conurbation, WA3, bordered by Birchwood to the north and the Risley Moss nature reserve to the south. The former UKAEA Risley site — once one of the UK\'s leading nuclear research facilities — has transitioned over the decades into a mix of business and residential development, and the area now has a settled, suburban character with easy access to the Birchwood road network and the M6 beyond.\n\nFor Risley residents, Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit in WA5 is accessible in approximately twenty minutes via the A57 westbound. Ceramic coating is an investment that suits the demographics of this part of Warrington well — residents tend to have established vehicles in good condition that benefit from a protection layer to maintain their appearance, and the proximity to Birchwood Park means a significant proportion of Risley\'s workforce drives prestige or newer vehicles. We apply Gtechniq Crystal Serum Light and Ultra as well as CarPro Cquartz UK 3.0 at our WA5 unit, with all preparation — decontamination, clay bar, correction — carried out on the day of the appointment.',
@@ -858,7 +858,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Locking Stumps Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Locking Stumps WA3 Warrington. Gtechniq & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Locking Stumps WA3 Warrington. Gtechniq & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Locking Stumps, Warrington',
     intro:
       'Locking Stumps is a residential area in the east of Warrington, WA3, positioned between Birchwood and the more rural reaches of the Croft and Culcheth direction. It\'s a quiet suburban pocket with wide residential streets, established gardens, and the kind of semi-rural edge that characterises east Warrington\'s transition from the urban core to the Cheshire and Lancashire countryside beyond.\n\nVehicles in Locking Stumps travel the A574, Birchwood Way, and the rural lanes connecting east towards Croft and north towards Culcheth — a mix of suburban arterials and genuinely rural roads that produces the full spectrum of paint contamination. Our Fairclough Mill unit in WA5 is accessible via the A574 and A57 in approximately twenty minutes from Locking Stumps. We apply Gtechniq and CarPro ceramic coatings in all available specifications, with every appointment including the full preparation process: decontamination wash, iron fallout removal, clay bar, paint correction, and precision coating application. For residents of Locking Stumps seeking the most convenient professional ceramic coating in the Warrington area, Car Ceramic Coating and detailing warrington0 is the local choice.',
@@ -903,7 +903,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Gorse Covert Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Gorse Covert WA3 Warrington. Gtechniq & CarPro from £250 at Fairclough Mill WA5. Professional results. Call 07375 759686.',
+      'Ceramic coating in Gorse Covert WA3 Warrington. Gtechniq & CarPro from £250 at Fairclough Mill WA5. Professional results. Call 07482 225323.',
     h1: 'Ceramic Coating in Gorse Covert, Warrington',
     intro:
       'Gorse Covert is a planned residential area in east Warrington, WA3, developed as part of the broader Birchwood new town expansion and notable for the distinctive Gorse Covert Mounds — the landscaped earthworks that border the estate and connect it to the wider Mersey Forest planting schemes. It\'s a green, well-planned community with established tree coverage, good road infrastructure, and the semi-rural feel that the Birchwood area generally has relative to central Warrington.\n\nThe tree coverage in and around Gorse Covert is directly relevant to vehicle maintenance. Mature trees — including the planted woodland of the Mounds and the Mersey Forest schemes — deposit sap, pollen, and leaf matter on vehicles parked beneath or nearby throughout the growing season. Spring in particular sees significant pollen accumulation on parked vehicles, and the heavy dew and rain that follows can drive pollen into the paint surface if it\'s left unaddressed. On a ceramic-coated surface, pollen and tree sap simply don\'t achieve the same adhesion — a rinse removes the majority without the need for a full contact wash. Our WA5 unit at Fairclough Mill is the closest professional ceramic coating facility to Gorse Covert.',
@@ -918,7 +918,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How do I book a ceramic coating appointment from Gorse Covert?',
         answer:
-          'Call us on 07375 759686 or complete our online quote form at warringtoncardetailing.co.uk. Provide your vehicle make, model, and approximate mileage or age, and note any paint condition concerns. We\'ll come back with a fixed price for the appropriate package. You then confirm a date and drop your vehicle at Fairclough Mill, Atherton\'s Quay, WA5 1AH — approximately 20 minutes from Gorse Covert via the A574.',
+          'Call us on 07482 225323 or complete our online quote form at warringtoncardetailing.co.uk. Provide your vehicle make, model, and approximate mileage or age, and note any paint condition concerns. We\'ll come back with a fixed price for the appropriate package. You then confirm a date and drop your vehicle at Fairclough Mill, Atherton\'s Quay, WA5 1AH — approximately 20 minutes from Gorse Covert via the A574.',
       },
       {
         question: 'Is Gtechniq Crystal Serum better than CarPro Cquartz for a Gorse Covert vehicle?',
@@ -948,7 +948,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Woolston Warrington WA1 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Woolston WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Woolston WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Woolston, Warrington',
     intro:
       'Woolston sits in the south-east of Warrington\'s WA1 postcode, adjacent to the Manchester Ship Canal and the Woolston Eyes nature reserve — a designated Site of Special Scientific Interest that runs along the canal\'s southern bank. The area includes established residential streets, some light industrial heritage near the canal, and the broader Martinscroft and Risley areas that form the eastern extent of the Woolston district. Access to both the Thelwall New Road and the Manchester Road A57 makes Woolston well-connected to Warrington town centre and the motorway network.\n\nWoolston vehicles travel a mix of residential streets, the A57 towards Manchester and towards Warrington centre, and the Thelwall New Road connecting south towards the M6 motorway approaches. This gives a varied contamination profile — urban grime on the A57, the atmospheric damp and organic matter associated with the Ship Canal and Eyes nature reserve, and the fine particulate of motorway-adjacent driving. Our WA5 studio at Fairclough Mill is a fifteen-minute drive from Woolston. We apply the full range of Gtechniq and CarPro ceramic coatings, with every appointment including comprehensive preparation from the first pre-wash through to the precision coating application.',
@@ -993,7 +993,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Padgate Warrington WA1 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Padgate WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Padgate WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Padgate, Warrington',
     intro:
       'Padgate is a residential suburb in east-central Warrington, spanning part of the WA1 postcode between the town centre and the east Warrington districts of Fearnhead and Birchwood. It\'s a well-established community with a mix of post-war and newer housing, served by the A49 corridor and Padgate Lane — main routes that connect Padgate residents to both Warrington town centre and the broader motorway network to the east.\n\nFor Padgate residents, Car Ceramic Coating and detailing warrington0 is accessible via a simple drive west on the A49 to the WA5 area — typically fifteen minutes in regular traffic. We apply Gtechniq Crystal Serum Light, Crystal Serum Ultra, and CarPro Cquartz UK 3.0 to the full range of vehicles driven by Padgate customers, from practical family cars to the newer mid-range vehicles common in this part of east Warrington. Paint condition varies significantly across the WA1 postcode — some vehicles are well-maintained candidates for a straightforward coating, while others need a thorough paint correction before the ceramic layer is applied. We assess every vehicle at drop-off and confirm the required work before starting.',
@@ -1008,7 +1008,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Do you offer ceramic coating for people who have recently moved to Padgate?',
         answer:
-          'We welcome customers from all over the WA1 area regardless of how long they\'ve been resident. Many new Padgate residents find Car Ceramic Coating and detailing warrington0 when they move to the area and want to protect a newly purchased vehicle or refresh an existing one. A quick call on 07375 759686 or an online quote form submission is all it takes to get a fixed price and a booking date.',
+          'We welcome customers from all over the WA1 area regardless of how long they\'ve been resident. Many new Padgate residents find Car Ceramic Coating and detailing warrington0 when they move to the area and want to protect a newly purchased vehicle or refresh an existing one. A quick call on 07482 225323 or an online quote form submission is all it takes to get a fixed price and a booking date.',
       },
       {
         question: 'Can ceramic coating fix the swirl marks on my car in Padgate?',
@@ -1038,7 +1038,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Fearnhead Warrington WA2 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Fearnhead WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Fearnhead WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Fearnhead, Warrington',
     intro:
       'Fearnhead is a residential suburb in the north-east of Warrington, WA2, sitting between Birchwood to the east and Padgate to the south, with the more rural districts of Croft and Culcheth accessible to the north. It\'s a predominantly family-oriented area with semi-detached housing, good school provision, and the kind of established community feel that tends to go with areas that developed primarily in the post-war decades. Long Lane is the main arterial through Fearnhead, connecting it to Winwick Road and the broader north Warrington road network.\n\nFearnhead customers drive a variety of routes — Long Lane to the A49 for town access, the Fearnhead Cross junction towards Birchwood and the business district, and the rural lanes towards Croft and Culcheth for those living near the north of the area. This combination of suburban arterial, business park approach road, and rural lane driving creates a mixed contamination profile. Our Fairclough Mill unit in WA5 is approximately fifteen minutes from Fearnhead via the A49 or A57 — a quick and direct route that makes coating appointments practical for a morning drop-off and afternoon collection.',
@@ -1063,7 +1063,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Can I book a ceramic coating for my car near Fearnhead at weekends?',
         answer:
-          'Yes — we operate seven days a week, including weekends. Weekend appointments are popular for customers who prefer not to lose a working day. Book in advance as weekend slots fill faster than weekdays. Call 07375 759686 or use the online quote form to check availability and confirm a date.',
+          'Yes — we operate seven days a week, including weekends. Weekend appointments are popular for customers who prefer not to lose a working day. Book in advance as weekend slots fill faster than weekdays. Call 07482 225323 or use the online quote form to check availability and confirm a date.',
       },
       {
         question: 'Is ceramic coating covered under my car insurance for a Fearnhead vehicle?',
@@ -1083,7 +1083,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Cinnamon Brow Warrington WA2 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Cinnamon Brow WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Cinnamon Brow WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Cinnamon Brow, Warrington',
     intro:
       'Cinnamon Brow is a north Warrington suburb in the WA2 postcode, positioned along the Winwick Road corridor between Fearnhead and the town of Winwick. It\'s a residential area that sits at the junction of Warrington\'s urban fabric and its northern rural approaches — Long Lane connects it south to the town centre, while the Winwick Road continues north past the former Winwick Hospital site and out towards the village of Winwick and the M62 interchange.\n\nVehicles in Cinnamon Brow make regular use of the Winwick Road — one of Warrington\'s main northern arterials — and the A49 connections towards the town centre. This is a road that carries significant volumes of both local and through traffic, and the contamination associated with busy A-roads accumulates consistently on vehicles in the surrounding residential streets. Our WA5 studio is accessible in approximately fifteen minutes from Cinnamon Brow via the A49 southbound — a direct, uncomplicated route that makes a same-day coating appointment perfectly practical. We apply the full Gtechniq and CarPro range, with every appointment including comprehensive paint preparation before the coating is applied.',
@@ -1128,7 +1128,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Bruche Warrington WA1 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Bruche WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Professional results. Call 07375 759686.',
+      'Ceramic coating in Bruche WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Professional results. Call 07482 225323.',
     h1: 'Ceramic Coating in Bruche, Warrington',
     intro:
       'Bruche is a small residential area in east Warrington, WA1, closely associated with the neighbouring Padgate community and known locally as the location of the Cheshire Constabulary headquarters — a significant employer and the source of a notable concentration of vehicles from across Cheshire parking in the area. It\'s a quiet, well-established residential area with straightforward access to the A49, Padgate Lane, and the broader east Warrington road network connecting to the town centre and beyond.\n\nWCD serves Bruche customers at our Fairclough Mill unit in WA5 — a direct fifteen-minute drive via the A49. The area has a mix of older established housing and more recently developed properties, and the vehicle population reflects that range. Customers from Bruche contact us for the full spectrum of ceramic coating services, from our entry-level CarPro Cquartz application on well-maintained family cars to Gtechniq Crystal Serum Ultra on newer or higher-value vehicles where the nine-year warranty and maximum hardness make the most sense. Every appointment includes the comprehensive preparation that ceramic coating requires to perform properly: decontamination, clay bar, correction, and a precise coating application.',
@@ -1173,7 +1173,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Latchford Warrington WA4 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Latchford WA4 Warrington. Gtechniq Crystal Serum & CarPro from £250 at Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Latchford WA4 Warrington. Gtechniq Crystal Serum & CarPro from £250 at Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Latchford, Warrington',
     intro:
       'Latchford is a densely built, established residential district in south Warrington, sitting on the southern bank of the Manchester Ship Canal between the town centre and the leafy suburbs of Stockton Heath. Loushers Lane and Wilderspool Causeway are the main arteries in and out of the area, and the junction at Kingsway Bridge — one of Warrington\'s key canal crossings — is a daily point of reference for residents commuting into the town centre. Latchford has a strong community identity and a mix of terraced streets, semis, and redeveloped areas near the canal waterfront.\n\nFrom a vehicle maintenance perspective, Latchford sits in a zone where urban road contamination is consistently higher than in the outer suburbs. The Wilderspool Causeway and Loushers Lane carry significant volumes of traffic, and the canal-side location creates the damp atmospheric conditions that accelerate the accumulation of road film on parked vehicles. Our Fairclough Mill unit in WA5 is under ten minutes from Latchford — a straight run along the A57 through the WA5 waterside area. We apply the full range of Gtechniq and CarPro ceramic coatings at our studio, and Latchford customers are among the most regular in our customer base.',
@@ -1218,7 +1218,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Howley Warrington WA1 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Howley WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Howley WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Howley, Warrington',
     intro:
       'Howley is one of Warrington\'s oldest established residential areas, sitting close to the town centre on the northern bank of the River Mersey at the WA1 waterfront. The area around Howley Lane, Mersey Street, and the Bridge Foot riverside is one of the most historically significant parts of the town — the crossing point that established Warrington\'s position on the north-south route through north-west England. Today it\'s a residential area with the character of inner-town Warrington: accessible, dense, and within easy reach of everything the town centre offers.\n\nFor Howley residents, Car Ceramic Coating and detailing warrington0\'s Fairclough Mill unit in WA5 is the nearest professional ceramic coating facility — a quick drive across the river and west along the A57 takes under ten minutes. The inner-town location means vehicles in Howley are exposed to the full urban contamination profile: road grime from the Bridge Foot junction and the routes crossing the Mersey, brake dust from the busy town centre roads, and the fine particulate that settles on vehicles parked in any densely built urban area. Ceramic coating\'s chemical barrier and water-repelling surface make urban vehicle maintenance significantly more manageable — less frequent thorough washing, less effort at each wash, and better-maintained paint over the vehicle\'s life.',
@@ -1263,7 +1263,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Fairfield Warrington WA1 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Fairfield WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book now 07375 759686.',
+      'Ceramic coating in Fairfield WA1 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book now 07482 225323.',
     h1: 'Ceramic Coating in Fairfield, Warrington',
     intro:
       'Fairfield is a residential district in east-central Warrington, WA1, characterised by established family housing along Fairfield Road, Lovely Lane, and the network of residential streets that spread between the hospital area and the Padgate boundary. It\'s a well-connected part of the town — the A57 and the routes towards Warrington Hospital give Fairfield good links both to the town centre and the east Warrington road network. The demographic here is a broad mix: families, healthcare professionals commuting to the hospital, and the longer-standing residents of an area that developed progressively through the twentieth century.\n\nFor Fairfield residents, Car Ceramic Coating and detailing warrington0 at Fairclough Mill in WA5 is a straight westbound drive on the A57 — fifteen minutes in normal traffic. We serve customers from the full length of Fairfield Road and the surrounding WA1 streets with our full ceramic coating range. The A57 corridor that most Fairfield residents use daily for commuting is one of Warrington\'s main east-west arterials, generating road contamination at a rate that affects vehicles in adjacent residential areas. Ceramic coating\'s chemical barrier significantly reduces the frequency with which that contamination needs to be removed.',
@@ -1273,7 +1273,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Can NHS and healthcare workers in Fairfield get ceramic coating for their vehicles?',
         answer:
-          'We coat vehicles for NHS staff and healthcare professionals from Warrington Hospital and surrounding facilities regularly. The same professional standard applies regardless of occupation, and our pricing is consistent. Many healthcare workers appreciate the reduced maintenance burden that ceramic coating provides — fewer hours spent washing the car in limited free time. Book by calling 07375 759686 or via our online form.',
+          'We coat vehicles for NHS staff and healthcare professionals from Warrington Hospital and surrounding facilities regularly. The same professional standard applies regardless of occupation, and our pricing is consistent. Many healthcare workers appreciate the reduced maintenance burden that ceramic coating provides — fewer hours spent washing the car in limited free time. Book by calling 07482 225323 or via our online form.',
       },
       {
         question: 'Is ceramic coating practical for an older, well-kept vehicle in Fairfield?',
@@ -1308,7 +1308,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Whitecross Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Whitecross WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill. Call 07375 759686.',
+      'Ceramic coating in Whitecross WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill. Call 07482 225323.',
     h1: 'Ceramic Coating in Whitecross, Warrington',
     intro:
       'Whitecross is an inner-west Warrington neighbourhood in the WA5 postcode, close to the town centre and well connected by the A57 and Sankey Street to both the civic centre and the retail areas of the Golden Square and the Bridge Street Quarter. It\'s a residential area with a mix of older terraced housing and some newer development, sitting close enough to the town centre to experience the contamination associated with an urban core while retaining the character of a residential community.\n\nFor Whitecross residents, Car Ceramic Coating and detailing warrington0\'s Fairclough Mill studio is extremely close — a short drive along the A57 in the WA5 area, well under ten minutes. The proximity makes us the most convenient professional ceramic coating option available. Vehicles in Whitecross face the urban contamination challenges typical of inner-Warrington: road grime from the A57 and Sankey Street, brake dust from the busy town centre junctions, and the fine particulate that settles on vehicles parked in densely built residential streets near major roads. Ceramic coating\'s chemical barrier and hydrophobic repellency provide a continuous defence against this accumulation, making maintenance significantly less intensive.',
@@ -1323,7 +1323,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How quickly can I book a ceramic coating from Whitecross at Car Ceramic Coating and detailing warrington0?',
         answer:
-          'For standard vehicles with no exceptional paint condition requirements, we can typically offer an appointment within one to two weeks of enquiry. Call 07375 759686 or use our online form to check current availability. Due to our proximity to Whitecross, we can sometimes accommodate short-notice enquiries if a slot becomes available — worth calling directly for urgent requests.',
+          'For standard vehicles with no exceptional paint condition requirements, we can typically offer an appointment within one to two weeks of enquiry. Call 07482 225323 or use our online form to check current availability. Due to our proximity to Whitecross, we can sometimes accommodate short-notice enquiries if a slot becomes available — worth calling directly for urgent requests.',
       },
       {
         question: 'What is included in the £250 CarPro Cquartz package for a Whitecross vehicle?',
@@ -1353,7 +1353,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Bewsey Warrington WA5 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Bewsey WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Bewsey WA5 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Bewsey, Warrington',
     intro:
       'Bewsey is a residential area in the north-west of Warrington\'s urban core, WA5, close to the Dallam area and with access via Bewsey Road to both the town centre and the western WA5 estates. Bewsey Old Hall — a historic moated manor house, now used as a community facility — gives the area a distinct heritage identity that contrasts with the predominantly twentieth-century residential development that surrounds it. Vehicles in Bewsey travel the town centre approaches, the routes towards the Westbrook and Callands estates, and the arterials connecting north Warrington to the motorway networks.\n\nFor Bewsey residents, Car Ceramic Coating and detailing warrington0\'s Fairclough Mill studio is accessible in minutes — a short drive through the WA5 area. The proximity is a practical advantage for a full-day coating appointment: drop off early, use the town centre or WA5 area during the working day, and collect the vehicle in the afternoon. We apply Gtechniq Crystal Serum Light and Ultra as well as CarPro Cquartz UK 3.0 to all vehicle types from our WA5 unit. The range of packages suits the variety of vehicles in Bewsey — from practical family cars on our CarPro entry package to newer or prestige vehicles on Crystal Serum Ultra.',
@@ -1398,7 +1398,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Orford Warrington WA2 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Orford WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Orford WA2 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Orford, Warrington',
     intro:
       'Orford is one of Warrington\'s larger established residential areas, spread across the WA2 postcode to the north of the town centre between the Winwick Road, Lovely Lane, and the routes towards Longford. It\'s a predominantly family community with a mix of council and owner-occupied housing, schools, parks including Orford Park, and a community hub that reflects the area\'s established social infrastructure. Orford Lane and Lovely Lane are the main arteries connecting the area to Warrington town centre and the Winwick Road to the north.\n\nVehicles in Orford typically cover the routes from the WA2 residential area into the town centre, up the Winwick Road towards the M62 and M6, and east towards the Birchwood business district via the Long Lane connection. This usage profile — urban arterial commuting combined with occasional motorway access — creates the standard combination of town grime and motorway particulate that ceramic coating addresses effectively. Our WA5 unit at Fairclough Mill is accessible via the A49 or A57 southbound and westbound from Orford — approximately fifteen minutes — making a full-day coating appointment easy to work around.',
@@ -1418,7 +1418,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'How do I contact Car Ceramic Coating and detailing warrington0 to book ceramic coating from Orford?',
         answer:
-          'Call us directly on 07375 759686 — we answer seven days a week, often outside normal business hours. Alternatively, submit a quote request at warringtoncardetailing.co.uk with your vehicle details and we\'ll respond within a few hours. We\'ll confirm a fixed price and a date at our Fairclough Mill, Atherton\'s Quay unit in WA5 1AH.',
+          'Call us directly on 07482 225323 — we answer seven days a week, often outside normal business hours. Alternatively, submit a quote request at warringtoncardetailing.co.uk with your vehicle details and we\'ll respond within a few hours. We\'ll confirm a fixed price and a date at our Fairclough Mill, Atherton\'s Quay unit in WA5 1AH.',
       },
       {
         question: 'What is the best way to wash a ceramic-coated car from Orford?',
@@ -1443,7 +1443,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Winwick Warrington WA2 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Winwick WA2 Warrington near M62/M6. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Winwick WA2 Warrington near M62/M6. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 at Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Winwick, Warrington',
     intro:
       'Winwick is a village on the northern edge of Warrington, WA2, historically significant as the site of St Oswald\'s Church — one of the oldest churches in the North West, set in a classic English village green surrounded by older properties and the distinctive rural-meets-suburban character of Warrington\'s northern fringe. The village sits close to the junction of the M62 and M6 motorways, making it one of the best-connected residential addresses in the region — and also one that exposes vehicles to consistent motorway-scale contamination from the surrounding infrastructure.\n\nFor Winwick residents who travel regularly on the M62 or M6, ceramic coating is the most practical response to the paint deterioration that high-mileage motorway driving accelerates. The fine stone chip exposure at motorway speed, the ferrous brake dust from surrounding vehicles, and the road spray from wet motorway surfaces all affect paintwork at a rate that\'s measurably higher than urban or rural lane driving. Gtechniq Crystal Serum Ultra\'s 9H hardness and two-layer system provides the best available protection for these conditions. Our WA5 unit at Fairclough Mill is twenty minutes from Winwick via the A49 — a straight southbound run into Warrington.',
@@ -1488,7 +1488,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Culcheth Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Culcheth WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Culcheth WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Culcheth, Warrington',
     intro:
       'Culcheth is a rural commuter village in the north-east of the Warrington area, WA3, surrounded by open countryside between Warrington, Newton-le-Willows, and the Lancashire border. It\'s a prosperous village with a thriving high street, spacious detached properties along Culcheth Hall Drive and Jackson Avenue, and the kind of settled, green character that makes it consistently popular with professional commuters who want countryside living within reach of Warrington, Manchester, and the motorway network. Vehicles here tend to be kept in excellent condition — many Culcheth residents have garages and are the customers who book services proactively rather than reactively.\n\nThe country lane driving around Culcheth — Warrington Road, the lanes towards Glazebury, and the routes south towards Birchwood and Fearnhead — creates the organic contamination profile typical of rural Cheshire: tree sap, pollen, fine stone chips from unmetalled surfaces. Ceramic coating\'s hydrophobic and chemical-resistant properties make it particularly effective for this driving environment. Our WA5 unit is approximately twenty minutes from Culcheth via the A574 — Culcheth customers regularly visit us for the full range of Gtechniq and CarPro packages, and the village\'s appreciation for quality makes it one of our most consistent customer bases in the WA3 area.',
@@ -1518,7 +1518,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
       {
         question: 'Is there a waiting list for ceramic coating at Car Ceramic Coating and detailing warrington0 from Culcheth?',
         answer:
-          'Availability varies by time of year — spring and early summer are our busiest periods as customers prepare vehicles for the better weather. We typically have availability within 1–2 weeks year-round, and occasionally sooner. For time-sensitive bookings (before a holiday or event), book as early as possible. Call 07375 759686 for the most current availability.',
+          'Availability varies by time of year — spring and early summer are our busiest periods as customers prepare vehicles for the better weather. We typically have availability within 1–2 weeks year-round, and occasionally sooner. For time-sensitive bookings (before a holiday or event), book as early as possible. Call 07482 225323 for the most current availability.',
       },
     ],
   },
@@ -1533,7 +1533,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Croft Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Croft WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07375 759686.',
+      'Ceramic coating in Croft WA3 Warrington. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Book 07482 225323.',
     h1: 'Ceramic Coating in Croft, Warrington',
     intro:
       'Croft is a village in the WA3 postcode between Warrington and Leigh, sitting on the border of the Warrington and Leigh districts in an area of open farmland and rural lanes. It\'s a quiet, traditional village with a strong community identity, accessible from the M62 at Junction 11 and connected to both Warrington and the wider Lancashire/Cheshire road network via the A574. Properties in Croft tend to be larger — detached houses, barn conversions, and the kind of rural homes that come with substantial driveways and garages, and vehicles that are taken seriously.\n\nCroft vehicles travel a consistent combination of M62 motorway driving for longer journeys and rural lane use for shorter local trips. The M62 Junction 11 proximity makes this one of the WA3 locations with the highest regular motorway mileage per driver. Ceramic coating\'s protection is particularly relevant here: motorway stone chip exposure is the most demanding environment for vehicle paint, and Gtechniq Crystal Serum Ultra at 9H provides the best available ceramic response. Our WA5 studio at Fairclough Mill is approximately twenty-five minutes from Croft via the A574 westbound — a practical drive for a morning drop-off.',
@@ -1578,7 +1578,7 @@ export const allCeramicCoatingLocations: CeramicCoatingLocationData[] = [
     ],
     metaTitle: 'Ceramic Coating Glazebury Warrington WA3 | Gtechniq & CarPro | Car Ceramic Coating and detailing warrington0',
     metaDescription:
-      'Ceramic coating in Glazebury WA3 Warrington near M62. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07375 759686.',
+      'Ceramic coating in Glazebury WA3 Warrington near M62. Gtechniq Crystal Serum & CarPro from £250. Car Ceramic Coating and detailing warrington0 Fairclough Mill WA5. Call 07482 225323.',
     h1: 'Ceramic Coating in Glazebury, Warrington',
     intro:
       'Glazebury is a small village in the east of the WA3 postcode, sitting between Warrington, Leigh, and the Chat Moss area to the south. It\'s accessible from the M62 at Junction 11 and from the A580 East Lancashire Road — one of the region\'s busiest inter-city routes connecting Liverpool and Manchester. The village itself retains a quiet, rural character: Glazebury Chapel, the village lane network, and the open countryside of Chat Moss create a setting that feels genuinely rural despite the motorway infrastructure visible on the horizon.\n\nFor Glazebury residents, the proximity to both the M62 and the A580 creates one of the most demanding paint environments of any WA3 location. The A580 is a notoriously contaminated road — a major inter-city route with a high HGV proportion, significant vehicle density, and a contamination profile that includes ferrous brake dust, rubber particulate, and the chemical compounds associated with heavy vehicle exhaust. Ceramic coating is the most effective paint protection available for vehicles travelling these roads regularly. Our Fairclough Mill unit in WA5 is approximately twenty-five minutes from Glazebury via the A574 — a worthwhile drive for protection that lasts years, not months.',

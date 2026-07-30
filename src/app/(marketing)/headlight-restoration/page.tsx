@@ -12,7 +12,7 @@ const CANONICAL = 'https://warringtoncardetailing.co.uk/headlight-restoration/';
 export const metadata: Metadata = {
   title: { absolute: 'Headlight Restoration Warrington | Crystal Clear Results | Car Ceramic Coating and detailing warrington0' },
   description:
-    'Professional headlight restoration in Warrington from £50. Restore yellowed, cloudy headlights to crystal clarity. Improves night visibility & MOT results. Free quote: 07375 759686.',
+    'Professional headlight restoration in Warrington from £50. Restore yellowed, cloudy headlights to crystal clarity. Improves night visibility & MOT results. Free quote: 07482 225323.',
   keywords: [
     'headlight restoration Warrington',
     'cloudy headlight repair Warrington',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Headlight Restoration Warrington | Crystal Clear Results | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional headlight restoration in Warrington from £50. Crystal clear results. Free quote: 07375 759686.',
+    description: 'Professional headlight restoration in Warrington from £50. Crystal clear results. Free quote: 07482 225323.',
     images: ['/hero-bg.jpg'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const headlightFaqs = [
   {
     question: 'How much does headlight restoration cost in Warrington?',
-    answer: 'Headlight restoration at Car Ceramic Coating and detailing warrington0 starts from £50 for a pair of headlights. The exact price depends on the severity of yellowing, hazing or scratching. Car Ceramic Coating and detailing warrington0 provides a free assessment and quote — call 07375 759686.',
+    answer: 'Headlight restoration at Car Ceramic Coating and detailing warrington0 starts from £50 for a pair of headlights. The exact price depends on the severity of yellowing, hazing or scratching. Car Ceramic Coating and detailing warrington0 provides a free assessment and quote — call 07482 225323.',
   },
   {
     question: 'How long does headlight restoration take?',

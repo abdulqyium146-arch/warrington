@@ -36,12 +36,12 @@ export const localBusinessSchema = {
   hasMap: 'https://maps.google.com/?q=Unit+1+Fairclough+Mill+Warrington+WA5+1AH',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+44 7375 759686',
+    telephone: '+44 7482 225323',
     contactType: 'customer service',
     areaServed: 'GB',
     availableLanguage: 'English',
   },
-  telephone: '+44 7375 759686',
+  telephone: '+44 7482 225323',
   email: 'info@wcdcardetailing.co.uk',
   openingHoursSpecification: [
     {
@@ -200,7 +200,7 @@ export const serviceSchema = (
     '@type': 'AutoBodyShop',
     '@id': BUSINESS_ID,
     name: 'Car Ceramic Coating and detailing warrington0',
-    telephone: '+44 7375 759686',
+    telephone: '+44 7482 225323',
     address: {
       '@type': 'PostalAddress',
       streetAddress: "Unit 1 Fairclough Mill, Atherton's Quay",

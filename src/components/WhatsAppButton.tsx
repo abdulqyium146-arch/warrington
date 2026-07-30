@@ -1,4 +1,4 @@
-﻿const WA_NUMBER = '447375759686';
+﻿const WA_NUMBER = '447482225323';
 const WA_MESSAGE = encodeURIComponent('Hi, I\'d like to get a quote for car detailing.');
 
 export default function WhatsAppButton() {

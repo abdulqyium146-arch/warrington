@@ -12,7 +12,7 @@ const CANONICAL = 'https://warringtoncardetailing.co.uk/interior-detailing/';
 export const metadata: Metadata = {
   title: { absolute: 'Interior Car Detailing Warrington | Deep Clean & Leather Care | Car Ceramic Coating and detailing warrington0' },
   description:
-    'Interior car detailing in Warrington from £80. Deep vacuum, fabric & leather cleaning, steam sanitising & odour removal at our WA5 unit. Free quote: 07375 759686.',
+    'Interior car detailing in Warrington from £80. Deep vacuum, fabric & leather cleaning, steam sanitising & odour removal at our WA5 unit. Free quote: 07482 225323.',
   keywords: [
     'interior car detailing Warrington',
     'interior car clean Warrington',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Interior Car Detailing Warrington | Deep Clean & Leather Care | Car Ceramic Coating and detailing warrington0',
-    description: 'Interior car detailing in Warrington from £80. Deep vacuum, fabric & leather cleaning, steam sanitising & odour removal. Free quote: 07375 759686.',
+    description: 'Interior car detailing in Warrington from £80. Deep vacuum, fabric & leather cleaning, steam sanitising & odour removal. Free quote: 07482 225323.',
     url: CANONICAL,
     siteName: 'Car Ceramic Coating and detailing warrington0',
     locale: 'en_GB',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Interior Car Detailing Warrington | Deep Clean & Leather Care | Car Ceramic Coating and detailing warrington0',
-    description: 'Interior car detailing in Warrington from £80. Deep clean, leather conditioning & odour removal. Free quote: 07375 759686.',
+    description: 'Interior car detailing in Warrington from £80. Deep clean, leather conditioning & odour removal. Free quote: 07482 225323.',
     images: ['/gallery/warrington-interior-car-detailing-1.webp'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
@@ -56,7 +56,7 @@ const interiorDetailingFaqs = [
   },
   {
     question: 'How long does interior car detailing take?',
-    answer: 'A standard interior detail takes 2–4 hours. A deep interior restoration with steam cleaning, leather conditioning and odour treatment can take 4–6 hours. Car Ceramic Coating and detailing warrington0 will confirm the exact timeframe with your free quote when you call 07375 759686.',
+    answer: 'A standard interior detail takes 2–4 hours. A deep interior restoration with steam cleaning, leather conditioning and odour treatment can take 4–6 hours. Car Ceramic Coating and detailing warrington0 will confirm the exact timeframe with your free quote when you call 07482 225323.',
   },
   {
     question: 'Can interior detailing remove pet hair?',

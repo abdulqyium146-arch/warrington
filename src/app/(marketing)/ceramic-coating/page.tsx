@@ -15,7 +15,7 @@ const CANONICAL = 'https://warringtoncardetailing.co.uk/ceramic-coating/';
 export const metadata: Metadata = {
   title: { absolute: 'Ceramic Coating Warrington | Gtechniq & CarPro Accredited | Car Ceramic Coating and detailing warrington0' },
   description:
-    'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. 9H hardness, 5–9 year protection. Paint correction prep included. Free quote: 07375 759686.',
+    'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. 9H hardness, 5–9 year protection. Paint correction prep included. Free quote: 07482 225323.',
   keywords: [
     'ceramic coating Warrington',
     'ceramic coating Warrington WA5',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ceramic Coating Warrington | Gtechniq & CarPro Accredited | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. 9H hardness, up to 9-year protection. Free quote: 07375 759686.',
+    description: 'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. 9H hardness, up to 9-year protection. Free quote: 07482 225323.',
     url: CANONICAL,
     siteName: 'Car Ceramic Coating and detailing warrington0',
     locale: 'en_GB',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ceramic Coating Warrington | Gtechniq & CarPro Accredited | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. Free quote: 07375 759686.',
+    description: 'Professional ceramic coating in Warrington from £250. Accredited Gtechniq & CarPro installers. Free quote: 07482 225323.',
     images: ['/gallery/ceramic-coating-seat-cupra-warrington-Car Ceramic Coating and detailing warrington0-car-detailing.jpg'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
