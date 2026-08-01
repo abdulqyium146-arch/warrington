@@ -8,21 +8,21 @@ import { imageGallerySchema, breadcrumbSchema } from '@/lib/schema';
 import { PHONE, PHONE_DISPLAY, SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Ceramic Coating Gallery Warrington | VW Golf R, Ford Mustang, BMW — WCD Car Detailing',
+  title: 'Ceramic Coating Gallery Warrington | Honda CR-V, BMW 3 Series, Ford Mustang — WCD',
   description:
-    'See real ceramic coating and machine polishing results on VW Golf R, Ford Mustang GT, BMW 2 Series, Seat Cupra and more. Before & after photos from our Warrington WA5 unit. 5-star rated.',
+    'Real ceramic coating & machine polishing results on Honda CR-V, BMW 3 Series M Sport, Ford Mustang GT, BMW 2 Series, Seat Cupra & more. Before & after photos from our Warrington WA5 unit.',
   alternates: { canonical: `${SITE_URL}/gallery` },
   openGraph: {
-    title: 'Ceramic Coating & Machine Polishing Gallery | WCD Car Detailing Warrington',
+    title: 'Car Detailing Gallery Warrington | WCD — Real Results, No Filters',
     description:
-      'Real results on VW Golf R, Ford Mustang GT, BMW 2 Series & more. Ceramic coating, machine polishing and car detailing in Warrington. No filters — just real results.',
+      'Honda CR-V, BMW 3 Series M Sport, Ford Mustang GT, BMW 2 Series, VW Golf R, Seat Cupra — ceramic coating, machine polishing & car detailing in Warrington. Every photo is real.',
     url: `${SITE_URL}/gallery`,
     images: [
       {
-        url: `${SITE_URL}/gallery/ford-mustang-gt-ceramic-coating-warrington-wcd-car-detailing.webp`,
+        url: `${SITE_URL}/gallery/bmw-3-series-m-sport-ceramic-coating-warrington-wcd.webp`,
         width: 1200,
         height: 900,
-        alt: 'Ford Mustang GT ceramic coating result in Warrington — deep gloss green finish by WCD Car Detailing',
+        alt: 'BMW 3 Series M Sport ceramic coating result in Warrington — Alpine White gloss finish by WCD Car Detailing',
       },
     ],
   },
@@ -33,6 +33,69 @@ export const metadata: Metadata = {
 
 const GALLERY_IMAGES = [
   // ── CERAMIC COATING ──────────────────────────────────────────────────────────
+  {
+    src: '/gallery/bmw-3-series-m-sport-ceramic-coating-warrington-wcd.webp',
+    alt: 'BMW 3 Series M Sport G20 ceramic coating in Warrington — Alpine White deep gloss result by WCD Car Detailing, Fairclough Mill WA5',
+    caption: 'BMW 3 Series M Sport — ceramic coating, Alpine White, Warrington',
+    category: 'Ceramic Coating',
+    featured: true,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-front.webp',
+    alt: 'Honda CR-V ceramic coating front view in Warrington — Crystal Black Pearl deep gloss hydrophobic finish by WCD Car Detailing WA5',
+    caption: 'Honda CR-V — ceramic coating, Crystal Black Pearl, Warrington',
+    category: 'Ceramic Coating',
+    featured: true,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-side-gloss.webp',
+    alt: 'Honda CR-V ceramic coating side panel gloss reflection in Warrington — deep mirror-like finish by WCD Car Detailing',
+    caption: 'Honda CR-V — ceramic coating side gloss, mirror reflection, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-rear-quarter.webp',
+    alt: 'Honda CR-V ceramic coating rear three-quarter view in Warrington — gloss black finish at WCD Car Detailing WA5',
+    caption: 'Honda CR-V — ceramic coating rear quarter, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-fender-detail.webp',
+    alt: 'Honda CR-V ceramic coating fender and wheel arch detail in Warrington — paint protection result by WCD Car Detailing',
+    caption: 'Honda CR-V — ceramic coating fender detail, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-tailgate.webp',
+    alt: 'Honda CR-V CR-V AWD badge ceramic coating result in Warrington — gloss tailgate finish by WCD Car Detailing WA5',
+    caption: 'Honda CR-V — ceramic coating tailgate, AWD badge detail, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-rear-gloss.webp',
+    alt: 'Honda CR-V rear ceramic coating gloss result in Warrington — full exterior protection at WCD Car Detailing WA5',
+    caption: 'Honda CR-V — ceramic coating rear gloss, Warrington',
+    category: 'Ceramic Coating',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
   {
     src: '/gallery/ford-mustang-gt-ceramic-coating-warrington-wcd-car-detailing.webp',
     alt: 'Ford Mustang GT ceramic coating in Warrington — deep gloss green paint protection by WCD Car Detailing, Fairclough Mill WA5',
@@ -88,6 +151,24 @@ const GALLERY_IMAGES = [
     height: 1080,
   },
   // ── MACHINE POLISHING ────────────────────────────────────────────────────────
+  {
+    src: '/gallery/paint-inspection-work-lights-warrington-wcd-machine-polishing.webp',
+    alt: 'Paint defect inspection under specialist work lights at WCD Car Detailing Warrington — pre-polishing assessment of swirl marks and scratches',
+    caption: 'Paint inspection under specialist lighting — pre-polishing assessment, Warrington',
+    category: 'Machine Polishing',
+    featured: true,
+    width: 1200,
+    height: 900,
+  },
+  {
+    src: '/gallery/swirl-marks-before-machine-polishing-warrington-wcd.webp',
+    alt: 'Swirl marks and paint defects on dark paintwork before machine polishing at WCD Car Detailing Warrington — before paint correction',
+    caption: 'Before machine polishing — swirl marks visible under inspection lighting, Warrington',
+    category: 'Before & After',
+    featured: false,
+    width: 1200,
+    height: 900,
+  },
   {
     src: '/gallery/warrington-paint-correction-swirl-removal-1.jpg',
     alt: 'Machine polishing and swirl mark removal in Warrington — paint correction result by WCD Car Detailing WA5',
@@ -241,8 +322,9 @@ export default function GalleryPage() {
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               Every photo below is a real result from our unit at Fairclough Mill, Warrington WA5. No
-              stock images, no filters. VW Golf R, Ford Mustang GT, BMW 2 Series, Seat Cupra and more —
-              ceramic coating that lasts years, machine polishing that eliminates swirl marks completely.
+              stock images, no filters. Honda CR-V, BMW 3 Series M Sport, Ford Mustang GT, BMW 2 Series,
+              VW Golf R, Seat Cupra and more — ceramic coating that lasts years, machine polishing
+              that eliminates swirl marks completely.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href={`tel:${PHONE}`} className="btn-primary">

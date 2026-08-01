@@ -858,6 +858,122 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── RECENT PROJECTS ───────────────────────────────────────────────── */}
+        <section id="recent-projects" className="py-20 bg-brand-black" aria-label="Recent ceramic coating and car detailing projects in Warrington">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="section-subheading">Real Results — No Filters</p>
+              <h2 className="section-heading">Recent Projects in Warrington</h2>
+              <div className="gold-divider" />
+              <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+                Honda CR-V, BMW 3 Series M Sport, Ford Mustang GT and more — every photo is taken at our
+                Fairclough Mill unit, Warrington WA5. No stock images, no editing.
+              </p>
+            </div>
+
+            {/* Hero project — Honda CR-V full ceramic coating */}
+            <div className="mb-6 rounded-xl overflow-hidden border border-brand-gold/30 bg-brand-darkgray group">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
+                <div className="relative lg:col-span-2 aspect-video lg:aspect-auto lg:min-h-[360px]">
+                  <Image
+                    src="/gallery/honda-crv-ceramic-coating-warrington-wcd-front.webp"
+                    alt="Honda CR-V full ceramic coating in Warrington — Crystal Black Pearl, deep gloss hydrophobic finish by WCD Car Detailing WA5"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    className="object-cover"
+                    priority={false}
+                    quality={88}
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="bg-brand-gold text-brand-black text-xs font-bold px-3 py-1.5 rounded-full">Featured Project</span>
+                  </div>
+                </div>
+                <div className="p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <p className="text-brand-gold text-xs font-semibold uppercase tracking-widest mb-2">Ceramic Coating · Warrington</p>
+                    <h3 className="font-heading font-black text-brand-white text-xl mb-3">Honda CR-V — Full Ceramic Coating</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                      Crystal Black Pearl Honda CR-V brought in for a full exterior ceramic coating package.
+                      Decontamination wash, clay bar, machine polish prep, then professional ceramic coating
+                      applied to all painted surfaces. Deep gloss hydrophobic finish that repels water, dirt
+                      and UV damage for years.
+                    </p>
+                    <ul className="space-y-1.5 mb-6">
+                      {['Decontamination wash & clay bar', 'Machine polish prep stage', 'Full ceramic coating applied', 'Hydrophobic — water beads off instantly'].map((pt) => (
+                        <li key={pt} className="flex items-start gap-2 text-gray-300 text-xs">
+                          <span className="text-brand-gold mt-0.5 flex-shrink-0">✓</span>{pt}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Link href="/ceramic-coating" className="btn-primary text-sm py-3 px-6 text-center">
+                    View Ceramic Coating →
+                  </Link>
+                </div>
+              </div>
+              {/* CR-V detail shots strip */}
+              <div className="grid grid-cols-3 gap-px bg-brand-gray/30 border-t border-brand-gold/20">
+                {[
+                  { src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-side-gloss.webp', alt: 'Honda CR-V ceramic coating side gloss reflection' },
+                  { src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-tailgate.webp', alt: 'Honda CR-V ceramic coating tailgate AWD badge detail' },
+                  { src: '/gallery/honda-crv-ceramic-coating-warrington-wcd-rear-gloss.webp', alt: 'Honda CR-V ceramic coating rear gloss Warrington' },
+                ].map((img) => (
+                  <div key={img.src} className="relative aspect-video">
+                    <Image src={img.src} alt={img.alt} fill sizes="33vw" className="object-cover" quality={82} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 3-col grid — other recent projects */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+              {[
+                {
+                  src: '/gallery/bmw-3-series-m-sport-ceramic-coating-warrington-wcd.webp',
+                  alt: 'BMW 3 Series G20 M Sport ceramic coating Warrington — Alpine White deep gloss by WCD Car Detailing',
+                  caption: 'BMW 3 Series M Sport — ceramic coating, Alpine White',
+                  badge: 'Ceramic Coating',
+                },
+                {
+                  src: '/gallery/ford-mustang-gt-ceramic-coating-warrington-wcd-car-detailing.webp',
+                  alt: 'Ford Mustang GT ceramic coating Warrington — Need for Green gloss result by WCD Car Detailing',
+                  caption: 'Ford Mustang GT — ceramic coating, full gloss finish',
+                  badge: 'Ceramic Coating',
+                },
+                {
+                  src: '/gallery/paint-inspection-work-lights-warrington-wcd-machine-polishing.webp',
+                  alt: 'Paint defect inspection under specialist work lights at WCD Car Detailing Warrington — machine polishing assessment',
+                  caption: 'Paint inspection — specialist lighting before machine polish',
+                  badge: 'Machine Polishing',
+                },
+              ].map((img) => (
+                <figure key={img.src} className="group relative overflow-hidden rounded-xl bg-brand-darkgray border border-brand-gray/30 hover:border-brand-gold/50 transition-all duration-300">
+                  <div className="relative aspect-video">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      quality={82}
+                    />
+                    <div className="absolute top-3 left-3">
+                      <span className="bg-brand-gold/90 text-brand-black text-xs font-bold px-2.5 py-1 rounded-full">{img.badge}</span>
+                    </div>
+                  </div>
+                  <figcaption className="px-4 py-3 text-xs text-gray-400 font-medium">{img.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link href="/gallery" className="btn-secondary inline-flex items-center gap-2">
+                View Full Gallery →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ── VEHICLE TYPES ─────────────────────────────────────────────────── */}
         <section id="vehicle-types" className="py-20 bg-brand-black">
           <div className="max-w-7xl mx-auto px-4">
