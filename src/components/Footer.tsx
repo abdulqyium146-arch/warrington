@@ -220,7 +220,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-center gap-3">
           <span className="text-gray-400 text-sm">Chat with us on WhatsApp:</span>
           <a
-            href={`https://wa.me/447482225323`}
+            href={`https://wa.me/447375759686`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat with Car Ceramic Coating and detailing warrington0 on WhatsApp"

@@ -1,7 +1,7 @@
 ﻿﻿export const SITE_NAME = 'Car Ceramic Coating and detailing warrington0';
 export const SITE_URL = 'https://warringtoncardetailing.co.uk';
-export const PHONE = '+44 7482 225323';
-export const PHONE_DISPLAY = '07482 225323';
+export const PHONE = '+44 7375 759686';
+export const PHONE_DISPLAY = '07375 759686';
 export const EMAIL = 'info@carceramiccoatingwarrington0.co.uk';
 export const ADDRESS = 'Unit 1 Fairclough Mill, Atherton\'s Quay, Warrington, WA5 1AH';
 export const ADDRESS_SHORT = 'Warrington, WA5 1AH';

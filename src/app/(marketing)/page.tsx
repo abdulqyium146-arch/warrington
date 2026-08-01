@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: 'Car Ceramic Coating & Paint Correction Warrington | Car Ceramic Coating and detailing warrington0 | 5★ Rated',
   },
   description:
-    'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350, car polishing & paint correction from £200. 5★ rated. WA5 unit. Call 07482 225323.',
+    'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350, car polishing & paint correction from £200. 5★ rated. WA5 unit. Call 07375 759686.',
   keywords: [
     'car ceramic coating',
     'ceramic car coating',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Car Ceramic Coating & Paint Correction Warrington | Car Ceramic Coating and detailing warrington0 | 5★ Rated',
-    description: 'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350, car polishing from £200. 5★ rated. Free quote: 07482 225323.',
+    description: 'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350, car polishing from £200. 5★ rated. Free quote: 07375 759686.',
     url: SITE_URL + '/',
     siteName: 'Car Ceramic Coating and detailing warrington0',
     locale: 'en_GB',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Car Ceramic Coating & Paint Correction Warrington | Car Ceramic Coating and detailing warrington0 | 5★ Rated',
-    description: 'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350. Free quote: 07482 225323.',
+    description: 'Best professional ceramic coating & paint correction in Warrington. Car ceramic coating from £350. Free quote: 07375 759686.',
     images: ['/hero-bg.jpg'],
   },
   robots: {
@@ -67,7 +67,7 @@ const localBusinessSchema = {
   description:
     "Car Ceramic Coating and detailing warrington0 is Warrington's best professional ceramic coating and paint correction specialist. Services include car ceramic coating, paint correction, car polishing, interior detailing, headlight restoration and auto paint enhancement at our dedicated WA5 unit.",
   url: SITE_URL,
-  telephone: '+44 7482 225323',
+  telephone: '+44 7375 759686',
   email: 'info@wcdcardetailing.co.uk',
   priceRange: '££',
   address: {
@@ -178,7 +178,7 @@ const faqs = [
   {
     question: 'Is Car Ceramic Coating and detailing warrington0 open on weekends and bank holidays?',
     answer:
-      'Yes — Car Ceramic Coating and detailing warrington0 is open 24 hours a day, 7 days a week, including weekends and bank holidays. You can book any time by calling 07482 225323 or using our online quote form.',
+      'Yes — Car Ceramic Coating and detailing warrington0 is open 24 hours a day, 7 days a week, including weekends and bank holidays. You can book any time by calling 07375 759686 or using our online quote form.',
   },
   {
     question: 'Which areas of Warrington do you cover?',
@@ -198,7 +198,7 @@ const faqs = [
   {
     question: 'Where can I get car ceramic coating near me in Warrington?',
     answer:
-      'Car Ceramic Coating and detailing warrington0 offers professional car ceramic coating at our dedicated unit in Warrington WA5 1AH — Unit 1 Fairclough Mill, Atherton\'s Quay. We apply Gtechniq and CarPro ceramic coatings, the best professional ceramic coating products available, to cars across all WA postcodes and the wider North West. Call 07482 225323 for a free ceramic coating quote.',
+      'Car Ceramic Coating and detailing warrington0 offers professional car ceramic coating at our dedicated unit in Warrington WA5 1AH — Unit 1 Fairclough Mill, Atherton\'s Quay. We apply Gtechniq and CarPro ceramic coatings, the best professional ceramic coating products available, to cars across all WA postcodes and the wider North West. Call 07375 759686 for a free ceramic coating quote.',
   },
   {
     question: 'Where can I find paint correction or car polishing near me in Warrington?',
@@ -443,7 +443,7 @@ export default function HomePage() {
               <a
                 href={`tel:${PHONE}`}
                 className="btn-primary text-lg py-4 px-8"
-                aria-label="Call Car Ceramic Coating and detailing warrington0 on 07482 225323"
+                aria-label="Call Car Ceramic Coating and detailing warrington0 on 07375 759686"
               >
                 📞 Call {PHONE_DISPLAY}
               </a>
@@ -632,7 +632,7 @@ export default function HomePage() {
                 {
                   step: '1',
                   title: 'Get Your Free Quote',
-                  copy: "Call 07482 225323 or fill in our quick online form. Tell us your vehicle, what you need, and where you're located in Warrington. We'll give you a clear, upfront quote — no obligation, no pressure.",
+                  copy: "Call 07375 759686 or fill in our quick online form. Tell us your vehicle, what you need, and where you're located in Warrington. We'll give you a clear, upfront quote — no obligation, no pressure.",
                 },
                 {
                   step: '2',
@@ -1090,7 +1090,7 @@ export default function HomePage() {
             <p className="text-gray-400 mb-8">
               Call us on{' '}
               <a href={`tel:${PHONE}`} className="text-brand-gold font-bold hover:underline">
-                07482 225323
+                07375 759686
               </a>{' '}
               or fill in our quick quote form and we&apos;ll get back to you fast.
             </p>

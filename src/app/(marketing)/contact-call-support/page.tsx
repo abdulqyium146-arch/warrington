@@ -5,22 +5,22 @@ import JsonLd from '@/components/JsonLd';
 import { SITE_URL, SITE_NAME, EMAIL } from '@/lib/constants';
 
 // ── Page-specific phone constants ──────────────────────────────────────────────
-const SUPPORT_PHONE = '+44 7482 225323';
-const SUPPORT_PHONE_DISPLAY = '+44 7482 225323';
-const SUPPORT_PHONE_DISPLAY_LOCAL = '07482 225323';
+const SUPPORT_PHONE = '+44 7375 759686';
+const SUPPORT_PHONE_DISPLAY = '+44 7375 759686';
+const SUPPORT_PHONE_DISPLAY_LOCAL = '07375 759686';
 
 // ── SEO Metadata ───────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Call Us: +44 7482 225323 | Car Ceramic Coating and detailing warrington0',
+  title: 'Call Us: +44 7375 759686 | Car Ceramic Coating and detailing warrington0',
   description:
-    'Call Car Ceramic Coating and detailing warrington0 on +44 7482 225323. Expert ceramic coating & machine polishing in Warrington. Open 24/7 — free no-obligation quote in minutes.',
+    'Call Car Ceramic Coating and detailing warrington0 on +44 7375 759686. Expert ceramic coating & machine polishing in Warrington. Open 24/7 — free no-obligation quote in minutes.',
   alternates: {
     canonical: `${SITE_URL}/contact-call-support`,
   },
   openGraph: {
-    title: 'Call Car Ceramic Coating and detailing warrington0 — +44 7482 225323 | 24/7 Support',
+    title: 'Call Car Ceramic Coating and detailing warrington0 — +44 7375 759686 | 24/7 Support',
     description:
-      'Speak directly with our detailing experts. Call +44 7482 225323 now for a free quote on ceramic coating, machine polishing & car detailing in Warrington.',
+      'Speak directly with our detailing experts. Call +44 7375 759686 now for a free quote on ceramic coating, machine polishing & car detailing in Warrington.',
     url: `${SITE_URL}/contact-call-support`,
     type: 'website',
     images: [
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
         url: '/hero-bg.jpg',
         width: 1200,
         height: 630,
-        alt: 'Car Ceramic Coating and detailing warrington0 — Call +44 7482 225323',
+        alt: 'Car Ceramic Coating and detailing warrington0 — Call +44 7375 759686',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Call Car Ceramic Coating and detailing warrington0 — +44 7482 225323',
+    title: 'Call Car Ceramic Coating and detailing warrington0 — +44 7375 759686',
     description:
-      'Open 24/7. Call +44 7482 225323 for a free quote on ceramic coating, machine polishing & car detailing in Warrington.',
+      'Open 24/7. Call +44 7375 759686 for a free quote on ceramic coating, machine polishing & car detailing in Warrington.',
     images: ['/hero-bg.jpg'],
   },
 };
@@ -49,7 +49,7 @@ const contactPageSchema = {
   name: 'Call Car Ceramic Coating and detailing warrington0 — Customer Support Line',
   url: `${SITE_URL}/contact-call-support`,
   description:
-    'Dedicated customer support and booking line for Car Ceramic Coating and detailing warrington0. Call +44 7482 225323 for a free quote.',
+    'Dedicated customer support and booking line for Car Ceramic Coating and detailing warrington0. Call +44 7375 759686 for a free quote.',
   mainEntity: {
     '@type': 'LocalBusiness',
     '@id': `${SITE_URL}/#business`,

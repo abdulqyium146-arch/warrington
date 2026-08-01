@@ -46,7 +46,7 @@ function baseTemplate(content: string, title: string): string {
   <div class="body">${content}</div>
   <div class="footer">
     <p>WCD Detailing · Unit 1 Fairclough Mill · Warrington WA5 1AH</p>
-    <p><a href="tel:+447482225323">07482 225323</a> · <a href="${SITE_URL}">${SITE_URL.replace('https://', '')}</a></p>
+    <p><a href="tel:+447375759686">07375 759686</a> · <a href="${SITE_URL}">${SITE_URL.replace('https://', '')}</a></p>
     <p style="margin-top:12px;color:#4b5563;">You're receiving this because you booked with us.</p>
   </div>
 </div>
@@ -85,7 +85,7 @@ export async function sendBookingConfirmation(data: {
     </div>
     <p><strong style="color:#f5f5f5;">Location:</strong><br />Unit 1 Fairclough Mill, Atherton's Quay, Warrington WA5 1AH</p>
     <p style="margin-top:8px;">Please arrive 5 minutes before your appointment. If you need to reschedule, call us at least 24 hours in advance.</p>
-    <center><a class="btn" href="tel:+447482225323">📞 07482 225323</a></center>
+    <center><a class="btn" href="tel:+447375759686">📞 07375 759686</a></center>
   `, 'Booking Confirmed — WCD Detailing');
 
   return getResend().emails.send({
@@ -121,7 +121,7 @@ export async function sendBookingReminder(data: {
     </div>
     <p><strong style="color:#f5f5f5;">Address:</strong> Unit 1 Fairclough Mill, Atherton's Quay, Warrington WA5 1AH</p>
     <p>Need to reschedule? Please call us as soon as possible.</p>
-    <center><a class="btn" href="tel:+447482225323">📞 Call to Reschedule</a></center>
+    <center><a class="btn" href="tel:+447375759686">📞 Call to Reschedule</a></center>
   `, 'Booking Reminder — WCD Detailing');
 
   return getResend().emails.send({
@@ -145,7 +145,7 @@ export async function sendReviewRequest(data: {
     <p>Thank you for choosing WCD Detailing for your <strong style="color:#c9a84c;">${data.services.join(' & ')}</strong>. We hope you're loving the results!</p>
     <p>Your feedback helps us improve and helps other car owners find us. It takes less than 60 seconds.</p>
     <center><a class="btn" href="https://g.page/r/WCDdetailing/review">⭐ Leave a Google Review</a></center>
-    <p style="margin-top:24px;font-size:13px;color:#6b7280;">If anything wasn't perfect, please call us directly and we'll make it right — <a href="tel:+447482225323" style="color:#c9a84c;">07482 225323</a></p>
+    <p style="margin-top:24px;font-size:13px;color:#6b7280;">If anything wasn't perfect, please call us directly and we'll make it right — <a href="tel:+447375759686" style="color:#c9a84c;">07375 759686</a></p>
   `, 'How did we do? — WCD Detailing');
 
   return getResend().emails.send({
@@ -187,7 +187,7 @@ export async function sendBookingConfirmedByAdmin(data: {
     </div>
     <p><strong style="color:#f5f5f5;">Location:</strong><br />Unit 1 Fairclough Mill, Atherton's Quay, Warrington WA5 1AH</p>
     <p>Please arrive 5 minutes early. Need to reschedule? Call us at least 24 hours in advance.</p>
-    <center><a class="btn" href="tel:+447482225323">📞 07482 225323</a></center>
+    <center><a class="btn" href="tel:+447375759686">📞 07375 759686</a></center>
   `, 'Booking Confirmed — WCD Detailing');
 
   return getResend().emails.send({
@@ -222,7 +222,7 @@ export async function sendBookingCancelledEmail(data: {
     </div>
     <p>If you'd like to rebook or have any questions, please don't hesitate to get in touch.</p>
     <center><a class="btn" href="${SITE_URL}/booking">Book Again</a></center>
-    <p style="text-align:center;font-size:13px;color:#6b7280;">Or call us: <a href="tel:+447482225323" style="color:#c9a84c;">07482 225323</a></p>
+    <p style="text-align:center;font-size:13px;color:#6b7280;">Or call us: <a href="tel:+447375759686" style="color:#c9a84c;">07375 759686</a></p>
   `, 'Booking Cancelled — WCD Detailing');
 
   return getResend().emails.send({
@@ -290,7 +290,7 @@ export async function sendEnquiryAcknowledgement(data: {
     </div>
     <p>No payment is required at this stage — we'll confirm everything over the phone or by email.</p>
     <p style="margin-top:16px;"><strong style="color:#f5f5f5;">Need to speak to us urgently?</strong></p>
-    <center><a class="btn" href="tel:+447482225323">📞 07482 225323</a></center>
+    <center><a class="btn" href="tel:+447375759686">📞 07375 759686</a></center>
   `, 'Booking Request Received — WCD Detailing');
 
   return getResend().emails.send({

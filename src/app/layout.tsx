@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Warrington's #1 ceramic coating & machine polishing specialists. Professional car detailing at our WA5 unit. Open 24/7. Call 07482 225323 for a free quote.",
+    "Warrington's #1 ceramic coating & machine polishing specialists. Professional car detailing at our WA5 unit. Open 24/7. Call 07375 759686 for a free quote.",
 
   keywords: [
     'car detailing Warrington',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: 'Car Ceramic Coating and detailing warrington0',
     title: 'Car Ceramic Coating and detailing warrington0 | Ceramic Coating & Machine Polishing | 5★ Rated',
     description:
-      "Warrington's #1 ceramic coating & machine polishing specialists. Professional car detailing at our WA5 unit. Open 24/7. Free quote: 07482 225323.",
+      "Warrington's #1 ceramic coating & machine polishing specialists. Professional car detailing at our WA5 unit. Open 24/7. Free quote: 07375 759686.",
     images: [
       {
         url: '/hero-bg.jpg',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Car Ceramic Coating and detailing warrington0 | Ceramic Coating & Machine Polishing | 5★ Rated',
     description:
-      "Warrington's #1 ceramic coating & machine polishing specialists. Open 24/7. Free quote: 07482 225323.",
+      "Warrington's #1 ceramic coating & machine polishing specialists. Open 24/7. Free quote: 07375 759686.",
     images: ['/hero-bg.jpg'],
     creator: '@WCDdetailing',
     site: '@WCDdetailing',
@@ -144,7 +144,7 @@ const organizationSchema = {
   image: `${BASE}/hero-bg.jpg`,
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+44 7482 225323',
+    telephone: '+44 7375 759686',
     contactType: 'customer service',
     availableLanguage: 'English',
     hoursAvailable: {
@@ -178,7 +178,7 @@ const localBusinessSchema = {
   description:
     "Warrington's premier ceramic coating and machine polishing specialists. Professional car detailing, paint correction, interior detailing and headlight restoration at our dedicated unit in Warrington WA5 1AH.",
   url: BASE,
-  telephone: '+44 7482 225323',
+  telephone: '+44 7375 759686',
   email: 'info@carceramiccoatingwarrington0.co.uk',
   priceRange: '££',
   currenciesAccepted: 'GBP',

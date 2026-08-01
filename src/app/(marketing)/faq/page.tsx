@@ -8,11 +8,11 @@ import { PHONE, PHONE_DISPLAY, SITE_URL } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Car Detailing FAQ Warrington | Car Ceramic Coating and detailing warrington0',
   description:
-    'Answers to every question about car detailing in Warrington. Ceramic coating, machine polishing, pricing, process and more. Car Ceramic Coating and detailing warrington0 07482 225323.',
+    'Answers to every question about car detailing in Warrington. Ceramic coating, machine polishing, pricing, process and more. Car Ceramic Coating and detailing warrington0 07375 759686.',
   alternates: { canonical: `${SITE_URL}/faq` },
   openGraph: {
     title: 'Car Detailing FAQ Warrington | Car Ceramic Coating and detailing warrington0',
-    description: 'Every question about car detailing in Warrington answered. Ceramic coating, machine polishing, pricing, process and more. Car Ceramic Coating and detailing warrington0 07482 225323.',
+    description: 'Every question about car detailing in Warrington answered. Ceramic coating, machine polishing, pricing, process and more. Car Ceramic Coating and detailing warrington0 07375 759686.',
     url: `${SITE_URL}/faq`,
   },
 };
@@ -25,7 +25,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'How much does car detailing cost in Warrington?', acceptedAnswer: { '@type': 'Answer', text: 'Car Ceramic Coating and detailing warrington0 pricing starts from £80 for an exterior or interior detail, £200 for machine polishing, £350 for ceramic coating, and £50 for headlight restoration. All quotes are free and provided before any work begins.' } },
     { '@type': 'Question', name: 'What is the difference between car detailing and car valeting?', acceptedAnswer: { '@type': 'Answer', text: 'Car valeting is a thorough clean of your vehicle. Car detailing goes further — it involves paint decontamination, machine polishing to remove swirl marks and scratches, and application of long-term protective coatings. A valet cleans your car. A detail restores and protects it.' } },
     { '@type': 'Question', name: 'How long does ceramic coating last?', acceptedAnswer: { '@type': 'Answer', text: 'A professionally applied ceramic coating from Car Ceramic Coating and detailing warrington0 lasts between 2 and 5 years depending on product grade and maintenance. Car Ceramic Coating and detailing warrington0 uses professional-only ceramic coating products applied after full paint correction preparation.' } },
-    { '@type': 'Question', name: 'Are you open on weekends and bank holidays?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Car Ceramic Coating and detailing warrington0 is open 24 hours a day, 7 days a week, 365 days a year including all bank holidays. Call 07482 225323 any time to book.' } },
+    { '@type': 'Question', name: 'Are you open on weekends and bank holidays?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Car Ceramic Coating and detailing warrington0 is open 24 hours a day, 7 days a week, 365 days a year including all bank holidays. Call 07375 759686 any time to book.' } },
   ],
 };
 

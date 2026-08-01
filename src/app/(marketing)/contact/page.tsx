@@ -8,7 +8,7 @@ import { PHONE, PHONE_DISPLAY, EMAIL, ADDRESS, SITE_URL } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Contact Car Ceramic Coating and detailing warrington0 | Free Quote',
   description:
-    'Get in touch with Car Ceramic Coating and detailing warrington0. Call 07482 225323 for a free no-obligation quote on ceramic coating, machine polishing, car detailing and more.',
+    'Get in touch with Car Ceramic Coating and detailing warrington0. Call 07375 759686 for a free no-obligation quote on ceramic coating, machine polishing, car detailing and more.',
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     title: 'Contact Car Ceramic Coating and detailing warrington0 | Free Quote',

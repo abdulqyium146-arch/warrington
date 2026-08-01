@@ -185,7 +185,7 @@ export default function StoreLocator() {
           Get Directions on Google Maps
         </a>
         <a
-          href={`https://wa.me/447482225323?text=${encodeURIComponent('Hi, I\'d like to get directions / book an appointment.')}`}
+          href={`https://wa.me/447375759686?text=${encodeURIComponent('Hi, I\'d like to get directions / book an appointment.')}`}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-secondary text-center"

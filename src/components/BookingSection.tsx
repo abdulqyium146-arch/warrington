@@ -38,10 +38,10 @@ export default function BookingSection() {
             <div className="mt-8 pt-8 border-t border-brand-gray/50">
               <p className="text-xs text-gray-500 mb-1">Prefer to call directly?</p>
               <a
-                href="tel:07482225323"
+                href="tel:07375759686"
                 className="text-brand-gold font-semibold text-lg hover:text-brand-gold-light transition-colors"
               >
-                07482 225323
+                07375 759686
               </a>
             </div>
           </div>

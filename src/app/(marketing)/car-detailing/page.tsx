@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   // absolute bypasses the layout template
   title: { absolute: 'Car Detailing Warrington | Professional Valeting & Paint Correction | Car Ceramic Coating and detailing warrington0' },
   description:
-    'Professional car detailing in Warrington from £80. Full exterior valet, interior deep clean, paint correction & ceramic coating at our WA5 unit. Free quote: 07482 225323.',
+    'Professional car detailing in Warrington from £80. Full exterior valet, interior deep clean, paint correction & ceramic coating at our WA5 unit. Free quote: 07375 759686.',
   keywords: [
     'car detailing Warrington',
     'car valeting Warrington',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Car Detailing Warrington | Professional Valeting & Paint Correction | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional car detailing in Warrington from £80. Full exterior & interior valet, paint correction at our WA5 unit. Free quote: 07482 225323.',
+    description: 'Professional car detailing in Warrington from £80. Full exterior & interior valet, paint correction at our WA5 unit. Free quote: 07375 759686.',
     url: CANONICAL,
     siteName: 'Car Ceramic Coating and detailing warrington0',
     locale: 'en_GB',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 const carDetailingFaqs = [
   {
     question: 'How much does car detailing cost in Warrington?',
-    answer: "Car detailing in Warrington at Car Ceramic Coating and detailing warrington0 starts from £80 for an Essential Detail (exterior or interior), £180 for a Full Detail, and £350 for the Ultimate Detail package including paint correction and ceramic coating. Final pricing depends on your vehicle's size and condition. Car Ceramic Coating and detailing warrington0 always provides a free, no-obligation quote before any work begins. Call 07482 225323.",
+    answer: "Car detailing in Warrington at Car Ceramic Coating and detailing warrington0 starts from £80 for an Essential Detail (exterior or interior), £180 for a Full Detail, and £350 for the Ultimate Detail package including paint correction and ceramic coating. Final pricing depends on your vehicle's size and condition. Car Ceramic Coating and detailing warrington0 always provides a free, no-obligation quote before any work begins. Call 07375 759686.",
   },
   {
     question: 'How long does car detailing take?',

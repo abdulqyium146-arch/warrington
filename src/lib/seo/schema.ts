@@ -81,7 +81,7 @@ export function locationPageSchema(location: {
     name: `Car Ceramic Coating and detailing warrington0`,
     description: location.description,
     url: location.url,
-    telephone: '+44 7482 225323',
+    telephone: '+44 7375 759686',
     address: {
       '@type': 'PostalAddress',
       streetAddress: "Unit 1 Fairclough Mill, Atherton's Quay",

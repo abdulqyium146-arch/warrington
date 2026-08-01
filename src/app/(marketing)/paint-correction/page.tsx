@@ -14,7 +14,7 @@ const CANONICAL = 'https://warringtoncardetailing.co.uk/paint-correction/';
 export const metadata: Metadata = {
   title: { absolute: 'Machine Polishing Warrington | Paint Correction & Swirl Removal | Car Ceramic Coating and detailing warrington0' },
   description:
-    'Professional machine polishing in Warrington from £150. Remove swirl marks, scratches & oxidation. Stage 1, 2 & 3 paint correction available. Free quote: 07482 225323.',
+    'Professional machine polishing in Warrington from £150. Remove swirl marks, scratches & oxidation. Stage 1, 2 & 3 paint correction available. Free quote: 07375 759686.',
   keywords: [
     'machine polishing Warrington',
     'paint correction Warrington',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Machine Polishing Warrington | Paint Correction & Swirl Removal | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional machine polishing in Warrington from £150. Remove swirl marks, scratches & oxidation. Stage 1, 2 & 3 correction. Free quote: 07482 225323.',
+    description: 'Professional machine polishing in Warrington from £150. Remove swirl marks, scratches & oxidation. Stage 1, 2 & 3 correction. Free quote: 07375 759686.',
     url: CANONICAL,
     siteName: 'Car Ceramic Coating and detailing warrington0',
     locale: 'en_GB',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Machine Polishing Warrington | Paint Correction & Swirl Removal | Car Ceramic Coating and detailing warrington0',
-    description: 'Professional machine polishing & paint correction in Warrington from £150. Free quote: 07482 225323.',
+    description: 'Professional machine polishing & paint correction in Warrington from £150. Free quote: 07375 759686.',
     images: ['/gallery/warrington-paint-correction-swirl-removal-1.jpg'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
